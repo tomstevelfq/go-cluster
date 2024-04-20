@@ -5,6 +5,10 @@ import (
 	"net/rpc"
 )
 
+// the relationship between Cluster and ClusterNode is that the Cluster object abstractly encapsulates a cluster while a
+// ClusterNode refers to a specific node within the cluster system
+// there is a cluster process running in each host, while the communication between local host and others relies on
+// rpc methods which provided by ClusterNode object
 type ClusterNode struct {
 	name      string
 	address   string

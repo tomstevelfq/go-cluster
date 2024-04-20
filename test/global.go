@@ -1,6 +1,5 @@
 package global
 
-type FileTransService struct{}
 type UploadRequest struct {
 	FileName    string
 	FileContent []byte
