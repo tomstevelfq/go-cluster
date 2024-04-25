@@ -186,3 +186,6 @@ func main() {
 	fmt.Println("start to end")
 	pool.Terminate()
 }
+
+// Add the following extensions,which allow you to register a function with name to thread pool
+// call them with name by user,instead of excute them immediately
