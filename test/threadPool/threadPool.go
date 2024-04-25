@@ -8,8 +8,51 @@ import (
 )
 
 type Job struct {
-	id int
+	id       int
+	callback func()
 }
+
+func AddNum(a int, b int) {
+	a = a + b
+	fmt.Printf("sum is %d\n", a)
+}
+
+func DoubleStr(a string) {
+	a = a + a
+	fmt.Printf("double string a is %s\n", a)
+}
+
+func PackThreadFunc(name string, values ...interface{}) func() {
+	if name == "AddNum" {
+		if len(values) < 2 {
+			log.Fatal("para length is not enough")
+		}
+		a, aok := values[0].(int)
+		b, bok := values[1].(int)
+		if !aok || !bok {
+			log.Fatal("para type is not right")
+		}
+		return func() {
+			AddNum(a, b)
+		}
+	} else if name == "DoubleStr" {
+		if len(values) < 1 {
+			log.Fatal("para length is not enough")
+		}
+		a, aok := values[0].(string)
+		if !aok {
+			log.Fatal("para type is not right")
+		}
+		return func() {
+			DoubleStr(a)
+		}
+	} else {
+		log.Fatal("error func name")
+	}
+	return nil
+}
+
+type Func func(values ...interface{})
 
 type Worker struct {
 	JobChannel chan *Job
@@ -25,6 +68,12 @@ type Pool struct {
 
 func (w *Worker) Process(job *Job) {
 	fmt.Println("worker ", w.id, "is processing job ", job.id)
+	if job.callback == nil {
+		fmt.Println("callback is nil")
+	} else {
+		fmt.Println("call back is not nil")
+	}
+	job.callback() //do the job
 }
 
 func (w *Worker) Stop(wg *sync.WaitGroup) {
@@ -113,7 +162,13 @@ func main() {
 	fmt.Println("start")
 	pool := InitPool(5, 10)
 	for i := 0; i < 10; i++ {
-		pool.AddJob(&Job{id: i})
+		j := &Job{id: i}
+		if i%2 == 0 {
+			j.callback = AddNumThreadFunc(1, 2)
+		} else {
+			j.callback = DoubleStrThreadFunc("123")
+		}
+		pool.AddJob(j)
 	}
 	fmt.Println("start to end")
 	pool.Terminate()
