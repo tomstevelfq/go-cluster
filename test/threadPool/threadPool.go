@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"log"
+	"reflect"
 	"runtime/debug"
 	"sync"
 )
@@ -52,6 +53,20 @@ func PackThreadFunc(name string, values ...interface{}) func() {
 	return nil
 }
 
+func WrapThreadFunc(f interface{}, args ...interface{}) func() {
+	vf := reflect.ValueOf(f)
+	if vf.Kind() != reflect.Func {
+		log.Fatal("the first para is not func type")
+	}
+	vargs := make([]reflect.Value, len(args))
+	for idx, val := range args {
+		vargs[idx] = reflect.ValueOf(val)
+	}
+	return func() {
+		vf.Call(vargs)
+	}
+}
+
 type Func func(values ...interface{})
 
 type Worker struct {
@@ -69,9 +84,7 @@ type Pool struct {
 func (w *Worker) Process(job *Job) {
 	fmt.Println("worker ", w.id, "is processing job ", job.id)
 	if job.callback == nil {
-		fmt.Println("callback is nil")
-	} else {
-		fmt.Println("call back is not nil")
+		log.Fatal("callback is nil")
 	}
 	job.callback() //do the job
 }
@@ -164,9 +177,9 @@ func main() {
 	for i := 0; i < 10; i++ {
 		j := &Job{id: i}
 		if i%2 == 0 {
-			j.callback = AddNumThreadFunc(1, 2)
+			j.callback = WrapThreadFunc(AddNum, 1, 2)
 		} else {
-			j.callback = DoubleStrThreadFunc("123")
+			j.callback = WrapThreadFunc(DoubleStr, "123")
 		}
 		pool.AddJob(j)
 	}
