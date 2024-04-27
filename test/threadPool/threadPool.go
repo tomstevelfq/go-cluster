@@ -6,65 +6,12 @@ import (
 	"reflect"
 	"runtime/debug"
 	"sync"
+	"time"
 )
 
 type Job struct {
 	id       int
 	callback func()
-}
-
-func AddNum(a int, b int) {
-	a = a + b
-	fmt.Printf("sum is %d\n", a)
-}
-
-func DoubleStr(a string) {
-	a = a + a
-	fmt.Printf("double string a is %s\n", a)
-}
-
-func PackThreadFunc(name string, values ...interface{}) func() {
-	if name == "AddNum" {
-		if len(values) < 2 {
-			log.Fatal("para length is not enough")
-		}
-		a, aok := values[0].(int)
-		b, bok := values[1].(int)
-		if !aok || !bok {
-			log.Fatal("para type is not right")
-		}
-		return func() {
-			AddNum(a, b)
-		}
-	} else if name == "DoubleStr" {
-		if len(values) < 1 {
-			log.Fatal("para length is not enough")
-		}
-		a, aok := values[0].(string)
-		if !aok {
-			log.Fatal("para type is not right")
-		}
-		return func() {
-			DoubleStr(a)
-		}
-	} else {
-		log.Fatal("error func name")
-	}
-	return nil
-}
-
-func WrapThreadFunc(f interface{}, args ...interface{}) func() {
-	vf := reflect.ValueOf(f)
-	if vf.Kind() != reflect.Func {
-		log.Fatal("the first para is not func type")
-	}
-	vargs := make([]reflect.Value, len(args))
-	for idx, val := range args {
-		vargs[idx] = reflect.ValueOf(val)
-	}
-	return func() {
-		vf.Call(vargs)
-	}
 }
 
 type Func func(values ...interface{})
@@ -79,6 +26,32 @@ type Pool struct {
 	Workers    []*Worker
 	JobChannel chan *Job
 	wg         sync.WaitGroup
+	methods    map[string]interface{}
+}
+
+func AddNum(a int, b int) {
+	a = a + b
+	fmt.Printf("sum is %d\n", a)
+}
+
+func DoubleStr(a string) {
+	a = a + a
+	fmt.Printf("double string a is %s\n", a)
+}
+
+func WrapThreadFunc(f interface{}, args ...interface{}) func() {
+	fmt.Println("para", args)
+	vf := reflect.ValueOf(f)
+	if vf.Kind() != reflect.Func {
+		log.Fatal("the first para is not func type")
+	}
+	vargs := make([]reflect.Value, len(args))
+	for idx, val := range args {
+		vargs[idx] = reflect.ValueOf(val)
+	}
+	return func() {
+		vf.Call(vargs)
+	}
 }
 
 func (w *Worker) Process(job *Job) {
@@ -139,6 +112,7 @@ func NewWorker(id int, jobChannel chan *Job) *Worker {
 // Initialize a thread pool
 func InitPool(workerSize int, jobSize int) *Pool {
 	var pool Pool
+	pool.methods = make(map[string]interface{})
 	pool.JobChannel = make(chan *Job, jobSize)
 	for i := 1; i <= workerSize; i++ {
 		worker := NewWorker(i, pool.JobChannel)
@@ -165,6 +139,24 @@ func (pool *Pool) AddJob(job *Job) {
 	fmt.Println("job ", job.id, " was allocated")
 }
 
+func (p *Pool) Register(name string, fn interface{}) {
+	p.methods[name] = fn
+}
+
+func (p *Pool) Call(name string, args ...interface{}) {
+	fn, ok := p.methods[name]
+	if !ok {
+		log.Fatal("function name is not found")
+	}
+	j := &Job{id: 0}
+	j.callback = WrapThreadFunc(fn, args...) //we need to use ... to expand args or else it will be a double level slice
+	p.AddJob(j)
+}
+
+func hello(name string) {
+	fmt.Printf("hello my name is %s\n", name)
+}
+
 func main() {
 	defer func() {
 		if err := recover(); err != nil {
@@ -184,6 +176,11 @@ func main() {
 		pool.AddJob(j)
 	}
 	fmt.Println("start to end")
+
+	fmt.Println("sleep for 2 seconds")
+	time.Sleep(time.Second * 2)
+	pool.Register("hello", hello)
+	pool.Call("hello", "tom")
 	pool.Terminate()
 }
 
