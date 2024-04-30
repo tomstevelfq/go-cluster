@@ -36,6 +36,7 @@ func main() {
 	fts := new(FileTransService)
 	rpc.Register(fts)
 	rpc.HandleHTTP()
+	fmt.Println(rpc.DefaultDebugPath, rpc.DefaultRPCPath)
 	l, err := net.Listen("tcp", "localhost:1234")
 	if err != nil {
 		log.Fatal("listen error", err)
