@@ -24,9 +24,11 @@ type RpcFunc func(name string, args *interface{}, reply *interface{})
 
 type Message struct {
 	Mid           MTYPE
-	TrigName      string //func name which need to call
+	FuncName      string //func name which need to call
 	SourceAddress string
 	DestAddress   string
+	args          interface{}
+	reply         interface{}
 }
 
 type ClusterNode struct {
@@ -34,9 +36,8 @@ type ClusterNode struct {
 	address   string
 	port      string
 	State     bool
-	rpcDone   chan *rpc.Call //store rpc finished message
 	rpcServer *rpc.Server
-	mesChan   chan *Message
+	mesDone   chan *Message
 }
 
 type Cluster struct {
@@ -50,6 +51,10 @@ type Calculate struct{}
 type CalArg struct {
 	l int
 	r int
+}
+
+func MessageCallback(mes *Message) {
+	fmt.Printf("message callback for message: %d, called func name: %s", mes.Mid, mes.FuncName)
 }
 
 func (cal *Calculate) Sum(arg *CalArg, reply *int) error {
@@ -98,54 +103,49 @@ func InitNode(name string) *ClusterNode {
 		Name:      name,
 		address:   addr,
 		State:     false,
-		rpcDone:   make(chan *rpc.Call, 10),
 		rpcServer: rpc.NewServer(),
-		mesChan:   make(chan *Message, 10),
+		mesDone:   make(chan *Message, 10),
 	}
 }
 
 // describe running details of ClusterNode
 func (node *ClusterNode) Run(port string) {
-	go func() { // start rpc listener
-		node.rpcServer.HandleHTTP("/rpc", "/debug/rpc")
-		listener, err := net.Listen("tcp", node.address+":"+node.port)
-		if err != nil {
-			panic(err)
-		}
-		http.Serve(listener, nil)
-	}()
-
-	for { // start channel switch
-		select {
-		case <-node.rpcDone:
-			fmt.Println("one rpc method finished")
-		case mes := <-node.mesChan:
-			fmt.Println("mes is coming", mes)
-		}
+	node.State = true
+	node.rpcServer.HandleHTTP("/rpc", "/debug/rpc")
+	listener, err := net.Listen("tcp", node.address+":"+node.port)
+	if err != nil {
+		panic(err)
 	}
+	http.Serve(listener, nil)
+}
+
+func (node *ClusterNode) Stop() {
+	node.State = false
 }
 
 func (node *ClusterNode) RegisterObj(obj *interface{}) {
 	node.rpcServer.Register(obj)
 }
 
+// 异步调用，返回一个通道done
+func (node *ClusterNode) CallAsync(addr string, method string, arg interface{}, reply interface{}) chan *rpc.Call {
+	client, err := rpc.DialHTTP("tcp", addr)
+	if err != nil {
+		panic(err)
+	}
+	defer client.Close()
+	done := make(chan *rpc.Call)
+	client.Go(method, arg, reply, done)
+	return done
+}
+
 // 消息存入通道
-func (node *ClusterNode) SendMessage(mes *Message) {
-	node.mesChan<-
-}
-
-// 消息转rpc
-func (node *ClusterNode) MessageToRpc(mes *Message) {
-
-}
-
-// 完成处理
-func (node *ClusterNode) ProcessDone(done *rpc.Call) {
-
-}
-
-func (node *ClusterNode) MessageToNode(otherNode *ClusterNode, mes *Message) {
-
+func (node *ClusterNode) MessageToNode(mes *Message, other *ClusterNode) {
+	done := node.CallAsync(other.address+":"+other.port, mes.FuncName, mes.args, mes.reply)
+	go func() {
+		<-done
+		node.mesDone <- mes
+	}()
 }
 
 func Test() {
