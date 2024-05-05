@@ -6,6 +6,7 @@ import (
 	"net"
 	"net/http"
 	"net/rpc"
+	"sync"
 )
 
 // the relationship between Cluster and ClusterNode is that the Cluster object abstractly encapsulates a cluster while a
@@ -32,18 +33,22 @@ type Message struct {
 }
 
 type ClusterNode struct {
-	Name      string
-	address   string
-	port      string
-	State     bool
-	rpcServer *rpc.Server
-	mesDone   chan *Message
+	mutex   sync.Mutex
+	Name    string
+	address string
+	port    string
+	State   bool
+	mesDone chan *Message
+	Client  *rpc.Client
 }
 
 type Cluster struct {
-	state    bool //running or stopped
+	mutex    sync.Mutex
+	State    bool //running or stopped
 	Nodes    []ClusterNode
 	NodesMap map[string]*ClusterNode
+	server   *rpc.Server
+	addr     string
 }
 
 type Calculate struct{}
@@ -90,41 +95,40 @@ func GetHostAddr() string {
 }
 
 // 初始化ClusterNode
-func InitNode(name string) *ClusterNode {
-	addr := GetHostAddr()
-	if addr == "" {
-		log.Fatal("ipv4 addr is not found")
+func InitNode(name string, addr string) *ClusterNode {
+	cli, err := rpc.DialHTTP("tcp", addr)
+	if err != nil {
+		panic(err)
 	}
 
-	server := rpc.NewServer()
-	server.Register(new(Calculate))
-
 	return &ClusterNode{
-		Name:      name,
-		address:   addr,
-		State:     false,
-		rpcServer: rpc.NewServer(),
-		mesDone:   make(chan *Message, 10),
+		Name:    name,
+		address: addr,
+		State:   false,
+		Client:  cli,
+		mesDone: make(chan *Message, 10),
 	}
 }
 
 // describe running details of ClusterNode
 func (node *ClusterNode) Run(port string) {
+	node.mutex.Lock()
 	node.State = true
-	node.rpcServer.HandleHTTP("/rpc", "/debug/rpc")
-	listener, err := net.Listen("tcp", node.address+":"+node.port)
-	if err != nil {
-		panic(err)
+	node.mutex.Unlock()
+	for {
+		if !node.State {
+			break
+		}
+
+		msg := <-node.mesDone
+		MessageCallback(msg)
 	}
-	http.Serve(listener, nil)
 }
 
 func (node *ClusterNode) Stop() {
+	node.mutex.Lock()
 	node.State = false
-}
-
-func (node *ClusterNode) RegisterObj(obj *interface{}) {
-	node.rpcServer.Register(obj)
+	node.mutex.Unlock()
 }
 
 // 异步调用，返回一个通道done
@@ -146,6 +150,42 @@ func (node *ClusterNode) MessageToNode(mes *Message, other *ClusterNode) {
 		<-done
 		node.mesDone <- mes
 	}()
+}
+
+func InitCluster(port string) *Cluster {
+	addr := GetHostAddr()
+	if addr == "" {
+		log.Fatal("can't bind ip addr")
+	}
+	if port == "" {
+		addr = addr + ":8080"
+	} else {
+		addr = addr + ":" + port
+	}
+
+	clust := new(Cluster)
+
+	clust.State = false
+	clust.addr = addr
+	clust.server = rpc.NewServer()
+	return clust
+}
+
+func (clust *Cluster) Run() {
+	clust.mutex.Lock()
+	clust.State = true
+	clust.mutex.Unlock()
+	clust.server.HandleHTTP("/rpc", "/debug/rpc")
+
+	listener, err := net.Listen("tcp", clust.addr)
+	if err != nil {
+		panic(err)
+	}
+	http.Serve(listener, nil)
+}
+
+func (node *Cluster) RegisterObj(obj *interface{}) {
+	node.server.Register(obj)
 }
 
 func Test() {
