@@ -1,11 +1,15 @@
 package cluster
 
 import (
+	"encoding/json"
 	"fmt"
 	"log"
+	"math"
 	"net"
 	"net/http"
 	"net/rpc"
+	"os"
+	"strings"
 	"sync"
 )
 
@@ -36,7 +40,6 @@ type ClusterNode struct {
 	mutex   sync.Mutex
 	Name    string
 	address string
-	port    string
 	State   bool
 	mesDone chan *Message
 	Client  *rpc.Client
@@ -45,17 +48,20 @@ type ClusterNode struct {
 type Cluster struct {
 	mutex    sync.Mutex
 	State    bool //running or stopped
-	Nodes    []ClusterNode
+	Nodes    []*ClusterNode
 	NodesMap map[string]*ClusterNode
+	addrList []string
 	server   *rpc.Server
 	addr     string
+	Master   bool //is master node or not
 }
 
 type Calculate struct{}
 
 type CalArg struct {
-	l int
-	r int
+	l     int
+	r     int
+	clust *Cluster
 }
 
 func MessageCallback(mes *Message) {
@@ -70,6 +76,19 @@ func (cal *Calculate) Sum(arg *CalArg, reply *int) error {
 		ret += i
 	}
 	*reply = ret
+	return nil
+}
+
+func (cal *Calculate) DoCalculate(arg *CalArg, reply *int) error {
+	//是主节点，直接开始计算
+	if arg.clust.Master {
+		*reply = arg.clust.CalCulateSum(arg.l, arg.r)
+	} else {
+		//否则转移至主节点
+		masterNode := arg.clust.GetMasterNode()
+		done := masterNode.CallAsync("Calculate.DoCalculate", arg, reply)
+		<-done
+	}
 	return nil
 }
 
@@ -111,7 +130,7 @@ func InitNode(name string, addr string) *ClusterNode {
 }
 
 // describe running details of ClusterNode
-func (node *ClusterNode) Run(port string) {
+func (node *ClusterNode) Run() {
 	node.mutex.Lock()
 	node.State = true
 	node.mutex.Unlock()
@@ -132,24 +151,14 @@ func (node *ClusterNode) Stop() {
 }
 
 // 异步调用，返回一个通道done
-func (node *ClusterNode) CallAsync(addr string, method string, arg interface{}, reply interface{}) chan *rpc.Call {
-	client, err := rpc.DialHTTP("tcp", addr)
-	if err != nil {
-		panic(err)
+func (node *ClusterNode) CallAsync(method string, arg interface{}, reply interface{}) chan *rpc.Call {
+	if node.Client == nil {
+		log.Fatal("node client is nil")
 	}
-	defer client.Close()
-	done := make(chan *rpc.Call)
-	client.Go(method, arg, reply, done)
-	return done
-}
 
-// 消息存入通道
-func (node *ClusterNode) MessageToNode(mes *Message, other *ClusterNode) {
-	done := node.CallAsync(other.address+":"+other.port, mes.FuncName, mes.args, mes.reply)
-	go func() {
-		<-done
-		node.mesDone <- mes
-	}()
+	done := make(chan *rpc.Call)
+	node.Client.Go(method, arg, reply, done)
+	return done
 }
 
 func InitCluster(port string) *Cluster {
@@ -165,10 +174,50 @@ func InitCluster(port string) *Cluster {
 
 	clust := new(Cluster)
 
+	if port == "9999" {
+		clust.Master = true
+	}
 	clust.State = false
 	clust.addr = addr
 	clust.server = rpc.NewServer()
+	clust.RegisterObj(new(Calculate))
 	return clust
+}
+
+func (clust *Cluster) PingAdd() {
+	//build a sequence of addrs list for nodes, test if the ping is ok
+	file, err := os.Open("addrs.json")
+	if err != nil {
+		log.Fatal("file open error")
+	}
+	defer file.Close()
+	var addrs []string
+	decoder := json.NewDecoder(file)
+	err = decoder.Decode(&addrs)
+	if err != nil {
+		log.Fatal("decode error")
+	}
+
+	for _, addr := range addrs {
+		client, err := rpc.DialHTTP("tcp", addr)
+		if err != nil {
+			fmt.Println("client connected error")
+			continue
+		}
+		defer client.Close()
+		cli := &ClusterNode{
+			State:   false,
+			Name:    "client-" + addr,
+			address: addr,
+			Client:  client,
+			mesDone: make(chan *Message, 10),
+		}
+		clust.Nodes = append(clust.Nodes, cli)
+	}
+
+	for _, node := range clust.Nodes {
+		go node.Run() //start all of the cluster nodes
+	}
 }
 
 func (clust *Cluster) Run() {
@@ -184,10 +233,58 @@ func (clust *Cluster) Run() {
 	http.Serve(listener, nil)
 }
 
-func (node *Cluster) RegisterObj(obj *interface{}) {
-	node.server.Register(obj)
+func (clust *Cluster) RegisterObj(obj interface{}) {
+	clust.server.Register(obj)
 }
 
-func Test() {
-	fmt.Println("cluster")
+// 消息存入通道
+func (host *Cluster) MessageToNode(mes *Message, node *ClusterNode) {
+	done := node.CallAsync(mes.FuncName, mes.args, mes.reply)
+	go func() {
+		<-done
+		node.mesDone <- mes
+	}()
+}
+
+func min(a int, b int) int {
+	if a < b {
+		return a
+	}
+	return b
+}
+
+// get the master node
+func (clust *Cluster) GetMasterNode() *ClusterNode {
+	res := (*ClusterNode)(nil)
+	for _, node := range clust.Nodes {
+		if strings.Contains(node.address, "9999") {
+			res = node
+		}
+	}
+	return res
+}
+
+// test code for Cluster, it aims to calculate sum for range of numa to numb with the use of distributed nodes
+func (clust *Cluster) CalCulateSum(numa int, numb int) int {
+	if len(clust.Nodes) == 0 {
+		log.Fatal("no nodes for calculating sum")
+	}
+	div := math.Ceil(float64(numb-numa) / float64(len(clust.Nodes)))
+
+	left := 0
+	right := int(div)
+	var wg sync.WaitGroup
+	res := 0
+	for _, node := range clust.Nodes {
+		reply := 0
+		done := node.CallAsync("Calculate.Sum", &CalArg{left, min(right, numb), nil}, &reply)
+		wg.Add(1)
+		go func() {
+			defer wg.Done()
+			<-done
+			res = res + reply
+		}()
+	}
+	wg.Wait()
+	return res
 }
