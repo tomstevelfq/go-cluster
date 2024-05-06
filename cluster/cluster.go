@@ -13,10 +13,10 @@ import (
 	"sync"
 )
 
-// the relationship between Cluster and ClusterNode is that the Cluster object abstractly encapsulates a cluster while a
-// ClusterNode refers to a specific node within the cluster system
+// the relationship between Cluster and ClientNode is that the Cluster object abstractly encapsulates a cluster while a
+// ClientNode refers to a specific node within the cluster system
 // there is a cluster process running in each host, while the communication between local host and others relies on
-// rpc methods which provided by ClusterNode object
+// rpc methods which provided by ClientNode object
 type MTYPE int32
 
 const (
@@ -36,7 +36,7 @@ type Message struct {
 	reply         interface{}
 }
 
-type ClusterNode struct {
+type ClientNode struct {
 	mutex   sync.Mutex
 	Name    string
 	address string
@@ -48,8 +48,8 @@ type ClusterNode struct {
 type Cluster struct {
 	mutex    sync.Mutex
 	State    bool //running or stopped
-	Nodes    []*ClusterNode
-	NodesMap map[string]*ClusterNode
+	Nodes    []*ClientNode
+	NodesMap map[string]*ClientNode
 	addrList []string
 	server   *rpc.Server
 	addr     string
@@ -113,14 +113,14 @@ func GetHostAddr() string {
 	return res
 }
 
-// 初始化ClusterNode
-func InitNode(name string, addr string) *ClusterNode {
+// 初始化ClientNode
+func InitNode(name string, addr string) *ClientNode {
 	cli, err := rpc.DialHTTP("tcp", addr)
 	if err != nil {
 		panic(err)
 	}
 
-	return &ClusterNode{
+	return &ClientNode{
 		Name:    name,
 		address: addr,
 		State:   false,
@@ -129,8 +129,8 @@ func InitNode(name string, addr string) *ClusterNode {
 	}
 }
 
-// describe running details of ClusterNode
-func (node *ClusterNode) Run() {
+// describe running details of ClientNode
+func (node *ClientNode) Run() {
 	node.mutex.Lock()
 	node.State = true
 	node.mutex.Unlock()
@@ -144,14 +144,14 @@ func (node *ClusterNode) Run() {
 	}
 }
 
-func (node *ClusterNode) Stop() {
+func (node *ClientNode) Stop() {
 	node.mutex.Lock()
 	node.State = false
 	node.mutex.Unlock()
 }
 
 // 异步调用，返回一个通道done
-func (node *ClusterNode) CallAsync(method string, arg interface{}, reply interface{}) chan *rpc.Call {
+func (node *ClientNode) CallAsync(method string, arg interface{}, reply interface{}) chan *rpc.Call {
 	if node.Client == nil {
 		log.Fatal("node client is nil")
 	}
@@ -205,7 +205,7 @@ func (clust *Cluster) PingAdd() {
 			continue
 		}
 		defer client.Close()
-		cli := &ClusterNode{
+		cli := &ClientNode{
 			State:   false,
 			Name:    "client-" + addr,
 			address: addr,
@@ -238,7 +238,7 @@ func (clust *Cluster) RegisterObj(obj interface{}) {
 }
 
 // 消息存入通道
-func (host *Cluster) MessageToNode(mes *Message, node *ClusterNode) {
+func (host *Cluster) MessageToNode(mes *Message, node *ClientNode) {
 	done := node.CallAsync(mes.FuncName, mes.args, mes.reply)
 	go func() {
 		<-done
@@ -254,8 +254,8 @@ func min(a int, b int) int {
 }
 
 // get the master node
-func (clust *Cluster) GetMasterNode() *ClusterNode {
-	res := (*ClusterNode)(nil)
+func (clust *Cluster) GetMasterNode() *ClientNode {
+	res := (*ClientNode)(nil)
 	for _, node := range clust.Nodes {
 		if strings.Contains(node.address, "9999") {
 			res = node
@@ -287,4 +287,14 @@ func (clust *Cluster) CalCulateSum(numa int, numb int) int {
 	}
 	wg.Wait()
 	return res
+}
+
+func (clust *Cluster) CallMasterAsync(method string, arg interface{}, reply interface{}) chan *rpc.Call {
+	masterNode := clust.GetMasterNode()
+	done := masterNode.CallAsync(method, arg, reply)
+	return done
+}
+
+func (clust *Cluster) CallMaster(method string, arg interface{}, reply interface{}) {
+	<-clust.CallMasterAsync(method, arg, reply)
 }
