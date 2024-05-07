@@ -4,7 +4,6 @@ import (
 	"fmt"
 	"log"
 	"net"
-	"net/http"
 	"net/rpc"
 	"os"
 	"strconv"
@@ -31,15 +30,42 @@ func (fts *FileTransService) UploadFile(req global.UploadRequest, res *global.Up
 	return nil
 }
 
+type ClustArg struct {
+	L int
+	R int
+}
+
+func (cal *FileTransService) Sum(arg *ClustArg, reply *int) error {
+	ret := 0
+	l := arg.L
+	r := arg.R
+	for i := l; i <= r; i++ {
+		ret += i
+	}
+	*reply = ret
+	return nil
+}
+
 func main() {
 	fmt.Println("start a file transfer server")
 	fts := new(FileTransService)
 	rpc.Register(fts)
-	rpc.HandleHTTP()
-	fmt.Println(rpc.DefaultDebugPath, rpc.DefaultRPCPath)
-	l, err := net.Listen("tcp", "localhost:1234")
+
+	listener, err := net.Listen("tcp", "192.168.3.11:9999")
 	if err != nil {
-		log.Fatal("listen error", err)
+		fmt.Println("Failed to listen:", err)
+		return
 	}
-	http.Serve(l, nil)
+	defer listener.Close()
+	log.Println("RPC server is running on", "192.168.3.11:9999")
+
+	// 接受连接并为每个连接启动一个 goroutine 来处理请求
+	for {
+		conn, err := listener.Accept()
+		if err != nil {
+			fmt.Println("Failed to accept connection:", err)
+			continue
+		}
+		go rpc.ServeConn(conn)
+	}
 }

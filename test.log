@@ -1,0 +1,900 @@
+2024/05/08 01:19:13 cluster.go:126: addr fe80::26d0:e597:761e:a594
+2024/05/08 01:19:13 cluster.go:126: addr 169.254.175.238
+2024/05/08 01:19:13 cluster.go:126: addr fe80::c36f:b5b3:d132:7a02
+2024/05/08 01:19:13 cluster.go:126: addr 169.254.150.161
+2024/05/08 01:19:13 cluster.go:126: addr fe80::2535:6606:72ff:6a6d
+2024/05/08 01:19:13 cluster.go:126: addr 169.254.54.151
+2024/05/08 01:19:13 cluster.go:126: addr fe80::14b5:45ca:1811:a75b
+2024/05/08 01:19:13 cluster.go:126: addr 192.168.3.11
+2024/05/08 01:19:13 cluster.go:256: clust.addr 192.168.3.11:8081
+2024/05/08 01:19:13 cluster.go:263: RPC server is running on 192.168.3.11:8081
+2024/05/08 01:19:13 cluster.go:126: addr fe80::26d0:e597:761e:a594
+2024/05/08 01:19:13 cluster.go:126: addr 169.254.175.238
+2024/05/08 01:19:13 cluster.go:126: addr fe80::c36f:b5b3:d132:7a02
+2024/05/08 01:19:13 cluster.go:126: addr 169.254.150.161
+2024/05/08 01:19:13 cluster.go:126: addr fe80::2535:6606:72ff:6a6d
+2024/05/08 01:19:13 cluster.go:126: addr 169.254.54.151
+2024/05/08 01:19:13 cluster.go:126: addr fe80::14b5:45ca:1811:a75b
+2024/05/08 01:19:13 cluster.go:126: addr 192.168.3.11
+2024/05/08 01:19:13 cluster.go:256: clust.addr 192.168.3.11:8082
+2024/05/08 01:19:13 cluster.go:263: RPC server is running on 192.168.3.11:8082
+2024/05/08 01:19:13 cluster.go:126: addr fe80::26d0:e597:761e:a594
+2024/05/08 01:19:13 cluster.go:126: addr 169.254.175.238
+2024/05/08 01:19:13 cluster.go:126: addr fe80::c36f:b5b3:d132:7a02
+2024/05/08 01:19:13 cluster.go:126: addr 169.254.150.161
+2024/05/08 01:19:13 cluster.go:126: addr fe80::2535:6606:72ff:6a6d
+2024/05/08 01:19:13 cluster.go:126: addr 169.254.54.151
+2024/05/08 01:19:13 cluster.go:126: addr fe80::14b5:45ca:1811:a75b
+2024/05/08 01:19:13 cluster.go:126: addr 192.168.3.11
+2024/05/08 01:19:13 cluster.go:256: clust.addr 192.168.3.11:8083
+2024/05/08 01:19:13 cluster.go:263: RPC server is running on 192.168.3.11:8083
+2024/05/08 01:19:13 cluster.go:126: addr fe80::26d0:e597:761e:a594
+2024/05/08 01:19:13 cluster.go:126: addr 169.254.175.238
+2024/05/08 01:19:13 cluster.go:126: addr fe80::c36f:b5b3:d132:7a02
+2024/05/08 01:19:13 cluster.go:126: addr 169.254.150.161
+2024/05/08 01:19:13 cluster.go:126: addr fe80::2535:6606:72ff:6a6d
+2024/05/08 01:19:13 cluster.go:126: addr 169.254.54.151
+2024/05/08 01:19:13 cluster.go:126: addr fe80::14b5:45ca:1811:a75b
+2024/05/08 01:19:13 cluster.go:126: addr 192.168.3.11
+2024/05/08 01:19:13 cluster.go:256: clust.addr 192.168.3.11:8084
+2024/05/08 01:19:13 cluster.go:263: RPC server is running on 192.168.3.11:8084
+2024/05/08 01:19:13 cluster.go:126: addr fe80::26d0:e597:761e:a594
+2024/05/08 01:19:13 cluster.go:126: addr 169.254.175.238
+2024/05/08 01:19:13 cluster.go:126: addr fe80::c36f:b5b3:d132:7a02
+2024/05/08 01:19:13 cluster.go:126: addr 169.254.150.161
+2024/05/08 01:19:13 cluster.go:126: addr fe80::2535:6606:72ff:6a6d
+2024/05/08 01:19:13 cluster.go:126: addr 169.254.54.151
+2024/05/08 01:19:13 cluster.go:126: addr fe80::14b5:45ca:1811:a75b
+2024/05/08 01:19:13 cluster.go:126: addr 192.168.3.11
+2024/05/08 01:19:13 cluster.go:256: clust.addr 192.168.3.11:8085
+2024/05/08 01:19:13 cluster.go:263: RPC server is running on 192.168.3.11:8085
+2024/05/08 01:19:13 cluster.go:126: addr fe80::26d0:e597:761e:a594
+2024/05/08 01:19:13 cluster.go:126: addr 169.254.175.238
+2024/05/08 01:19:13 cluster.go:126: addr fe80::c36f:b5b3:d132:7a02
+2024/05/08 01:19:13 cluster.go:126: addr 169.254.150.161
+2024/05/08 01:19:13 cluster.go:126: addr fe80::2535:6606:72ff:6a6d
+2024/05/08 01:19:13 cluster.go:126: addr 169.254.54.151
+2024/05/08 01:19:13 cluster.go:126: addr fe80::14b5:45ca:1811:a75b
+2024/05/08 01:19:13 cluster.go:126: addr 192.168.3.11
+2024/05/08 01:19:13 cluster.go:256: clust.addr 192.168.3.11:8086
+2024/05/08 01:19:13 cluster.go:263: RPC server is running on 192.168.3.11:8086
+2024/05/08 01:19:13 cluster.go:126: addr fe80::26d0:e597:761e:a594
+2024/05/08 01:19:13 cluster.go:126: addr 169.254.175.238
+2024/05/08 01:19:13 cluster.go:126: addr fe80::c36f:b5b3:d132:7a02
+2024/05/08 01:19:13 cluster.go:126: addr 169.254.150.161
+2024/05/08 01:19:13 cluster.go:126: addr fe80::2535:6606:72ff:6a6d
+2024/05/08 01:19:13 cluster.go:126: addr 169.254.54.151
+2024/05/08 01:19:13 cluster.go:126: addr fe80::14b5:45ca:1811:a75b
+2024/05/08 01:19:13 cluster.go:126: addr 192.168.3.11
+2024/05/08 01:19:13 cluster.go:256: clust.addr 192.168.3.11:8087
+2024/05/08 01:19:13 cluster.go:263: RPC server is running on 192.168.3.11:8087
+2024/05/08 01:19:13 cluster.go:126: addr fe80::26d0:e597:761e:a594
+2024/05/08 01:19:13 cluster.go:126: addr 169.254.175.238
+2024/05/08 01:19:13 cluster.go:126: addr fe80::c36f:b5b3:d132:7a02
+2024/05/08 01:19:13 cluster.go:126: addr 169.254.150.161
+2024/05/08 01:19:13 cluster.go:126: addr fe80::2535:6606:72ff:6a6d
+2024/05/08 01:19:13 cluster.go:126: addr 169.254.54.151
+2024/05/08 01:19:13 cluster.go:126: addr fe80::14b5:45ca:1811:a75b
+2024/05/08 01:19:13 cluster.go:126: addr 192.168.3.11
+2024/05/08 01:19:13 cluster.go:256: clust.addr 192.168.3.11:8088
+2024/05/08 01:19:13 cluster.go:263: RPC server is running on 192.168.3.11:8088
+2024/05/08 01:19:13 cluster.go:126: addr fe80::26d0:e597:761e:a594
+2024/05/08 01:19:13 cluster.go:126: addr 169.254.175.238
+2024/05/08 01:19:13 cluster.go:126: addr fe80::c36f:b5b3:d132:7a02
+2024/05/08 01:19:13 cluster.go:126: addr 169.254.150.161
+2024/05/08 01:19:13 cluster.go:126: addr fe80::2535:6606:72ff:6a6d
+2024/05/08 01:19:13 cluster.go:126: addr 169.254.54.151
+2024/05/08 01:19:13 cluster.go:126: addr fe80::14b5:45ca:1811:a75b
+2024/05/08 01:19:13 cluster.go:126: addr 192.168.3.11
+2024/05/08 01:19:13 cluster.go:256: clust.addr 192.168.3.11:8089
+2024/05/08 01:19:13 cluster.go:263: RPC server is running on 192.168.3.11:8089
+2024/05/08 01:19:13 cluster.go:126: addr fe80::26d0:e597:761e:a594
+2024/05/08 01:19:13 cluster.go:126: addr 169.254.175.238
+2024/05/08 01:19:13 cluster.go:126: addr fe80::c36f:b5b3:d132:7a02
+2024/05/08 01:19:13 cluster.go:126: addr 169.254.150.161
+2024/05/08 01:19:13 cluster.go:126: addr fe80::2535:6606:72ff:6a6d
+2024/05/08 01:19:13 cluster.go:126: addr 169.254.54.151
+2024/05/08 01:19:13 cluster.go:126: addr fe80::14b5:45ca:1811:a75b
+2024/05/08 01:19:13 cluster.go:126: addr 192.168.3.11
+2024/05/08 01:19:13 cluster.go:256: clust.addr 192.168.3.11:9999
+2024/05/08 01:19:13 cluster.go:263: RPC server is running on 192.168.3.11:9999
+2024/05/08 01:19:18 cluster.go:305: cluster 192.168.3.11:8081 --pingadd 192.168.3.11:8081
+2024/05/08 01:19:18 cluster.go:305: cluster 192.168.3.11:8082 --pingadd 192.168.3.11:8081
+2024/05/08 01:19:18 cluster.go:234: client connected success 192.168.3.11:8081 --- 192.168.3.11:8081
+2024/05/08 01:19:18 cluster.go:305: cluster 192.168.3.11:8081 --pingadd 192.168.3.11:8082
+2024/05/08 01:19:18 cluster.go:234: client connected success 192.168.3.11:8082 --- 192.168.3.11:8081
+2024/05/08 01:19:18 cluster.go:305: cluster 192.168.3.11:8082 --pingadd 192.168.3.11:8082
+2024/05/08 01:19:18 cluster.go:234: client connected success 192.168.3.11:8081 --- 192.168.3.11:8082
+2024/05/08 01:19:18 cluster.go:305: cluster 192.168.3.11:8081 --pingadd 192.168.3.11:8083
+2024/05/08 01:19:18 cluster.go:234: client connected success 192.168.3.11:8082 --- 192.168.3.11:8082
+2024/05/08 01:19:18 cluster.go:305: cluster 192.168.3.11:8082 --pingadd 192.168.3.11:8083
+2024/05/08 01:19:18 cluster.go:234: client connected success 192.168.3.11:8081 --- 192.168.3.11:8083
+2024/05/08 01:19:18 cluster.go:305: cluster 192.168.3.11:8081 --pingadd 192.168.3.11:8084
+2024/05/08 01:19:18 cluster.go:234: client connected success 192.168.3.11:8082 --- 192.168.3.11:8083
+2024/05/08 01:19:18 cluster.go:305: cluster 192.168.3.11:8082 --pingadd 192.168.3.11:8084
+2024/05/08 01:19:18 cluster.go:234: client connected success 192.168.3.11:8081 --- 192.168.3.11:8084
+2024/05/08 01:19:18 cluster.go:305: cluster 192.168.3.11:8081 --pingadd 192.168.3.11:8085
+2024/05/08 01:19:18 cluster.go:234: client connected success 192.168.3.11:8082 --- 192.168.3.11:8084
+2024/05/08 01:19:18 cluster.go:305: cluster 192.168.3.11:8082 --pingadd 192.168.3.11:8085
+2024/05/08 01:19:18 cluster.go:234: client connected success 192.168.3.11:8081 --- 192.168.3.11:8085
+2024/05/08 01:19:18 cluster.go:305: cluster 192.168.3.11:8081 --pingadd 192.168.3.11:8086
+2024/05/08 01:19:18 cluster.go:234: client connected success 192.168.3.11:8082 --- 192.168.3.11:8085
+2024/05/08 01:19:18 cluster.go:305: cluster 192.168.3.11:8082 --pingadd 192.168.3.11:8086
+2024/05/08 01:19:18 cluster.go:234: client connected success 192.168.3.11:8081 --- 192.168.3.11:8086
+2024/05/08 01:19:18 cluster.go:305: cluster 192.168.3.11:8081 --pingadd 192.168.3.11:8087
+2024/05/08 01:19:18 cluster.go:234: client connected success 192.168.3.11:8082 --- 192.168.3.11:8086
+2024/05/08 01:19:18 cluster.go:305: cluster 192.168.3.11:8082 --pingadd 192.168.3.11:8087
+2024/05/08 01:19:18 cluster.go:234: client connected success 192.168.3.11:8081 --- 192.168.3.11:8087
+2024/05/08 01:19:18 cluster.go:305: cluster 192.168.3.11:8081 --pingadd 192.168.3.11:8088
+2024/05/08 01:19:18 cluster.go:234: client connected success 192.168.3.11:8082 --- 192.168.3.11:8087
+2024/05/08 01:19:18 cluster.go:305: cluster 192.168.3.11:8082 --pingadd 192.168.3.11:8088
+2024/05/08 01:19:18 cluster.go:234: client connected success 192.168.3.11:8081 --- 192.168.3.11:8088
+2024/05/08 01:19:18 cluster.go:305: cluster 192.168.3.11:8081 --pingadd 192.168.3.11:8089
+2024/05/08 01:19:18 cluster.go:234: client connected success 192.168.3.11:8082 --- 192.168.3.11:8088
+2024/05/08 01:19:18 cluster.go:305: cluster 192.168.3.11:8082 --pingadd 192.168.3.11:8089
+2024/05/08 01:19:18 cluster.go:234: client connected success 192.168.3.11:8081 --- 192.168.3.11:8089
+2024/05/08 01:19:18 cluster.go:305: cluster 192.168.3.11:8081 --pingadd 192.168.3.11:9999
+2024/05/08 01:19:18 cluster.go:234: client connected success 192.168.3.11:8082 --- 192.168.3.11:8089
+2024/05/08 01:19:18 cluster.go:305: cluster 192.168.3.11:8082 --pingadd 192.168.3.11:9999
+2024/05/08 01:19:18 cluster.go:234: client connected success 192.168.3.11:8081 --- 192.168.3.11:9999
+2024/05/08 01:19:18 cluster.go:234: client connected success 192.168.3.11:8082 --- 192.168.3.11:9999
+2024/05/08 01:19:18 cluster.go:305: cluster 192.168.3.11:8083 --pingadd 192.168.3.11:8081
+2024/05/08 01:19:18 cluster.go:234: client connected success 192.168.3.11:8083 --- 192.168.3.11:8081
+2024/05/08 01:19:18 cluster.go:305: cluster 192.168.3.11:8083 --pingadd 192.168.3.11:8082
+2024/05/08 01:19:18 cluster.go:234: client connected success 192.168.3.11:8083 --- 192.168.3.11:8082
+2024/05/08 01:19:18 cluster.go:305: cluster 192.168.3.11:8083 --pingadd 192.168.3.11:8083
+2024/05/08 01:19:18 cluster.go:234: client connected success 192.168.3.11:8083 --- 192.168.3.11:8083
+2024/05/08 01:19:18 cluster.go:305: cluster 192.168.3.11:8083 --pingadd 192.168.3.11:8084
+2024/05/08 01:19:18 cluster.go:234: client connected success 192.168.3.11:8083 --- 192.168.3.11:8084
+2024/05/08 01:19:18 cluster.go:305: cluster 192.168.3.11:8083 --pingadd 192.168.3.11:8085
+2024/05/08 01:19:18 cluster.go:234: client connected success 192.168.3.11:8083 --- 192.168.3.11:8085
+2024/05/08 01:19:18 cluster.go:305: cluster 192.168.3.11:8083 --pingadd 192.168.3.11:8086
+2024/05/08 01:19:18 cluster.go:234: client connected success 192.168.3.11:8083 --- 192.168.3.11:8086
+2024/05/08 01:19:18 cluster.go:305: cluster 192.168.3.11:8083 --pingadd 192.168.3.11:8087
+2024/05/08 01:19:18 cluster.go:234: client connected success 192.168.3.11:8083 --- 192.168.3.11:8087
+2024/05/08 01:19:18 cluster.go:305: cluster 192.168.3.11:8083 --pingadd 192.168.3.11:8088
+2024/05/08 01:19:18 cluster.go:234: client connected success 192.168.3.11:8083 --- 192.168.3.11:8088
+2024/05/08 01:19:18 cluster.go:305: cluster 192.168.3.11:8083 --pingadd 192.168.3.11:8089
+2024/05/08 01:19:18 cluster.go:234: client connected success 192.168.3.11:8083 --- 192.168.3.11:8089
+2024/05/08 01:19:18 cluster.go:305: cluster 192.168.3.11:8083 --pingadd 192.168.3.11:9999
+2024/05/08 01:19:18 cluster.go:234: client connected success 192.168.3.11:8083 --- 192.168.3.11:9999
+2024/05/08 01:19:18 cluster.go:305: cluster 192.168.3.11:8084 --pingadd 192.168.3.11:8081
+2024/05/08 01:19:18 cluster.go:234: client connected success 192.168.3.11:8084 --- 192.168.3.11:8081
+2024/05/08 01:19:18 cluster.go:305: cluster 192.168.3.11:8084 --pingadd 192.168.3.11:8082
+2024/05/08 01:19:18 cluster.go:234: client connected success 192.168.3.11:8084 --- 192.168.3.11:8082
+2024/05/08 01:19:18 cluster.go:305: cluster 192.168.3.11:8084 --pingadd 192.168.3.11:8083
+2024/05/08 01:19:18 cluster.go:234: client connected success 192.168.3.11:8084 --- 192.168.3.11:8083
+2024/05/08 01:19:18 cluster.go:305: cluster 192.168.3.11:8084 --pingadd 192.168.3.11:8084
+2024/05/08 01:19:18 cluster.go:305: cluster 192.168.3.11:8085 --pingadd 192.168.3.11:8081
+2024/05/08 01:19:18 cluster.go:234: client connected success 192.168.3.11:8084 --- 192.168.3.11:8084
+2024/05/08 01:19:18 cluster.go:305: cluster 192.168.3.11:8084 --pingadd 192.168.3.11:8085
+2024/05/08 01:19:18 cluster.go:234: client connected success 192.168.3.11:8085 --- 192.168.3.11:8081
+2024/05/08 01:19:18 cluster.go:305: cluster 192.168.3.11:8085 --pingadd 192.168.3.11:8082
+2024/05/08 01:19:18 cluster.go:234: client connected success 192.168.3.11:8084 --- 192.168.3.11:8085
+2024/05/08 01:19:18 cluster.go:305: cluster 192.168.3.11:8084 --pingadd 192.168.3.11:8086
+2024/05/08 01:19:18 cluster.go:234: client connected success 192.168.3.11:8085 --- 192.168.3.11:8082
+2024/05/08 01:19:18 cluster.go:305: cluster 192.168.3.11:8085 --pingadd 192.168.3.11:8083
+2024/05/08 01:19:18 cluster.go:234: client connected success 192.168.3.11:8084 --- 192.168.3.11:8086
+2024/05/08 01:19:18 cluster.go:305: cluster 192.168.3.11:8084 --pingadd 192.168.3.11:8087
+2024/05/08 01:19:18 cluster.go:234: client connected success 192.168.3.11:8085 --- 192.168.3.11:8083
+2024/05/08 01:19:18 cluster.go:305: cluster 192.168.3.11:8085 --pingadd 192.168.3.11:8084
+2024/05/08 01:19:18 cluster.go:234: client connected success 192.168.3.11:8084 --- 192.168.3.11:8087
+2024/05/08 01:19:18 cluster.go:305: cluster 192.168.3.11:8084 --pingadd 192.168.3.11:8088
+2024/05/08 01:19:18 cluster.go:234: client connected success 192.168.3.11:8085 --- 192.168.3.11:8084
+2024/05/08 01:19:18 cluster.go:305: cluster 192.168.3.11:8085 --pingadd 192.168.3.11:8085
+2024/05/08 01:19:18 cluster.go:234: client connected success 192.168.3.11:8084 --- 192.168.3.11:8088
+2024/05/08 01:19:18 cluster.go:305: cluster 192.168.3.11:8084 --pingadd 192.168.3.11:8089
+2024/05/08 01:19:18 cluster.go:234: client connected success 192.168.3.11:8085 --- 192.168.3.11:8085
+2024/05/08 01:19:18 cluster.go:305: cluster 192.168.3.11:8085 --pingadd 192.168.3.11:8086
+2024/05/08 01:19:18 cluster.go:234: client connected success 192.168.3.11:8084 --- 192.168.3.11:8089
+2024/05/08 01:19:18 cluster.go:305: cluster 192.168.3.11:8084 --pingadd 192.168.3.11:9999
+2024/05/08 01:19:18 cluster.go:234: client connected success 192.168.3.11:8085 --- 192.168.3.11:8086
+2024/05/08 01:19:18 cluster.go:305: cluster 192.168.3.11:8085 --pingadd 192.168.3.11:8087
+2024/05/08 01:19:18 cluster.go:234: client connected success 192.168.3.11:8084 --- 192.168.3.11:9999
+2024/05/08 01:19:18 cluster.go:234: client connected success 192.168.3.11:8085 --- 192.168.3.11:8087
+2024/05/08 01:19:18 cluster.go:305: cluster 192.168.3.11:8085 --pingadd 192.168.3.11:8088
+2024/05/08 01:19:18 cluster.go:234: client connected success 192.168.3.11:8085 --- 192.168.3.11:8088
+2024/05/08 01:19:18 cluster.go:305: cluster 192.168.3.11:8085 --pingadd 192.168.3.11:8089
+2024/05/08 01:19:18 cluster.go:234: client connected success 192.168.3.11:8085 --- 192.168.3.11:8089
+2024/05/08 01:19:18 cluster.go:305: cluster 192.168.3.11:8085 --pingadd 192.168.3.11:9999
+2024/05/08 01:19:18 cluster.go:234: client connected success 192.168.3.11:8085 --- 192.168.3.11:9999
+2024/05/08 01:19:18 cluster.go:305: cluster 192.168.3.11:8086 --pingadd 192.168.3.11:8081
+2024/05/08 01:19:18 cluster.go:234: client connected success 192.168.3.11:8086 --- 192.168.3.11:8081
+2024/05/08 01:19:18 cluster.go:305: cluster 192.168.3.11:8086 --pingadd 192.168.3.11:8082
+2024/05/08 01:19:18 cluster.go:234: client connected success 192.168.3.11:8086 --- 192.168.3.11:8082
+2024/05/08 01:19:18 cluster.go:305: cluster 192.168.3.11:8086 --pingadd 192.168.3.11:8083
+2024/05/08 01:19:18 cluster.go:234: client connected success 192.168.3.11:8086 --- 192.168.3.11:8083
+2024/05/08 01:19:18 cluster.go:305: cluster 192.168.3.11:8086 --pingadd 192.168.3.11:8084
+2024/05/08 01:19:18 cluster.go:234: client connected success 192.168.3.11:8086 --- 192.168.3.11:8084
+2024/05/08 01:19:18 cluster.go:305: cluster 192.168.3.11:8086 --pingadd 192.168.3.11:8085
+2024/05/08 01:19:18 cluster.go:234: client connected success 192.168.3.11:8086 --- 192.168.3.11:8085
+2024/05/08 01:19:18 cluster.go:305: cluster 192.168.3.11:8086 --pingadd 192.168.3.11:8086
+2024/05/08 01:19:18 cluster.go:234: client connected success 192.168.3.11:8086 --- 192.168.3.11:8086
+2024/05/08 01:19:18 cluster.go:305: cluster 192.168.3.11:8086 --pingadd 192.168.3.11:8087
+2024/05/08 01:19:18 cluster.go:234: client connected success 192.168.3.11:8086 --- 192.168.3.11:8087
+2024/05/08 01:19:18 cluster.go:305: cluster 192.168.3.11:8086 --pingadd 192.168.3.11:8088
+2024/05/08 01:19:18 cluster.go:234: client connected success 192.168.3.11:8086 --- 192.168.3.11:8088
+2024/05/08 01:19:18 cluster.go:305: cluster 192.168.3.11:8086 --pingadd 192.168.3.11:8089
+2024/05/08 01:19:18 cluster.go:234: client connected success 192.168.3.11:8086 --- 192.168.3.11:8089
+2024/05/08 01:19:18 cluster.go:305: cluster 192.168.3.11:8086 --pingadd 192.168.3.11:9999
+2024/05/08 01:19:18 cluster.go:234: client connected success 192.168.3.11:8086 --- 192.168.3.11:9999
+2024/05/08 01:19:18 cluster.go:305: cluster 192.168.3.11:8087 --pingadd 192.168.3.11:8081
+2024/05/08 01:19:18 cluster.go:234: client connected success 192.168.3.11:8087 --- 192.168.3.11:8081
+2024/05/08 01:19:18 cluster.go:305: cluster 192.168.3.11:8087 --pingadd 192.168.3.11:8082
+2024/05/08 01:19:18 cluster.go:234: client connected success 192.168.3.11:8087 --- 192.168.3.11:8082
+2024/05/08 01:19:18 cluster.go:305: cluster 192.168.3.11:8087 --pingadd 192.168.3.11:8083
+2024/05/08 01:19:18 cluster.go:234: client connected success 192.168.3.11:8087 --- 192.168.3.11:8083
+2024/05/08 01:19:18 cluster.go:305: cluster 192.168.3.11:8087 --pingadd 192.168.3.11:8084
+2024/05/08 01:19:18 cluster.go:234: client connected success 192.168.3.11:8087 --- 192.168.3.11:8084
+2024/05/08 01:19:18 cluster.go:305: cluster 192.168.3.11:8087 --pingadd 192.168.3.11:8085
+2024/05/08 01:19:18 cluster.go:234: client connected success 192.168.3.11:8087 --- 192.168.3.11:8085
+2024/05/08 01:19:18 cluster.go:305: cluster 192.168.3.11:8087 --pingadd 192.168.3.11:8086
+2024/05/08 01:19:18 cluster.go:234: client connected success 192.168.3.11:8087 --- 192.168.3.11:8086
+2024/05/08 01:19:18 cluster.go:305: cluster 192.168.3.11:8087 --pingadd 192.168.3.11:8087
+2024/05/08 01:19:18 cluster.go:234: client connected success 192.168.3.11:8087 --- 192.168.3.11:8087
+2024/05/08 01:19:18 cluster.go:305: cluster 192.168.3.11:8087 --pingadd 192.168.3.11:8088
+2024/05/08 01:19:18 cluster.go:234: client connected success 192.168.3.11:8087 --- 192.168.3.11:8088
+2024/05/08 01:19:18 cluster.go:305: cluster 192.168.3.11:8087 --pingadd 192.168.3.11:8089
+2024/05/08 01:19:18 cluster.go:234: client connected success 192.168.3.11:8087 --- 192.168.3.11:8089
+2024/05/08 01:19:18 cluster.go:305: cluster 192.168.3.11:8087 --pingadd 192.168.3.11:9999
+2024/05/08 01:19:18 cluster.go:234: client connected success 192.168.3.11:8087 --- 192.168.3.11:9999
+2024/05/08 01:19:18 cluster.go:305: cluster 192.168.3.11:8088 --pingadd 192.168.3.11:8081
+2024/05/08 01:19:18 cluster.go:234: client connected success 192.168.3.11:8088 --- 192.168.3.11:8081
+2024/05/08 01:19:18 cluster.go:305: cluster 192.168.3.11:8088 --pingadd 192.168.3.11:8082
+2024/05/08 01:19:18 cluster.go:234: client connected success 192.168.3.11:8088 --- 192.168.3.11:8082
+2024/05/08 01:19:18 cluster.go:305: cluster 192.168.3.11:8088 --pingadd 192.168.3.11:8083
+2024/05/08 01:19:18 cluster.go:234: client connected success 192.168.3.11:8088 --- 192.168.3.11:8083
+2024/05/08 01:19:18 cluster.go:305: cluster 192.168.3.11:8088 --pingadd 192.168.3.11:8084
+2024/05/08 01:19:18 cluster.go:234: client connected success 192.168.3.11:8088 --- 192.168.3.11:8084
+2024/05/08 01:19:18 cluster.go:305: cluster 192.168.3.11:8088 --pingadd 192.168.3.11:8085
+2024/05/08 01:19:18 cluster.go:234: client connected success 192.168.3.11:8088 --- 192.168.3.11:8085
+2024/05/08 01:19:18 cluster.go:305: cluster 192.168.3.11:8088 --pingadd 192.168.3.11:8086
+2024/05/08 01:19:18 cluster.go:234: client connected success 192.168.3.11:8088 --- 192.168.3.11:8086
+2024/05/08 01:19:18 cluster.go:305: cluster 192.168.3.11:8088 --pingadd 192.168.3.11:8087
+2024/05/08 01:19:18 cluster.go:234: client connected success 192.168.3.11:8088 --- 192.168.3.11:8087
+2024/05/08 01:19:18 cluster.go:305: cluster 192.168.3.11:8088 --pingadd 192.168.3.11:8088
+2024/05/08 01:19:18 cluster.go:234: client connected success 192.168.3.11:8088 --- 192.168.3.11:8088
+2024/05/08 01:19:18 cluster.go:305: cluster 192.168.3.11:8088 --pingadd 192.168.3.11:8089
+2024/05/08 01:19:18 cluster.go:234: client connected success 192.168.3.11:8088 --- 192.168.3.11:8089
+2024/05/08 01:19:18 cluster.go:305: cluster 192.168.3.11:8088 --pingadd 192.168.3.11:9999
+2024/05/08 01:19:18 cluster.go:234: client connected success 192.168.3.11:8088 --- 192.168.3.11:9999
+2024/05/08 01:19:18 cluster.go:305: cluster 192.168.3.11:8089 --pingadd 192.168.3.11:8081
+2024/05/08 01:19:18 cluster.go:234: client connected success 192.168.3.11:8089 --- 192.168.3.11:8081
+2024/05/08 01:19:18 cluster.go:305: cluster 192.168.3.11:8089 --pingadd 192.168.3.11:8082
+2024/05/08 01:19:18 cluster.go:234: client connected success 192.168.3.11:8089 --- 192.168.3.11:8082
+2024/05/08 01:19:18 cluster.go:305: cluster 192.168.3.11:8089 --pingadd 192.168.3.11:8083
+2024/05/08 01:19:18 cluster.go:234: client connected success 192.168.3.11:8089 --- 192.168.3.11:8083
+2024/05/08 01:19:18 cluster.go:305: cluster 192.168.3.11:8089 --pingadd 192.168.3.11:8084
+2024/05/08 01:19:18 cluster.go:234: client connected success 192.168.3.11:8089 --- 192.168.3.11:8084
+2024/05/08 01:19:18 cluster.go:305: cluster 192.168.3.11:8089 --pingadd 192.168.3.11:8085
+2024/05/08 01:19:18 cluster.go:234: client connected success 192.168.3.11:8089 --- 192.168.3.11:8085
+2024/05/08 01:19:18 cluster.go:305: cluster 192.168.3.11:8089 --pingadd 192.168.3.11:8086
+2024/05/08 01:19:18 cluster.go:234: client connected success 192.168.3.11:8089 --- 192.168.3.11:8086
+2024/05/08 01:19:18 cluster.go:305: cluster 192.168.3.11:8089 --pingadd 192.168.3.11:8087
+2024/05/08 01:19:18 cluster.go:234: client connected success 192.168.3.11:8089 --- 192.168.3.11:8087
+2024/05/08 01:19:18 cluster.go:305: cluster 192.168.3.11:8089 --pingadd 192.168.3.11:8088
+2024/05/08 01:19:18 cluster.go:234: client connected success 192.168.3.11:8089 --- 192.168.3.11:8088
+2024/05/08 01:19:18 cluster.go:305: cluster 192.168.3.11:8089 --pingadd 192.168.3.11:8089
+2024/05/08 01:19:18 cluster.go:234: client connected success 192.168.3.11:8089 --- 192.168.3.11:8089
+2024/05/08 01:19:18 cluster.go:305: cluster 192.168.3.11:8089 --pingadd 192.168.3.11:9999
+2024/05/08 01:19:18 cluster.go:234: client connected success 192.168.3.11:8089 --- 192.168.3.11:9999
+2024/05/08 01:19:18 cluster.go:305: cluster 192.168.3.11:9999 --pingadd 192.168.3.11:8081
+2024/05/08 01:19:18 cluster.go:234: client connected success 192.168.3.11:9999 --- 192.168.3.11:8081
+2024/05/08 01:19:18 cluster.go:305: cluster 192.168.3.11:9999 --pingadd 192.168.3.11:8082
+2024/05/08 01:19:18 cluster.go:234: client connected success 192.168.3.11:9999 --- 192.168.3.11:8082
+2024/05/08 01:19:18 cluster.go:305: cluster 192.168.3.11:9999 --pingadd 192.168.3.11:8083
+2024/05/08 01:19:18 cluster.go:234: client connected success 192.168.3.11:9999 --- 192.168.3.11:8083
+2024/05/08 01:19:18 cluster.go:305: cluster 192.168.3.11:9999 --pingadd 192.168.3.11:8084
+2024/05/08 01:19:18 cluster.go:234: client connected success 192.168.3.11:9999 --- 192.168.3.11:8084
+2024/05/08 01:19:18 cluster.go:305: cluster 192.168.3.11:9999 --pingadd 192.168.3.11:8085
+2024/05/08 01:19:18 cluster.go:234: client connected success 192.168.3.11:9999 --- 192.168.3.11:8085
+2024/05/08 01:19:18 cluster.go:305: cluster 192.168.3.11:9999 --pingadd 192.168.3.11:8086
+2024/05/08 01:19:18 cluster.go:234: client connected success 192.168.3.11:9999 --- 192.168.3.11:8086
+2024/05/08 01:19:18 cluster.go:305: cluster 192.168.3.11:9999 --pingadd 192.168.3.11:8087
+2024/05/08 01:19:18 cluster.go:234: client connected success 192.168.3.11:9999 --- 192.168.3.11:8087
+2024/05/08 01:19:18 cluster.go:305: cluster 192.168.3.11:9999 --pingadd 192.168.3.11:8088
+2024/05/08 01:19:18 cluster.go:234: client connected success 192.168.3.11:9999 --- 192.168.3.11:8088
+2024/05/08 01:19:18 cluster.go:305: cluster 192.168.3.11:9999 --pingadd 192.168.3.11:8089
+2024/05/08 01:19:18 cluster.go:234: client connected success 192.168.3.11:9999 --- 192.168.3.11:8089
+2024/05/08 01:19:18 cluster.go:305: cluster 192.168.3.11:9999 --pingadd 192.168.3.11:9999
+2024/05/08 01:19:18 cluster.go:234: client connected success 192.168.3.11:9999 --- 192.168.3.11:9999
+2024/05/08 01:21:43 cluster.go:126: addr fe80::26d0:e597:761e:a594
+2024/05/08 01:21:43 cluster.go:126: addr 169.254.175.238
+2024/05/08 01:21:43 cluster.go:126: addr fe80::c36f:b5b3:d132:7a02
+2024/05/08 01:21:43 cluster.go:126: addr 169.254.150.161
+2024/05/08 01:21:43 cluster.go:126: addr fe80::2535:6606:72ff:6a6d
+2024/05/08 01:21:43 cluster.go:126: addr 169.254.54.151
+2024/05/08 01:21:43 cluster.go:126: addr fe80::14b5:45ca:1811:a75b
+2024/05/08 01:21:43 cluster.go:126: addr 192.168.3.11
+2024/05/08 01:21:43 cluster.go:256: clust.addr 192.168.3.11:8081
+2024/05/08 01:21:43 cluster.go:263: RPC server is running on 192.168.3.11:8081
+2024/05/08 01:21:43 cluster.go:126: addr fe80::26d0:e597:761e:a594
+2024/05/08 01:21:43 cluster.go:126: addr 169.254.175.238
+2024/05/08 01:21:43 cluster.go:126: addr fe80::c36f:b5b3:d132:7a02
+2024/05/08 01:21:43 cluster.go:126: addr 169.254.150.161
+2024/05/08 01:21:43 cluster.go:126: addr fe80::2535:6606:72ff:6a6d
+2024/05/08 01:21:43 cluster.go:126: addr 169.254.54.151
+2024/05/08 01:21:43 cluster.go:126: addr fe80::14b5:45ca:1811:a75b
+2024/05/08 01:21:43 cluster.go:126: addr 192.168.3.11
+2024/05/08 01:21:43 cluster.go:256: clust.addr 192.168.3.11:8082
+2024/05/08 01:21:43 cluster.go:263: RPC server is running on 192.168.3.11:8082
+2024/05/08 01:21:43 cluster.go:126: addr fe80::26d0:e597:761e:a594
+2024/05/08 01:21:43 cluster.go:126: addr 169.254.175.238
+2024/05/08 01:21:43 cluster.go:126: addr fe80::c36f:b5b3:d132:7a02
+2024/05/08 01:21:43 cluster.go:126: addr 169.254.150.161
+2024/05/08 01:21:43 cluster.go:126: addr fe80::2535:6606:72ff:6a6d
+2024/05/08 01:21:43 cluster.go:126: addr 169.254.54.151
+2024/05/08 01:21:43 cluster.go:126: addr fe80::14b5:45ca:1811:a75b
+2024/05/08 01:21:43 cluster.go:126: addr 192.168.3.11
+2024/05/08 01:21:43 cluster.go:256: clust.addr 192.168.3.11:8083
+2024/05/08 01:21:43 cluster.go:263: RPC server is running on 192.168.3.11:8083
+2024/05/08 01:21:43 cluster.go:126: addr fe80::26d0:e597:761e:a594
+2024/05/08 01:21:43 cluster.go:126: addr 169.254.175.238
+2024/05/08 01:21:43 cluster.go:126: addr fe80::c36f:b5b3:d132:7a02
+2024/05/08 01:21:43 cluster.go:126: addr 169.254.150.161
+2024/05/08 01:21:43 cluster.go:126: addr fe80::2535:6606:72ff:6a6d
+2024/05/08 01:21:43 cluster.go:126: addr 169.254.54.151
+2024/05/08 01:21:43 cluster.go:126: addr fe80::14b5:45ca:1811:a75b
+2024/05/08 01:21:43 cluster.go:126: addr 192.168.3.11
+2024/05/08 01:21:43 cluster.go:256: clust.addr 192.168.3.11:8084
+2024/05/08 01:21:43 cluster.go:263: RPC server is running on 192.168.3.11:8084
+2024/05/08 01:21:43 cluster.go:126: addr fe80::26d0:e597:761e:a594
+2024/05/08 01:21:43 cluster.go:126: addr 169.254.175.238
+2024/05/08 01:21:43 cluster.go:126: addr fe80::c36f:b5b3:d132:7a02
+2024/05/08 01:21:43 cluster.go:126: addr 169.254.150.161
+2024/05/08 01:21:43 cluster.go:126: addr fe80::2535:6606:72ff:6a6d
+2024/05/08 01:21:43 cluster.go:126: addr 169.254.54.151
+2024/05/08 01:21:43 cluster.go:126: addr fe80::14b5:45ca:1811:a75b
+2024/05/08 01:21:43 cluster.go:126: addr 192.168.3.11
+2024/05/08 01:21:43 cluster.go:256: clust.addr 192.168.3.11:8085
+2024/05/08 01:21:43 cluster.go:263: RPC server is running on 192.168.3.11:8085
+2024/05/08 01:21:43 cluster.go:126: addr fe80::26d0:e597:761e:a594
+2024/05/08 01:21:43 cluster.go:126: addr 169.254.175.238
+2024/05/08 01:21:43 cluster.go:126: addr fe80::c36f:b5b3:d132:7a02
+2024/05/08 01:21:43 cluster.go:126: addr 169.254.150.161
+2024/05/08 01:21:43 cluster.go:126: addr fe80::2535:6606:72ff:6a6d
+2024/05/08 01:21:43 cluster.go:126: addr 169.254.54.151
+2024/05/08 01:21:43 cluster.go:126: addr fe80::14b5:45ca:1811:a75b
+2024/05/08 01:21:43 cluster.go:126: addr 192.168.3.11
+2024/05/08 01:21:43 cluster.go:256: clust.addr 192.168.3.11:8086
+2024/05/08 01:21:43 cluster.go:263: RPC server is running on 192.168.3.11:8086
+2024/05/08 01:21:43 cluster.go:126: addr fe80::26d0:e597:761e:a594
+2024/05/08 01:21:43 cluster.go:126: addr 169.254.175.238
+2024/05/08 01:21:43 cluster.go:126: addr fe80::c36f:b5b3:d132:7a02
+2024/05/08 01:21:43 cluster.go:126: addr 169.254.150.161
+2024/05/08 01:21:43 cluster.go:126: addr fe80::2535:6606:72ff:6a6d
+2024/05/08 01:21:43 cluster.go:126: addr 169.254.54.151
+2024/05/08 01:21:43 cluster.go:126: addr fe80::14b5:45ca:1811:a75b
+2024/05/08 01:21:43 cluster.go:126: addr 192.168.3.11
+2024/05/08 01:21:43 cluster.go:256: clust.addr 192.168.3.11:8087
+2024/05/08 01:21:43 cluster.go:263: RPC server is running on 192.168.3.11:8087
+2024/05/08 01:21:43 cluster.go:126: addr fe80::26d0:e597:761e:a594
+2024/05/08 01:21:43 cluster.go:126: addr 169.254.175.238
+2024/05/08 01:21:43 cluster.go:126: addr fe80::c36f:b5b3:d132:7a02
+2024/05/08 01:21:43 cluster.go:126: addr 169.254.150.161
+2024/05/08 01:21:43 cluster.go:126: addr fe80::2535:6606:72ff:6a6d
+2024/05/08 01:21:43 cluster.go:126: addr 169.254.54.151
+2024/05/08 01:21:43 cluster.go:126: addr fe80::14b5:45ca:1811:a75b
+2024/05/08 01:21:43 cluster.go:126: addr 192.168.3.11
+2024/05/08 01:21:43 cluster.go:256: clust.addr 192.168.3.11:8088
+2024/05/08 01:21:43 cluster.go:263: RPC server is running on 192.168.3.11:8088
+2024/05/08 01:21:43 cluster.go:126: addr fe80::26d0:e597:761e:a594
+2024/05/08 01:21:43 cluster.go:126: addr 169.254.175.238
+2024/05/08 01:21:43 cluster.go:126: addr fe80::c36f:b5b3:d132:7a02
+2024/05/08 01:21:43 cluster.go:126: addr 169.254.150.161
+2024/05/08 01:21:43 cluster.go:126: addr fe80::2535:6606:72ff:6a6d
+2024/05/08 01:21:43 cluster.go:126: addr 169.254.54.151
+2024/05/08 01:21:43 cluster.go:126: addr fe80::14b5:45ca:1811:a75b
+2024/05/08 01:21:43 cluster.go:126: addr 192.168.3.11
+2024/05/08 01:21:43 cluster.go:256: clust.addr 192.168.3.11:8089
+2024/05/08 01:21:43 cluster.go:263: RPC server is running on 192.168.3.11:8089
+2024/05/08 01:21:43 cluster.go:126: addr fe80::26d0:e597:761e:a594
+2024/05/08 01:21:43 cluster.go:126: addr 169.254.175.238
+2024/05/08 01:21:43 cluster.go:126: addr fe80::c36f:b5b3:d132:7a02
+2024/05/08 01:21:43 cluster.go:126: addr 169.254.150.161
+2024/05/08 01:21:43 cluster.go:126: addr fe80::2535:6606:72ff:6a6d
+2024/05/08 01:21:43 cluster.go:126: addr 169.254.54.151
+2024/05/08 01:21:43 cluster.go:126: addr fe80::14b5:45ca:1811:a75b
+2024/05/08 01:21:43 cluster.go:126: addr 192.168.3.11
+2024/05/08 01:21:43 cluster.go:256: clust.addr 192.168.3.11:9999
+2024/05/08 01:21:43 cluster.go:263: RPC server is running on 192.168.3.11:9999
+2024/05/08 01:21:48 cluster.go:305: cluster 192.168.3.11:8082 --pingadd 192.168.3.11:8081
+2024/05/08 01:21:48 cluster.go:305: cluster 192.168.3.11:8081 --pingadd 192.168.3.11:8081
+2024/05/08 01:21:48 cluster.go:234: client connected success 192.168.3.11:8082 --- 192.168.3.11:8081
+2024/05/08 01:21:48 cluster.go:305: cluster 192.168.3.11:8082 --pingadd 192.168.3.11:8082
+2024/05/08 01:21:48 cluster.go:234: client connected success 192.168.3.11:8081 --- 192.168.3.11:8081
+2024/05/08 01:21:48 cluster.go:305: cluster 192.168.3.11:8081 --pingadd 192.168.3.11:8082
+2024/05/08 01:21:48 cluster.go:234: client connected success 192.168.3.11:8082 --- 192.168.3.11:8082
+2024/05/08 01:21:48 cluster.go:305: cluster 192.168.3.11:8082 --pingadd 192.168.3.11:8083
+2024/05/08 01:21:48 cluster.go:234: client connected success 192.168.3.11:8081 --- 192.168.3.11:8082
+2024/05/08 01:21:48 cluster.go:305: cluster 192.168.3.11:8081 --pingadd 192.168.3.11:8083
+2024/05/08 01:21:48 cluster.go:234: client connected success 192.168.3.11:8082 --- 192.168.3.11:8083
+2024/05/08 01:21:48 cluster.go:305: cluster 192.168.3.11:8082 --pingadd 192.168.3.11:8084
+2024/05/08 01:21:48 cluster.go:234: client connected success 192.168.3.11:8081 --- 192.168.3.11:8083
+2024/05/08 01:21:48 cluster.go:305: cluster 192.168.3.11:8081 --pingadd 192.168.3.11:8084
+2024/05/08 01:21:48 cluster.go:234: client connected success 192.168.3.11:8082 --- 192.168.3.11:8084
+2024/05/08 01:21:48 cluster.go:305: cluster 192.168.3.11:8082 --pingadd 192.168.3.11:8085
+2024/05/08 01:21:48 cluster.go:234: client connected success 192.168.3.11:8081 --- 192.168.3.11:8084
+2024/05/08 01:21:48 cluster.go:305: cluster 192.168.3.11:8081 --pingadd 192.168.3.11:8085
+2024/05/08 01:21:48 cluster.go:234: client connected success 192.168.3.11:8082 --- 192.168.3.11:8085
+2024/05/08 01:21:48 cluster.go:305: cluster 192.168.3.11:8082 --pingadd 192.168.3.11:8086
+2024/05/08 01:21:48 cluster.go:234: client connected success 192.168.3.11:8081 --- 192.168.3.11:8085
+2024/05/08 01:21:48 cluster.go:305: cluster 192.168.3.11:8081 --pingadd 192.168.3.11:8086
+2024/05/08 01:21:48 cluster.go:234: client connected success 192.168.3.11:8082 --- 192.168.3.11:8086
+2024/05/08 01:21:48 cluster.go:305: cluster 192.168.3.11:8082 --pingadd 192.168.3.11:8087
+2024/05/08 01:21:48 cluster.go:234: client connected success 192.168.3.11:8081 --- 192.168.3.11:8086
+2024/05/08 01:21:48 cluster.go:305: cluster 192.168.3.11:8081 --pingadd 192.168.3.11:8087
+2024/05/08 01:21:48 cluster.go:234: client connected success 192.168.3.11:8082 --- 192.168.3.11:8087
+2024/05/08 01:21:48 cluster.go:305: cluster 192.168.3.11:8082 --pingadd 192.168.3.11:8088
+2024/05/08 01:21:48 cluster.go:234: client connected success 192.168.3.11:8081 --- 192.168.3.11:8087
+2024/05/08 01:21:48 cluster.go:305: cluster 192.168.3.11:8081 --pingadd 192.168.3.11:8088
+2024/05/08 01:21:48 cluster.go:234: client connected success 192.168.3.11:8082 --- 192.168.3.11:8088
+2024/05/08 01:21:48 cluster.go:305: cluster 192.168.3.11:8082 --pingadd 192.168.3.11:8089
+2024/05/08 01:21:48 cluster.go:234: client connected success 192.168.3.11:8081 --- 192.168.3.11:8088
+2024/05/08 01:21:48 cluster.go:305: cluster 192.168.3.11:8081 --pingadd 192.168.3.11:8089
+2024/05/08 01:21:48 cluster.go:234: client connected success 192.168.3.11:8082 --- 192.168.3.11:8089
+2024/05/08 01:21:48 cluster.go:305: cluster 192.168.3.11:8082 --pingadd 192.168.3.11:9999
+2024/05/08 01:21:48 cluster.go:234: client connected success 192.168.3.11:8081 --- 192.168.3.11:8089
+2024/05/08 01:21:48 cluster.go:305: cluster 192.168.3.11:8081 --pingadd 192.168.3.11:9999
+2024/05/08 01:21:48 cluster.go:234: client connected success 192.168.3.11:8082 --- 192.168.3.11:9999
+2024/05/08 01:21:48 cluster.go:234: client connected success 192.168.3.11:8081 --- 192.168.3.11:9999
+2024/05/08 01:21:48 cluster.go:305: cluster 192.168.3.11:8083 --pingadd 192.168.3.11:8081
+2024/05/08 01:21:48 cluster.go:234: client connected success 192.168.3.11:8083 --- 192.168.3.11:8081
+2024/05/08 01:21:48 cluster.go:305: cluster 192.168.3.11:8083 --pingadd 192.168.3.11:8082
+2024/05/08 01:21:48 cluster.go:234: client connected success 192.168.3.11:8083 --- 192.168.3.11:8082
+2024/05/08 01:21:48 cluster.go:305: cluster 192.168.3.11:8083 --pingadd 192.168.3.11:8083
+2024/05/08 01:21:48 cluster.go:234: client connected success 192.168.3.11:8083 --- 192.168.3.11:8083
+2024/05/08 01:21:48 cluster.go:305: cluster 192.168.3.11:8083 --pingadd 192.168.3.11:8084
+2024/05/08 01:21:48 cluster.go:234: client connected success 192.168.3.11:8083 --- 192.168.3.11:8084
+2024/05/08 01:21:48 cluster.go:305: cluster 192.168.3.11:8083 --pingadd 192.168.3.11:8085
+2024/05/08 01:21:48 cluster.go:234: client connected success 192.168.3.11:8083 --- 192.168.3.11:8085
+2024/05/08 01:21:48 cluster.go:305: cluster 192.168.3.11:8083 --pingadd 192.168.3.11:8086
+2024/05/08 01:21:48 cluster.go:234: client connected success 192.168.3.11:8083 --- 192.168.3.11:8086
+2024/05/08 01:21:48 cluster.go:305: cluster 192.168.3.11:8083 --pingadd 192.168.3.11:8087
+2024/05/08 01:21:48 cluster.go:305: cluster 192.168.3.11:8084 --pingadd 192.168.3.11:8081
+2024/05/08 01:21:48 cluster.go:234: client connected success 192.168.3.11:8083 --- 192.168.3.11:8087
+2024/05/08 01:21:48 cluster.go:305: cluster 192.168.3.11:8083 --pingadd 192.168.3.11:8088
+2024/05/08 01:21:48 cluster.go:234: client connected success 192.168.3.11:8084 --- 192.168.3.11:8081
+2024/05/08 01:21:48 cluster.go:305: cluster 192.168.3.11:8084 --pingadd 192.168.3.11:8082
+2024/05/08 01:21:48 cluster.go:234: client connected success 192.168.3.11:8083 --- 192.168.3.11:8088
+2024/05/08 01:21:48 cluster.go:305: cluster 192.168.3.11:8083 --pingadd 192.168.3.11:8089
+2024/05/08 01:21:48 cluster.go:234: client connected success 192.168.3.11:8084 --- 192.168.3.11:8082
+2024/05/08 01:21:48 cluster.go:305: cluster 192.168.3.11:8084 --pingadd 192.168.3.11:8083
+2024/05/08 01:21:48 cluster.go:234: client connected success 192.168.3.11:8083 --- 192.168.3.11:8089
+2024/05/08 01:21:48 cluster.go:305: cluster 192.168.3.11:8083 --pingadd 192.168.3.11:9999
+2024/05/08 01:21:48 cluster.go:234: client connected success 192.168.3.11:8084 --- 192.168.3.11:8083
+2024/05/08 01:21:48 cluster.go:305: cluster 192.168.3.11:8084 --pingadd 192.168.3.11:8084
+2024/05/08 01:21:48 cluster.go:234: client connected success 192.168.3.11:8084 --- 192.168.3.11:8084
+2024/05/08 01:21:48 cluster.go:305: cluster 192.168.3.11:8084 --pingadd 192.168.3.11:8085
+2024/05/08 01:21:48 cluster.go:234: client connected success 192.168.3.11:8083 --- 192.168.3.11:9999
+2024/05/08 01:21:48 cluster.go:234: client connected success 192.168.3.11:8084 --- 192.168.3.11:8085
+2024/05/08 01:21:48 cluster.go:305: cluster 192.168.3.11:8084 --pingadd 192.168.3.11:8086
+2024/05/08 01:21:48 cluster.go:234: client connected success 192.168.3.11:8084 --- 192.168.3.11:8086
+2024/05/08 01:21:48 cluster.go:305: cluster 192.168.3.11:8084 --pingadd 192.168.3.11:8087
+2024/05/08 01:21:48 cluster.go:234: client connected success 192.168.3.11:8084 --- 192.168.3.11:8087
+2024/05/08 01:21:48 cluster.go:305: cluster 192.168.3.11:8084 --pingadd 192.168.3.11:8088
+2024/05/08 01:21:48 cluster.go:234: client connected success 192.168.3.11:8084 --- 192.168.3.11:8088
+2024/05/08 01:21:48 cluster.go:305: cluster 192.168.3.11:8084 --pingadd 192.168.3.11:8089
+2024/05/08 01:21:48 cluster.go:234: client connected success 192.168.3.11:8084 --- 192.168.3.11:8089
+2024/05/08 01:21:48 cluster.go:305: cluster 192.168.3.11:8084 --pingadd 192.168.3.11:9999
+2024/05/08 01:21:48 cluster.go:234: client connected success 192.168.3.11:8084 --- 192.168.3.11:9999
+2024/05/08 01:21:48 cluster.go:305: cluster 192.168.3.11:8085 --pingadd 192.168.3.11:8081
+2024/05/08 01:21:48 cluster.go:234: client connected success 192.168.3.11:8085 --- 192.168.3.11:8081
+2024/05/08 01:21:48 cluster.go:305: cluster 192.168.3.11:8085 --pingadd 192.168.3.11:8082
+2024/05/08 01:21:48 cluster.go:234: client connected success 192.168.3.11:8085 --- 192.168.3.11:8082
+2024/05/08 01:21:48 cluster.go:305: cluster 192.168.3.11:8085 --pingadd 192.168.3.11:8083
+2024/05/08 01:21:48 cluster.go:234: client connected success 192.168.3.11:8085 --- 192.168.3.11:8083
+2024/05/08 01:21:48 cluster.go:305: cluster 192.168.3.11:8085 --pingadd 192.168.3.11:8084
+2024/05/08 01:21:48 cluster.go:234: client connected success 192.168.3.11:8085 --- 192.168.3.11:8084
+2024/05/08 01:21:48 cluster.go:305: cluster 192.168.3.11:8085 --pingadd 192.168.3.11:8085
+2024/05/08 01:21:48 cluster.go:234: client connected success 192.168.3.11:8085 --- 192.168.3.11:8085
+2024/05/08 01:21:48 cluster.go:305: cluster 192.168.3.11:8085 --pingadd 192.168.3.11:8086
+2024/05/08 01:21:48 cluster.go:234: client connected success 192.168.3.11:8085 --- 192.168.3.11:8086
+2024/05/08 01:21:48 cluster.go:305: cluster 192.168.3.11:8085 --pingadd 192.168.3.11:8087
+2024/05/08 01:21:48 cluster.go:234: client connected success 192.168.3.11:8085 --- 192.168.3.11:8087
+2024/05/08 01:21:48 cluster.go:305: cluster 192.168.3.11:8085 --pingadd 192.168.3.11:8088
+2024/05/08 01:21:48 cluster.go:234: client connected success 192.168.3.11:8085 --- 192.168.3.11:8088
+2024/05/08 01:21:48 cluster.go:305: cluster 192.168.3.11:8085 --pingadd 192.168.3.11:8089
+2024/05/08 01:21:48 cluster.go:234: client connected success 192.168.3.11:8085 --- 192.168.3.11:8089
+2024/05/08 01:21:48 cluster.go:305: cluster 192.168.3.11:8085 --pingadd 192.168.3.11:9999
+2024/05/08 01:21:48 cluster.go:234: client connected success 192.168.3.11:8085 --- 192.168.3.11:9999
+2024/05/08 01:21:48 cluster.go:305: cluster 192.168.3.11:8086 --pingadd 192.168.3.11:8081
+2024/05/08 01:21:48 cluster.go:234: client connected success 192.168.3.11:8086 --- 192.168.3.11:8081
+2024/05/08 01:21:48 cluster.go:305: cluster 192.168.3.11:8086 --pingadd 192.168.3.11:8082
+2024/05/08 01:21:48 cluster.go:234: client connected success 192.168.3.11:8086 --- 192.168.3.11:8082
+2024/05/08 01:21:48 cluster.go:305: cluster 192.168.3.11:8086 --pingadd 192.168.3.11:8083
+2024/05/08 01:21:48 cluster.go:234: client connected success 192.168.3.11:8086 --- 192.168.3.11:8083
+2024/05/08 01:21:48 cluster.go:305: cluster 192.168.3.11:8086 --pingadd 192.168.3.11:8084
+2024/05/08 01:21:48 cluster.go:234: client connected success 192.168.3.11:8086 --- 192.168.3.11:8084
+2024/05/08 01:21:48 cluster.go:305: cluster 192.168.3.11:8086 --pingadd 192.168.3.11:8085
+2024/05/08 01:21:48 cluster.go:234: client connected success 192.168.3.11:8086 --- 192.168.3.11:8085
+2024/05/08 01:21:48 cluster.go:305: cluster 192.168.3.11:8086 --pingadd 192.168.3.11:8086
+2024/05/08 01:21:48 cluster.go:305: cluster 192.168.3.11:8087 --pingadd 192.168.3.11:8081
+2024/05/08 01:21:48 cluster.go:234: client connected success 192.168.3.11:8087 --- 192.168.3.11:8081
+2024/05/08 01:21:48 cluster.go:305: cluster 192.168.3.11:8087 --pingadd 192.168.3.11:8082
+2024/05/08 01:21:48 cluster.go:234: client connected success 192.168.3.11:8086 --- 192.168.3.11:8086
+2024/05/08 01:21:48 cluster.go:305: cluster 192.168.3.11:8086 --pingadd 192.168.3.11:8087
+2024/05/08 01:21:48 cluster.go:234: client connected success 192.168.3.11:8087 --- 192.168.3.11:8082
+2024/05/08 01:21:48 cluster.go:305: cluster 192.168.3.11:8087 --pingadd 192.168.3.11:8083
+2024/05/08 01:21:48 cluster.go:234: client connected success 192.168.3.11:8086 --- 192.168.3.11:8087
+2024/05/08 01:21:48 cluster.go:305: cluster 192.168.3.11:8086 --pingadd 192.168.3.11:8088
+2024/05/08 01:21:48 cluster.go:234: client connected success 192.168.3.11:8087 --- 192.168.3.11:8083
+2024/05/08 01:21:48 cluster.go:305: cluster 192.168.3.11:8087 --pingadd 192.168.3.11:8084
+2024/05/08 01:21:48 cluster.go:234: client connected success 192.168.3.11:8086 --- 192.168.3.11:8088
+2024/05/08 01:21:48 cluster.go:305: cluster 192.168.3.11:8086 --pingadd 192.168.3.11:8089
+2024/05/08 01:21:48 cluster.go:234: client connected success 192.168.3.11:8087 --- 192.168.3.11:8084
+2024/05/08 01:21:48 cluster.go:305: cluster 192.168.3.11:8087 --pingadd 192.168.3.11:8085
+2024/05/08 01:21:48 cluster.go:234: client connected success 192.168.3.11:8086 --- 192.168.3.11:8089
+2024/05/08 01:21:48 cluster.go:305: cluster 192.168.3.11:8086 --pingadd 192.168.3.11:9999
+2024/05/08 01:21:48 cluster.go:234: client connected success 192.168.3.11:8087 --- 192.168.3.11:8085
+2024/05/08 01:21:48 cluster.go:305: cluster 192.168.3.11:8087 --pingadd 192.168.3.11:8086
+2024/05/08 01:21:48 cluster.go:234: client connected success 192.168.3.11:8086 --- 192.168.3.11:9999
+2024/05/08 01:21:48 cluster.go:234: client connected success 192.168.3.11:8087 --- 192.168.3.11:8086
+2024/05/08 01:21:48 cluster.go:305: cluster 192.168.3.11:8087 --pingadd 192.168.3.11:8087
+2024/05/08 01:21:48 cluster.go:234: client connected success 192.168.3.11:8087 --- 192.168.3.11:8087
+2024/05/08 01:21:48 cluster.go:305: cluster 192.168.3.11:8087 --pingadd 192.168.3.11:8088
+2024/05/08 01:21:48 cluster.go:234: client connected success 192.168.3.11:8087 --- 192.168.3.11:8088
+2024/05/08 01:21:48 cluster.go:305: cluster 192.168.3.11:8087 --pingadd 192.168.3.11:8089
+2024/05/08 01:21:48 cluster.go:234: client connected success 192.168.3.11:8087 --- 192.168.3.11:8089
+2024/05/08 01:21:48 cluster.go:305: cluster 192.168.3.11:8087 --pingadd 192.168.3.11:9999
+2024/05/08 01:21:48 cluster.go:234: client connected success 192.168.3.11:8087 --- 192.168.3.11:9999
+2024/05/08 01:21:48 cluster.go:305: cluster 192.168.3.11:8088 --pingadd 192.168.3.11:8081
+2024/05/08 01:21:48 cluster.go:234: client connected success 192.168.3.11:8088 --- 192.168.3.11:8081
+2024/05/08 01:21:48 cluster.go:305: cluster 192.168.3.11:8088 --pingadd 192.168.3.11:8082
+2024/05/08 01:21:48 cluster.go:234: client connected success 192.168.3.11:8088 --- 192.168.3.11:8082
+2024/05/08 01:21:48 cluster.go:305: cluster 192.168.3.11:8088 --pingadd 192.168.3.11:8083
+2024/05/08 01:21:48 cluster.go:234: client connected success 192.168.3.11:8088 --- 192.168.3.11:8083
+2024/05/08 01:21:48 cluster.go:305: cluster 192.168.3.11:8088 --pingadd 192.168.3.11:8084
+2024/05/08 01:21:48 cluster.go:234: client connected success 192.168.3.11:8088 --- 192.168.3.11:8084
+2024/05/08 01:21:48 cluster.go:305: cluster 192.168.3.11:8088 --pingadd 192.168.3.11:8085
+2024/05/08 01:21:48 cluster.go:234: client connected success 192.168.3.11:8088 --- 192.168.3.11:8085
+2024/05/08 01:21:48 cluster.go:305: cluster 192.168.3.11:8088 --pingadd 192.168.3.11:8086
+2024/05/08 01:21:48 cluster.go:234: client connected success 192.168.3.11:8088 --- 192.168.3.11:8086
+2024/05/08 01:21:48 cluster.go:305: cluster 192.168.3.11:8088 --pingadd 192.168.3.11:8087
+2024/05/08 01:21:48 cluster.go:234: client connected success 192.168.3.11:8088 --- 192.168.3.11:8087
+2024/05/08 01:21:48 cluster.go:305: cluster 192.168.3.11:8088 --pingadd 192.168.3.11:8088
+2024/05/08 01:21:48 cluster.go:234: client connected success 192.168.3.11:8088 --- 192.168.3.11:8088
+2024/05/08 01:21:48 cluster.go:305: cluster 192.168.3.11:8088 --pingadd 192.168.3.11:8089
+2024/05/08 01:21:48 cluster.go:234: client connected success 192.168.3.11:8088 --- 192.168.3.11:8089
+2024/05/08 01:21:48 cluster.go:305: cluster 192.168.3.11:8088 --pingadd 192.168.3.11:9999
+2024/05/08 01:21:48 cluster.go:234: client connected success 192.168.3.11:8088 --- 192.168.3.11:9999
+2024/05/08 01:21:48 cluster.go:305: cluster 192.168.3.11:8089 --pingadd 192.168.3.11:8081
+2024/05/08 01:21:48 cluster.go:234: client connected success 192.168.3.11:8089 --- 192.168.3.11:8081
+2024/05/08 01:21:48 cluster.go:305: cluster 192.168.3.11:8089 --pingadd 192.168.3.11:8082
+2024/05/08 01:21:48 cluster.go:234: client connected success 192.168.3.11:8089 --- 192.168.3.11:8082
+2024/05/08 01:21:48 cluster.go:305: cluster 192.168.3.11:8089 --pingadd 192.168.3.11:8083
+2024/05/08 01:21:48 cluster.go:234: client connected success 192.168.3.11:8089 --- 192.168.3.11:8083
+2024/05/08 01:21:48 cluster.go:305: cluster 192.168.3.11:8089 --pingadd 192.168.3.11:8084
+2024/05/08 01:21:48 cluster.go:234: client connected success 192.168.3.11:8089 --- 192.168.3.11:8084
+2024/05/08 01:21:48 cluster.go:305: cluster 192.168.3.11:8089 --pingadd 192.168.3.11:8085
+2024/05/08 01:21:48 cluster.go:234: client connected success 192.168.3.11:8089 --- 192.168.3.11:8085
+2024/05/08 01:21:48 cluster.go:305: cluster 192.168.3.11:8089 --pingadd 192.168.3.11:8086
+2024/05/08 01:21:48 cluster.go:234: client connected success 192.168.3.11:8089 --- 192.168.3.11:8086
+2024/05/08 01:21:48 cluster.go:305: cluster 192.168.3.11:8089 --pingadd 192.168.3.11:8087
+2024/05/08 01:21:48 cluster.go:234: client connected success 192.168.3.11:8089 --- 192.168.3.11:8087
+2024/05/08 01:21:48 cluster.go:305: cluster 192.168.3.11:8089 --pingadd 192.168.3.11:8088
+2024/05/08 01:21:48 cluster.go:234: client connected success 192.168.3.11:8089 --- 192.168.3.11:8088
+2024/05/08 01:21:48 cluster.go:305: cluster 192.168.3.11:8089 --pingadd 192.168.3.11:8089
+2024/05/08 01:21:48 cluster.go:234: client connected success 192.168.3.11:8089 --- 192.168.3.11:8089
+2024/05/08 01:21:48 cluster.go:305: cluster 192.168.3.11:8089 --pingadd 192.168.3.11:9999
+2024/05/08 01:21:48 cluster.go:234: client connected success 192.168.3.11:8089 --- 192.168.3.11:9999
+2024/05/08 01:21:48 cluster.go:305: cluster 192.168.3.11:9999 --pingadd 192.168.3.11:8081
+2024/05/08 01:21:48 cluster.go:234: client connected success 192.168.3.11:9999 --- 192.168.3.11:8081
+2024/05/08 01:21:48 cluster.go:305: cluster 192.168.3.11:9999 --pingadd 192.168.3.11:8082
+2024/05/08 01:21:48 cluster.go:234: client connected success 192.168.3.11:9999 --- 192.168.3.11:8082
+2024/05/08 01:21:48 cluster.go:305: cluster 192.168.3.11:9999 --pingadd 192.168.3.11:8083
+2024/05/08 01:21:48 cluster.go:234: client connected success 192.168.3.11:9999 --- 192.168.3.11:8083
+2024/05/08 01:21:48 cluster.go:305: cluster 192.168.3.11:9999 --pingadd 192.168.3.11:8084
+2024/05/08 01:21:48 cluster.go:234: client connected success 192.168.3.11:9999 --- 192.168.3.11:8084
+2024/05/08 01:21:48 cluster.go:305: cluster 192.168.3.11:9999 --pingadd 192.168.3.11:8085
+2024/05/08 01:21:48 cluster.go:234: client connected success 192.168.3.11:9999 --- 192.168.3.11:8085
+2024/05/08 01:21:48 cluster.go:305: cluster 192.168.3.11:9999 --pingadd 192.168.3.11:8086
+2024/05/08 01:21:48 cluster.go:234: client connected success 192.168.3.11:9999 --- 192.168.3.11:8086
+2024/05/08 01:21:48 cluster.go:305: cluster 192.168.3.11:9999 --pingadd 192.168.3.11:8087
+2024/05/08 01:21:48 cluster.go:234: client connected success 192.168.3.11:9999 --- 192.168.3.11:8087
+2024/05/08 01:21:48 cluster.go:305: cluster 192.168.3.11:9999 --pingadd 192.168.3.11:8088
+2024/05/08 01:21:48 cluster.go:234: client connected success 192.168.3.11:9999 --- 192.168.3.11:8088
+2024/05/08 01:21:48 cluster.go:305: cluster 192.168.3.11:9999 --pingadd 192.168.3.11:8089
+2024/05/08 01:21:48 cluster.go:234: client connected success 192.168.3.11:9999 --- 192.168.3.11:8089
+2024/05/08 01:21:48 cluster.go:305: cluster 192.168.3.11:9999 --pingadd 192.168.3.11:9999
+2024/05/08 01:21:48 cluster.go:234: client connected success 192.168.3.11:9999 --- 192.168.3.11:9999
+2024/05/08 01:23:52 cluster.go:126: addr fe80::26d0:e597:761e:a594
+2024/05/08 01:23:52 cluster.go:126: addr 169.254.175.238
+2024/05/08 01:23:52 cluster.go:126: addr fe80::c36f:b5b3:d132:7a02
+2024/05/08 01:23:52 cluster.go:126: addr 169.254.150.161
+2024/05/08 01:23:52 cluster.go:126: addr fe80::2535:6606:72ff:6a6d
+2024/05/08 01:23:52 cluster.go:126: addr 169.254.54.151
+2024/05/08 01:23:52 cluster.go:126: addr fe80::14b5:45ca:1811:a75b
+2024/05/08 01:23:52 cluster.go:126: addr 192.168.3.11
+2024/05/08 01:23:52 cluster.go:256: clust.addr 192.168.3.11:8081
+2024/05/08 01:23:52 cluster.go:263: RPC server is running on 192.168.3.11:8081
+2024/05/08 01:23:52 cluster.go:126: addr fe80::26d0:e597:761e:a594
+2024/05/08 01:23:52 cluster.go:126: addr 169.254.175.238
+2024/05/08 01:23:52 cluster.go:126: addr fe80::c36f:b5b3:d132:7a02
+2024/05/08 01:23:52 cluster.go:126: addr 169.254.150.161
+2024/05/08 01:23:52 cluster.go:126: addr fe80::2535:6606:72ff:6a6d
+2024/05/08 01:23:52 cluster.go:126: addr 169.254.54.151
+2024/05/08 01:23:52 cluster.go:126: addr fe80::14b5:45ca:1811:a75b
+2024/05/08 01:23:52 cluster.go:126: addr 192.168.3.11
+2024/05/08 01:23:52 cluster.go:256: clust.addr 192.168.3.11:8082
+2024/05/08 01:23:52 cluster.go:263: RPC server is running on 192.168.3.11:8082
+2024/05/08 01:23:52 cluster.go:126: addr fe80::26d0:e597:761e:a594
+2024/05/08 01:23:52 cluster.go:126: addr 169.254.175.238
+2024/05/08 01:23:52 cluster.go:126: addr fe80::c36f:b5b3:d132:7a02
+2024/05/08 01:23:52 cluster.go:126: addr 169.254.150.161
+2024/05/08 01:23:52 cluster.go:126: addr fe80::2535:6606:72ff:6a6d
+2024/05/08 01:23:52 cluster.go:126: addr 169.254.54.151
+2024/05/08 01:23:52 cluster.go:126: addr fe80::14b5:45ca:1811:a75b
+2024/05/08 01:23:52 cluster.go:126: addr 192.168.3.11
+2024/05/08 01:23:52 cluster.go:256: clust.addr 192.168.3.11:8083
+2024/05/08 01:23:52 cluster.go:263: RPC server is running on 192.168.3.11:8083
+2024/05/08 01:23:52 cluster.go:126: addr fe80::26d0:e597:761e:a594
+2024/05/08 01:23:52 cluster.go:126: addr 169.254.175.238
+2024/05/08 01:23:52 cluster.go:126: addr fe80::c36f:b5b3:d132:7a02
+2024/05/08 01:23:52 cluster.go:126: addr 169.254.150.161
+2024/05/08 01:23:52 cluster.go:126: addr fe80::2535:6606:72ff:6a6d
+2024/05/08 01:23:52 cluster.go:126: addr 169.254.54.151
+2024/05/08 01:23:52 cluster.go:126: addr fe80::14b5:45ca:1811:a75b
+2024/05/08 01:23:52 cluster.go:126: addr 192.168.3.11
+2024/05/08 01:23:52 cluster.go:256: clust.addr 192.168.3.11:8084
+2024/05/08 01:23:52 cluster.go:263: RPC server is running on 192.168.3.11:8084
+2024/05/08 01:23:52 cluster.go:126: addr fe80::26d0:e597:761e:a594
+2024/05/08 01:23:52 cluster.go:126: addr 169.254.175.238
+2024/05/08 01:23:52 cluster.go:126: addr fe80::c36f:b5b3:d132:7a02
+2024/05/08 01:23:52 cluster.go:126: addr 169.254.150.161
+2024/05/08 01:23:52 cluster.go:126: addr fe80::2535:6606:72ff:6a6d
+2024/05/08 01:23:52 cluster.go:126: addr 169.254.54.151
+2024/05/08 01:23:52 cluster.go:126: addr fe80::14b5:45ca:1811:a75b
+2024/05/08 01:23:52 cluster.go:126: addr 192.168.3.11
+2024/05/08 01:23:52 cluster.go:256: clust.addr 192.168.3.11:8085
+2024/05/08 01:23:52 cluster.go:263: RPC server is running on 192.168.3.11:8085
+2024/05/08 01:23:52 cluster.go:126: addr fe80::26d0:e597:761e:a594
+2024/05/08 01:23:52 cluster.go:126: addr 169.254.175.238
+2024/05/08 01:23:52 cluster.go:126: addr fe80::c36f:b5b3:d132:7a02
+2024/05/08 01:23:52 cluster.go:126: addr 169.254.150.161
+2024/05/08 01:23:52 cluster.go:126: addr fe80::2535:6606:72ff:6a6d
+2024/05/08 01:23:52 cluster.go:126: addr 169.254.54.151
+2024/05/08 01:23:52 cluster.go:126: addr fe80::14b5:45ca:1811:a75b
+2024/05/08 01:23:52 cluster.go:126: addr 192.168.3.11
+2024/05/08 01:23:52 cluster.go:256: clust.addr 192.168.3.11:8086
+2024/05/08 01:23:52 cluster.go:263: RPC server is running on 192.168.3.11:8086
+2024/05/08 01:23:52 cluster.go:126: addr fe80::26d0:e597:761e:a594
+2024/05/08 01:23:52 cluster.go:126: addr 169.254.175.238
+2024/05/08 01:23:52 cluster.go:126: addr fe80::c36f:b5b3:d132:7a02
+2024/05/08 01:23:52 cluster.go:126: addr 169.254.150.161
+2024/05/08 01:23:52 cluster.go:126: addr fe80::2535:6606:72ff:6a6d
+2024/05/08 01:23:52 cluster.go:126: addr 169.254.54.151
+2024/05/08 01:23:52 cluster.go:126: addr fe80::14b5:45ca:1811:a75b
+2024/05/08 01:23:52 cluster.go:126: addr 192.168.3.11
+2024/05/08 01:23:52 cluster.go:256: clust.addr 192.168.3.11:8087
+2024/05/08 01:23:52 cluster.go:263: RPC server is running on 192.168.3.11:8087
+2024/05/08 01:23:52 cluster.go:126: addr fe80::26d0:e597:761e:a594
+2024/05/08 01:23:52 cluster.go:126: addr 169.254.175.238
+2024/05/08 01:23:52 cluster.go:126: addr fe80::c36f:b5b3:d132:7a02
+2024/05/08 01:23:52 cluster.go:126: addr 169.254.150.161
+2024/05/08 01:23:52 cluster.go:126: addr fe80::2535:6606:72ff:6a6d
+2024/05/08 01:23:52 cluster.go:126: addr 169.254.54.151
+2024/05/08 01:23:52 cluster.go:126: addr fe80::14b5:45ca:1811:a75b
+2024/05/08 01:23:52 cluster.go:126: addr 192.168.3.11
+2024/05/08 01:23:52 cluster.go:256: clust.addr 192.168.3.11:8088
+2024/05/08 01:23:52 cluster.go:263: RPC server is running on 192.168.3.11:8088
+2024/05/08 01:23:52 cluster.go:126: addr fe80::26d0:e597:761e:a594
+2024/05/08 01:23:52 cluster.go:126: addr 169.254.175.238
+2024/05/08 01:23:52 cluster.go:126: addr fe80::c36f:b5b3:d132:7a02
+2024/05/08 01:23:52 cluster.go:126: addr 169.254.150.161
+2024/05/08 01:23:52 cluster.go:126: addr fe80::2535:6606:72ff:6a6d
+2024/05/08 01:23:52 cluster.go:126: addr 169.254.54.151
+2024/05/08 01:23:52 cluster.go:126: addr fe80::14b5:45ca:1811:a75b
+2024/05/08 01:23:52 cluster.go:126: addr 192.168.3.11
+2024/05/08 01:23:52 cluster.go:256: clust.addr 192.168.3.11:8089
+2024/05/08 01:23:52 cluster.go:263: RPC server is running on 192.168.3.11:8089
+2024/05/08 01:23:52 cluster.go:126: addr fe80::26d0:e597:761e:a594
+2024/05/08 01:23:52 cluster.go:126: addr 169.254.175.238
+2024/05/08 01:23:52 cluster.go:126: addr fe80::c36f:b5b3:d132:7a02
+2024/05/08 01:23:52 cluster.go:126: addr 169.254.150.161
+2024/05/08 01:23:52 cluster.go:126: addr fe80::2535:6606:72ff:6a6d
+2024/05/08 01:23:52 cluster.go:126: addr 169.254.54.151
+2024/05/08 01:23:52 cluster.go:126: addr fe80::14b5:45ca:1811:a75b
+2024/05/08 01:23:52 cluster.go:126: addr 192.168.3.11
+2024/05/08 01:23:52 cluster.go:256: clust.addr 192.168.3.11:9999
+2024/05/08 01:23:52 cluster.go:263: RPC server is running on 192.168.3.11:9999
+2024/05/08 01:23:57 cluster.go:305: cluster 192.168.3.11:8082 --pingadd 192.168.3.11:8081
+2024/05/08 01:23:57 cluster.go:305: cluster 192.168.3.11:8081 --pingadd 192.168.3.11:8081
+2024/05/08 01:23:57 cluster.go:234: client connected success 192.168.3.11:8082 --- 192.168.3.11:8081
+2024/05/08 01:23:57 cluster.go:305: cluster 192.168.3.11:8082 --pingadd 192.168.3.11:8082
+2024/05/08 01:23:57 cluster.go:234: client connected success 192.168.3.11:8081 --- 192.168.3.11:8081
+2024/05/08 01:23:57 cluster.go:305: cluster 192.168.3.11:8081 --pingadd 192.168.3.11:8082
+2024/05/08 01:23:57 cluster.go:234: client connected success 192.168.3.11:8082 --- 192.168.3.11:8082
+2024/05/08 01:23:57 cluster.go:305: cluster 192.168.3.11:8082 --pingadd 192.168.3.11:8083
+2024/05/08 01:23:57 cluster.go:234: client connected success 192.168.3.11:8081 --- 192.168.3.11:8082
+2024/05/08 01:23:57 cluster.go:305: cluster 192.168.3.11:8081 --pingadd 192.168.3.11:8083
+2024/05/08 01:23:57 cluster.go:234: client connected success 192.168.3.11:8082 --- 192.168.3.11:8083
+2024/05/08 01:23:57 cluster.go:305: cluster 192.168.3.11:8082 --pingadd 192.168.3.11:8084
+2024/05/08 01:23:57 cluster.go:234: client connected success 192.168.3.11:8081 --- 192.168.3.11:8083
+2024/05/08 01:23:57 cluster.go:305: cluster 192.168.3.11:8081 --pingadd 192.168.3.11:8084
+2024/05/08 01:23:57 cluster.go:234: client connected success 192.168.3.11:8082 --- 192.168.3.11:8084
+2024/05/08 01:23:57 cluster.go:305: cluster 192.168.3.11:8082 --pingadd 192.168.3.11:8085
+2024/05/08 01:23:57 cluster.go:234: client connected success 192.168.3.11:8081 --- 192.168.3.11:8084
+2024/05/08 01:23:57 cluster.go:305: cluster 192.168.3.11:8081 --pingadd 192.168.3.11:8085
+2024/05/08 01:23:57 cluster.go:234: client connected success 192.168.3.11:8082 --- 192.168.3.11:8085
+2024/05/08 01:23:57 cluster.go:305: cluster 192.168.3.11:8082 --pingadd 192.168.3.11:8086
+2024/05/08 01:23:57 cluster.go:234: client connected success 192.168.3.11:8081 --- 192.168.3.11:8085
+2024/05/08 01:23:57 cluster.go:305: cluster 192.168.3.11:8081 --pingadd 192.168.3.11:8086
+2024/05/08 01:23:57 cluster.go:234: client connected success 192.168.3.11:8082 --- 192.168.3.11:8086
+2024/05/08 01:23:57 cluster.go:305: cluster 192.168.3.11:8082 --pingadd 192.168.3.11:8087
+2024/05/08 01:23:57 cluster.go:234: client connected success 192.168.3.11:8081 --- 192.168.3.11:8086
+2024/05/08 01:23:57 cluster.go:305: cluster 192.168.3.11:8081 --pingadd 192.168.3.11:8087
+2024/05/08 01:23:57 cluster.go:234: client connected success 192.168.3.11:8082 --- 192.168.3.11:8087
+2024/05/08 01:23:57 cluster.go:305: cluster 192.168.3.11:8082 --pingadd 192.168.3.11:8088
+2024/05/08 01:23:57 cluster.go:234: client connected success 192.168.3.11:8081 --- 192.168.3.11:8087
+2024/05/08 01:23:57 cluster.go:305: cluster 192.168.3.11:8081 --pingadd 192.168.3.11:8088
+2024/05/08 01:23:57 cluster.go:234: client connected success 192.168.3.11:8082 --- 192.168.3.11:8088
+2024/05/08 01:23:57 cluster.go:305: cluster 192.168.3.11:8082 --pingadd 192.168.3.11:8089
+2024/05/08 01:23:57 cluster.go:234: client connected success 192.168.3.11:8081 --- 192.168.3.11:8088
+2024/05/08 01:23:57 cluster.go:305: cluster 192.168.3.11:8081 --pingadd 192.168.3.11:8089
+2024/05/08 01:23:57 cluster.go:234: client connected success 192.168.3.11:8082 --- 192.168.3.11:8089
+2024/05/08 01:23:57 cluster.go:305: cluster 192.168.3.11:8082 --pingadd 192.168.3.11:9999
+2024/05/08 01:23:57 cluster.go:234: client connected success 192.168.3.11:8081 --- 192.168.3.11:8089
+2024/05/08 01:23:57 cluster.go:305: cluster 192.168.3.11:8081 --pingadd 192.168.3.11:9999
+2024/05/08 01:23:57 cluster.go:234: client connected success 192.168.3.11:8082 --- 192.168.3.11:9999
+2024/05/08 01:23:57 cluster.go:305: cluster 192.168.3.11:8083 --pingadd 192.168.3.11:8081
+2024/05/08 01:23:57 cluster.go:234: client connected success 192.168.3.11:8081 --- 192.168.3.11:9999
+2024/05/08 01:23:57 cluster.go:234: client connected success 192.168.3.11:8083 --- 192.168.3.11:8081
+2024/05/08 01:23:57 cluster.go:305: cluster 192.168.3.11:8083 --pingadd 192.168.3.11:8082
+2024/05/08 01:23:57 cluster.go:234: client connected success 192.168.3.11:8083 --- 192.168.3.11:8082
+2024/05/08 01:23:57 cluster.go:305: cluster 192.168.3.11:8083 --pingadd 192.168.3.11:8083
+2024/05/08 01:23:57 cluster.go:234: client connected success 192.168.3.11:8083 --- 192.168.3.11:8083
+2024/05/08 01:23:57 cluster.go:305: cluster 192.168.3.11:8083 --pingadd 192.168.3.11:8084
+2024/05/08 01:23:57 cluster.go:234: client connected success 192.168.3.11:8083 --- 192.168.3.11:8084
+2024/05/08 01:23:57 cluster.go:305: cluster 192.168.3.11:8083 --pingadd 192.168.3.11:8085
+2024/05/08 01:23:57 cluster.go:234: client connected success 192.168.3.11:8083 --- 192.168.3.11:8085
+2024/05/08 01:23:57 cluster.go:305: cluster 192.168.3.11:8083 --pingadd 192.168.3.11:8086
+2024/05/08 01:23:57 cluster.go:234: client connected success 192.168.3.11:8083 --- 192.168.3.11:8086
+2024/05/08 01:23:57 cluster.go:305: cluster 192.168.3.11:8083 --pingadd 192.168.3.11:8087
+2024/05/08 01:23:57 cluster.go:234: client connected success 192.168.3.11:8083 --- 192.168.3.11:8087
+2024/05/08 01:23:57 cluster.go:305: cluster 192.168.3.11:8083 --pingadd 192.168.3.11:8088
+2024/05/08 01:23:57 cluster.go:234: client connected success 192.168.3.11:8083 --- 192.168.3.11:8088
+2024/05/08 01:23:57 cluster.go:305: cluster 192.168.3.11:8083 --pingadd 192.168.3.11:8089
+2024/05/08 01:23:57 cluster.go:234: client connected success 192.168.3.11:8083 --- 192.168.3.11:8089
+2024/05/08 01:23:57 cluster.go:305: cluster 192.168.3.11:8083 --pingadd 192.168.3.11:9999
+2024/05/08 01:23:57 cluster.go:234: client connected success 192.168.3.11:8083 --- 192.168.3.11:9999
+2024/05/08 01:23:57 cluster.go:305: cluster 192.168.3.11:8085 --pingadd 192.168.3.11:8081
+2024/05/08 01:23:57 cluster.go:305: cluster 192.168.3.11:8084 --pingadd 192.168.3.11:8081
+2024/05/08 01:23:57 cluster.go:305: cluster 192.168.3.11:8086 --pingadd 192.168.3.11:8081
+2024/05/08 01:23:57 cluster.go:234: client connected success 192.168.3.11:8085 --- 192.168.3.11:8081
+2024/05/08 01:23:57 cluster.go:305: cluster 192.168.3.11:8085 --pingadd 192.168.3.11:8082
+2024/05/08 01:23:57 cluster.go:234: client connected success 192.168.3.11:8084 --- 192.168.3.11:8081
+2024/05/08 01:23:57 cluster.go:305: cluster 192.168.3.11:8084 --pingadd 192.168.3.11:8082
+2024/05/08 01:23:57 cluster.go:234: client connected success 192.168.3.11:8086 --- 192.168.3.11:8081
+2024/05/08 01:23:57 cluster.go:305: cluster 192.168.3.11:8086 --pingadd 192.168.3.11:8082
+2024/05/08 01:23:57 cluster.go:234: client connected success 192.168.3.11:8084 --- 192.168.3.11:8082
+2024/05/08 01:23:57 cluster.go:305: cluster 192.168.3.11:8084 --pingadd 192.168.3.11:8083
+2024/05/08 01:23:57 cluster.go:234: client connected success 192.168.3.11:8085 --- 192.168.3.11:8082
+2024/05/08 01:23:57 cluster.go:305: cluster 192.168.3.11:8085 --pingadd 192.168.3.11:8083
+2024/05/08 01:23:57 cluster.go:234: client connected success 192.168.3.11:8086 --- 192.168.3.11:8082
+2024/05/08 01:23:57 cluster.go:305: cluster 192.168.3.11:8086 --pingadd 192.168.3.11:8083
+2024/05/08 01:23:57 cluster.go:234: client connected success 192.168.3.11:8084 --- 192.168.3.11:8083
+2024/05/08 01:23:57 cluster.go:305: cluster 192.168.3.11:8084 --pingadd 192.168.3.11:8084
+2024/05/08 01:23:57 cluster.go:234: client connected success 192.168.3.11:8085 --- 192.168.3.11:8083
+2024/05/08 01:23:57 cluster.go:305: cluster 192.168.3.11:8085 --pingadd 192.168.3.11:8084
+2024/05/08 01:23:57 cluster.go:234: client connected success 192.168.3.11:8086 --- 192.168.3.11:8083
+2024/05/08 01:23:57 cluster.go:305: cluster 192.168.3.11:8086 --pingadd 192.168.3.11:8084
+2024/05/08 01:23:57 cluster.go:234: client connected success 192.168.3.11:8084 --- 192.168.3.11:8084
+2024/05/08 01:23:57 cluster.go:305: cluster 192.168.3.11:8084 --pingadd 192.168.3.11:8085
+2024/05/08 01:23:57 cluster.go:234: client connected success 192.168.3.11:8085 --- 192.168.3.11:8084
+2024/05/08 01:23:57 cluster.go:305: cluster 192.168.3.11:8085 --pingadd 192.168.3.11:8085
+2024/05/08 01:23:57 cluster.go:234: client connected success 192.168.3.11:8086 --- 192.168.3.11:8084
+2024/05/08 01:23:57 cluster.go:305: cluster 192.168.3.11:8086 --pingadd 192.168.3.11:8085
+2024/05/08 01:23:57 cluster.go:234: client connected success 192.168.3.11:8084 --- 192.168.3.11:8085
+2024/05/08 01:23:57 cluster.go:234: client connected success 192.168.3.11:8085 --- 192.168.3.11:8085
+2024/05/08 01:23:57 cluster.go:305: cluster 192.168.3.11:8085 --pingadd 192.168.3.11:8086
+2024/05/08 01:23:57 cluster.go:305: cluster 192.168.3.11:8084 --pingadd 192.168.3.11:8086
+2024/05/08 01:23:57 cluster.go:234: client connected success 192.168.3.11:8086 --- 192.168.3.11:8085
+2024/05/08 01:23:57 cluster.go:305: cluster 192.168.3.11:8086 --pingadd 192.168.3.11:8086
+2024/05/08 01:23:57 cluster.go:234: client connected success 192.168.3.11:8085 --- 192.168.3.11:8086
+2024/05/08 01:23:57 cluster.go:305: cluster 192.168.3.11:8085 --pingadd 192.168.3.11:8087
+2024/05/08 01:23:57 cluster.go:234: client connected success 192.168.3.11:8084 --- 192.168.3.11:8086
+2024/05/08 01:23:57 cluster.go:305: cluster 192.168.3.11:8084 --pingadd 192.168.3.11:8087
+2024/05/08 01:23:57 cluster.go:234: client connected success 192.168.3.11:8086 --- 192.168.3.11:8086
+2024/05/08 01:23:57 cluster.go:305: cluster 192.168.3.11:8086 --pingadd 192.168.3.11:8087
+2024/05/08 01:23:57 cluster.go:234: client connected success 192.168.3.11:8085 --- 192.168.3.11:8087
+2024/05/08 01:23:57 cluster.go:305: cluster 192.168.3.11:8085 --pingadd 192.168.3.11:8088
+2024/05/08 01:23:57 cluster.go:234: client connected success 192.168.3.11:8084 --- 192.168.3.11:8087
+2024/05/08 01:23:57 cluster.go:305: cluster 192.168.3.11:8084 --pingadd 192.168.3.11:8088
+2024/05/08 01:23:57 cluster.go:234: client connected success 192.168.3.11:8085 --- 192.168.3.11:8088
+2024/05/08 01:23:57 cluster.go:305: cluster 192.168.3.11:8085 --pingadd 192.168.3.11:8089
+2024/05/08 01:23:57 cluster.go:234: client connected success 192.168.3.11:8086 --- 192.168.3.11:8087
+2024/05/08 01:23:57 cluster.go:305: cluster 192.168.3.11:8086 --pingadd 192.168.3.11:8088
+2024/05/08 01:23:57 cluster.go:234: client connected success 192.168.3.11:8084 --- 192.168.3.11:8088
+2024/05/08 01:23:57 cluster.go:305: cluster 192.168.3.11:8084 --pingadd 192.168.3.11:8089
+2024/05/08 01:23:57 cluster.go:234: client connected success 192.168.3.11:8085 --- 192.168.3.11:8089
+2024/05/08 01:23:57 cluster.go:305: cluster 192.168.3.11:8085 --pingadd 192.168.3.11:9999
+2024/05/08 01:23:57 cluster.go:234: client connected success 192.168.3.11:8086 --- 192.168.3.11:8088
+2024/05/08 01:23:57 cluster.go:305: cluster 192.168.3.11:8086 --pingadd 192.168.3.11:8089
+2024/05/08 01:23:57 cluster.go:234: client connected success 192.168.3.11:8085 --- 192.168.3.11:9999
+2024/05/08 01:23:57 cluster.go:234: client connected success 192.168.3.11:8084 --- 192.168.3.11:8089
+2024/05/08 01:23:57 cluster.go:305: cluster 192.168.3.11:8084 --pingadd 192.168.3.11:9999
+2024/05/08 01:23:57 cluster.go:234: client connected success 192.168.3.11:8086 --- 192.168.3.11:8089
+2024/05/08 01:23:57 cluster.go:305: cluster 192.168.3.11:8086 --pingadd 192.168.3.11:9999
+2024/05/08 01:23:57 cluster.go:234: client connected success 192.168.3.11:8086 --- 192.168.3.11:9999
+2024/05/08 01:23:57 cluster.go:234: client connected success 192.168.3.11:8084 --- 192.168.3.11:9999
+2024/05/08 01:23:57 cluster.go:305: cluster 192.168.3.11:8087 --pingadd 192.168.3.11:8081
+2024/05/08 01:23:57 cluster.go:305: cluster 192.168.3.11:8088 --pingadd 192.168.3.11:8081
+2024/05/08 01:23:57 cluster.go:234: client connected success 192.168.3.11:8088 --- 192.168.3.11:8081
+2024/05/08 01:23:57 cluster.go:305: cluster 192.168.3.11:8088 --pingadd 192.168.3.11:8082
+2024/05/08 01:23:57 cluster.go:234: client connected success 192.168.3.11:8087 --- 192.168.3.11:8081
+2024/05/08 01:23:57 cluster.go:305: cluster 192.168.3.11:8087 --pingadd 192.168.3.11:8082
+2024/05/08 01:23:57 cluster.go:234: client connected success 192.168.3.11:8088 --- 192.168.3.11:8082
+2024/05/08 01:23:57 cluster.go:305: cluster 192.168.3.11:8088 --pingadd 192.168.3.11:8083
+2024/05/08 01:23:57 cluster.go:234: client connected success 192.168.3.11:8087 --- 192.168.3.11:8082
+2024/05/08 01:23:57 cluster.go:305: cluster 192.168.3.11:8087 --pingadd 192.168.3.11:8083
+2024/05/08 01:23:57 cluster.go:234: client connected success 192.168.3.11:8088 --- 192.168.3.11:8083
+2024/05/08 01:23:57 cluster.go:305: cluster 192.168.3.11:8088 --pingadd 192.168.3.11:8084
+2024/05/08 01:23:57 cluster.go:234: client connected success 192.168.3.11:8087 --- 192.168.3.11:8083
+2024/05/08 01:23:57 cluster.go:305: cluster 192.168.3.11:8087 --pingadd 192.168.3.11:8084
+2024/05/08 01:23:57 cluster.go:234: client connected success 192.168.3.11:8088 --- 192.168.3.11:8084
+2024/05/08 01:23:57 cluster.go:305: cluster 192.168.3.11:8088 --pingadd 192.168.3.11:8085
+2024/05/08 01:23:57 cluster.go:234: client connected success 192.168.3.11:8087 --- 192.168.3.11:8084
+2024/05/08 01:23:57 cluster.go:305: cluster 192.168.3.11:8087 --pingadd 192.168.3.11:8085
+2024/05/08 01:23:57 cluster.go:234: client connected success 192.168.3.11:8088 --- 192.168.3.11:8085
+2024/05/08 01:23:57 cluster.go:305: cluster 192.168.3.11:8088 --pingadd 192.168.3.11:8086
+2024/05/08 01:23:57 cluster.go:234: client connected success 192.168.3.11:8087 --- 192.168.3.11:8085
+2024/05/08 01:23:57 cluster.go:305: cluster 192.168.3.11:8087 --pingadd 192.168.3.11:8086
+2024/05/08 01:23:57 cluster.go:234: client connected success 192.168.3.11:8088 --- 192.168.3.11:8086
+2024/05/08 01:23:57 cluster.go:305: cluster 192.168.3.11:8088 --pingadd 192.168.3.11:8087
+2024/05/08 01:23:57 cluster.go:234: client connected success 192.168.3.11:8087 --- 192.168.3.11:8086
+2024/05/08 01:23:57 cluster.go:305: cluster 192.168.3.11:8087 --pingadd 192.168.3.11:8087
+2024/05/08 01:23:57 cluster.go:234: client connected success 192.168.3.11:8088 --- 192.168.3.11:8087
+2024/05/08 01:23:57 cluster.go:305: cluster 192.168.3.11:8088 --pingadd 192.168.3.11:8088
+2024/05/08 01:23:57 cluster.go:234: client connected success 192.168.3.11:8087 --- 192.168.3.11:8087
+2024/05/08 01:23:57 cluster.go:305: cluster 192.168.3.11:8087 --pingadd 192.168.3.11:8088
+2024/05/08 01:23:57 cluster.go:234: client connected success 192.168.3.11:8088 --- 192.168.3.11:8088
+2024/05/08 01:23:57 cluster.go:305: cluster 192.168.3.11:8088 --pingadd 192.168.3.11:8089
+2024/05/08 01:23:57 cluster.go:234: client connected success 192.168.3.11:8087 --- 192.168.3.11:8088
+2024/05/08 01:23:57 cluster.go:305: cluster 192.168.3.11:8087 --pingadd 192.168.3.11:8089
+2024/05/08 01:23:57 cluster.go:234: client connected success 192.168.3.11:8088 --- 192.168.3.11:8089
+2024/05/08 01:23:57 cluster.go:305: cluster 192.168.3.11:8088 --pingadd 192.168.3.11:9999
+2024/05/08 01:23:57 cluster.go:234: client connected success 192.168.3.11:8087 --- 192.168.3.11:8089
+2024/05/08 01:23:57 cluster.go:305: cluster 192.168.3.11:8087 --pingadd 192.168.3.11:9999
+2024/05/08 01:23:57 cluster.go:234: client connected success 192.168.3.11:8088 --- 192.168.3.11:9999
+2024/05/08 01:23:57 cluster.go:234: client connected success 192.168.3.11:8087 --- 192.168.3.11:9999
+2024/05/08 01:23:57 cluster.go:305: cluster 192.168.3.11:8089 --pingadd 192.168.3.11:8081
+2024/05/08 01:23:57 cluster.go:305: cluster 192.168.3.11:9999 --pingadd 192.168.3.11:8081
+2024/05/08 01:23:57 cluster.go:234: client connected success 192.168.3.11:9999 --- 192.168.3.11:8081
+2024/05/08 01:23:57 cluster.go:305: cluster 192.168.3.11:9999 --pingadd 192.168.3.11:8082
+2024/05/08 01:23:57 cluster.go:234: client connected success 192.168.3.11:8089 --- 192.168.3.11:8081
+2024/05/08 01:23:57 cluster.go:305: cluster 192.168.3.11:8089 --pingadd 192.168.3.11:8082
+2024/05/08 01:23:57 cluster.go:234: client connected success 192.168.3.11:9999 --- 192.168.3.11:8082
+2024/05/08 01:23:57 cluster.go:305: cluster 192.168.3.11:9999 --pingadd 192.168.3.11:8083
+2024/05/08 01:23:57 cluster.go:234: client connected success 192.168.3.11:8089 --- 192.168.3.11:8082
+2024/05/08 01:23:57 cluster.go:305: cluster 192.168.3.11:8089 --pingadd 192.168.3.11:8083
+2024/05/08 01:23:57 cluster.go:234: client connected success 192.168.3.11:9999 --- 192.168.3.11:8083
+2024/05/08 01:23:57 cluster.go:305: cluster 192.168.3.11:9999 --pingadd 192.168.3.11:8084
+2024/05/08 01:23:57 cluster.go:234: client connected success 192.168.3.11:8089 --- 192.168.3.11:8083
+2024/05/08 01:23:57 cluster.go:305: cluster 192.168.3.11:8089 --pingadd 192.168.3.11:8084
+2024/05/08 01:23:57 cluster.go:234: client connected success 192.168.3.11:9999 --- 192.168.3.11:8084
+2024/05/08 01:23:57 cluster.go:305: cluster 192.168.3.11:9999 --pingadd 192.168.3.11:8085
+2024/05/08 01:23:57 cluster.go:234: client connected success 192.168.3.11:8089 --- 192.168.3.11:8084
+2024/05/08 01:23:57 cluster.go:305: cluster 192.168.3.11:8089 --pingadd 192.168.3.11:8085
+2024/05/08 01:23:57 cluster.go:234: client connected success 192.168.3.11:9999 --- 192.168.3.11:8085
+2024/05/08 01:23:57 cluster.go:305: cluster 192.168.3.11:9999 --pingadd 192.168.3.11:8086
+2024/05/08 01:23:57 cluster.go:234: client connected success 192.168.3.11:8089 --- 192.168.3.11:8085
+2024/05/08 01:23:57 cluster.go:305: cluster 192.168.3.11:8089 --pingadd 192.168.3.11:8086
+2024/05/08 01:23:57 cluster.go:234: client connected success 192.168.3.11:9999 --- 192.168.3.11:8086
+2024/05/08 01:23:57 cluster.go:305: cluster 192.168.3.11:9999 --pingadd 192.168.3.11:8087
+2024/05/08 01:23:57 cluster.go:234: client connected success 192.168.3.11:8089 --- 192.168.3.11:8086
+2024/05/08 01:23:57 cluster.go:305: cluster 192.168.3.11:8089 --pingadd 192.168.3.11:8087
+2024/05/08 01:23:57 cluster.go:234: client connected success 192.168.3.11:9999 --- 192.168.3.11:8087
+2024/05/08 01:23:57 cluster.go:305: cluster 192.168.3.11:9999 --pingadd 192.168.3.11:8088
+2024/05/08 01:23:57 cluster.go:234: client connected success 192.168.3.11:8089 --- 192.168.3.11:8087
+2024/05/08 01:23:57 cluster.go:305: cluster 192.168.3.11:8089 --pingadd 192.168.3.11:8088
+2024/05/08 01:23:57 cluster.go:234: client connected success 192.168.3.11:9999 --- 192.168.3.11:8088
+2024/05/08 01:23:57 cluster.go:305: cluster 192.168.3.11:9999 --pingadd 192.168.3.11:8089
+2024/05/08 01:23:57 cluster.go:234: client connected success 192.168.3.11:8089 --- 192.168.3.11:8088
+2024/05/08 01:23:57 cluster.go:305: cluster 192.168.3.11:8089 --pingadd 192.168.3.11:8089
+2024/05/08 01:23:57 cluster.go:234: client connected success 192.168.3.11:9999 --- 192.168.3.11:8089
+2024/05/08 01:23:57 cluster.go:305: cluster 192.168.3.11:9999 --pingadd 192.168.3.11:9999
+2024/05/08 01:23:57 cluster.go:234: client connected success 192.168.3.11:8089 --- 192.168.3.11:8089
+2024/05/08 01:23:57 cluster.go:305: cluster 192.168.3.11:8089 --pingadd 192.168.3.11:9999
+2024/05/08 01:23:57 cluster.go:234: client connected success 192.168.3.11:9999 --- 192.168.3.11:9999
+2024/05/08 01:23:57 cluster.go:234: client connected success 192.168.3.11:8089 --- 192.168.3.11:9999

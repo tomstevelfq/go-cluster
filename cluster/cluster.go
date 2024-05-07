@@ -65,14 +65,19 @@ type CalArg struct {
 	clust *Cluster
 }
 
+type ClustArg struct {
+	L int
+	R int
+}
+
 func MessageCallback(mes *Message) {
 	fmt.Printf("message callback for message: %d, called func name: %s", mes.Mid, mes.FuncName)
 }
 
-func (cal *Calculate) Sum(arg *CalArg, reply *int) error {
+func (cal *Calculate) Sum(arg *ClustArg, reply *int) error {
 	ret := 0
-	l := arg.l
-	r := arg.r
+	l := arg.L
+	r := arg.R
 	for i := l; i <= r; i++ {
 		ret += i
 	}
@@ -88,6 +93,19 @@ func (cal *Calculate) DoCalculate(arg *CalArg, reply *int) error {
 		//否则转移至主节点
 		masterNode := arg.clust.GetMasterNode()
 		done := masterNode.CallAsync("Calculate.DoCalculate", arg, reply)
+		<-done
+	}
+	return nil
+}
+
+func (clust *Cluster) ClusterCalculateRpc(arg *ClustArg, reply *int) error {
+	//是主节点，直接开始计算
+	if clust.Master {
+		*reply = clust.CalCulateSum(arg.L, arg.R)
+	} else {
+		//否则转移至主节点
+		masterNode := clust.GetMasterNode()
+		done := masterNode.CallAsync("Cluster.ClusterCalculateRpc", arg, reply)
 		<-done
 	}
 	return nil
@@ -157,6 +175,7 @@ func (node *ClientNode) Stop() {
 
 // 异步调用，返回一个通道done
 func (node *ClientNode) CallAsync(method string, arg interface{}, reply interface{}) chan *rpc.Call {
+	log.Println("node", node.address, "callasync method:", method)
 	if node.Client == nil {
 		log.Fatal("node client is nil")
 	}
@@ -186,6 +205,7 @@ func InitCluster(port string) *Cluster {
 	clust.addr = addr
 	clust.server = rpc.NewServer()
 	clust.RegisterObj(new(Calculate))
+	clust.RegisterObj(clust)
 	return clust
 }
 
@@ -204,12 +224,14 @@ func (clust *Cluster) PingAdd() {
 	}
 
 	for _, addr := range addrs {
+		addr = "192.168.3.11:" + addr
 		clust.DebugLog("cluster", clust.addr, "--pingadd", addr)
-		client, err := rpc.DialHTTP("tcp", addr)
+		client, err := rpc.Dial("tcp", addr)
 		if err != nil {
-			fmt.Println("client connected error")
+			log.Println("client connected error", clust.addr, "---", addr)
 			continue
 		}
+		log.Println("client connected success", clust.addr, "---", addr)
 		defer client.Close()
 		cli := &ClientNode{
 			State:   false,
@@ -252,7 +274,7 @@ func (clust *Cluster) Run() {
 			fmt.Println("Failed to accept connection:", err)
 			continue
 		}
-		go rpc.ServeConn(conn)
+		go clust.server.ServeConn(conn)
 	}
 }
 
@@ -304,7 +326,7 @@ func (clust *Cluster) GetMasterNode() *ClientNode {
 
 // test code for Cluster, it aims to calculate sum for range of numa to numb with the use of distributed nodes
 func (clust *Cluster) CalCulateSum(numa int, numb int) int {
-	clust.DebugLog("cluster", clust.addr, "--start calculate sum")
+	fmt.Println("cluster", clust.addr, "--start calculate sum")
 	if len(clust.Nodes) == 0 {
 		log.Fatal("no nodes for calculating sum")
 	}
@@ -316,8 +338,8 @@ func (clust *Cluster) CalCulateSum(numa int, numb int) int {
 	res := 0
 	for _, node := range clust.Nodes {
 		reply := 0
-		clust.DebugLog("cluster", clust.addr, "--call async calculate", node.address)
-		done := node.CallAsync("Calculate.Sum", &CalArg{left, min(right, numb), nil}, &reply)
+		fmt.Println("cluster", clust.addr, "--call async calculate", node.address)
+		done := node.CallAsync("Calculate.Sum", &ClustArg{left, min(right, numb)}, &reply)
 		wg.Add(1)
 		go func() {
 			defer wg.Done()
@@ -331,11 +353,27 @@ func (clust *Cluster) CalCulateSum(numa int, numb int) int {
 
 func (clust *Cluster) CallMasterAsync(method string, arg interface{}, reply interface{}) chan *rpc.Call {
 	masterNode := clust.GetMasterNode()
-	clust.DebugLog("cluster Node", clust.addr, "--call master Node", masterNode.address)
+	fmt.Println("cluster Node", clust.addr, "--call master Node", masterNode.address)
 	done := masterNode.CallAsync(method, arg, reply)
 	return done
 }
 
 func (clust *Cluster) CallMaster(method string, arg interface{}, reply interface{}) {
 	<-clust.CallMasterAsync(method, arg, reply)
+}
+
+func GetAddrs() []string {
+	//build a sequence of addrs list for nodes, test if the ping is ok
+	file, err := os.Open("addrs.json")
+	if err != nil {
+		log.Fatal("file open error")
+	}
+	defer file.Close()
+	var addrs []string
+	decoder := json.NewDecoder(file)
+	err = decoder.Decode(&addrs)
+	if err != nil {
+		log.Fatal("decode error")
+	}
+	return addrs
 }
