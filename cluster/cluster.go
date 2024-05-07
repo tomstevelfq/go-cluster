@@ -11,6 +11,7 @@ import (
 	"os"
 	"strings"
 	"sync"
+	"time"
 )
 
 // the relationship between Cluster and ClientNode is that the Cluster object abstractly encapsulates a cluster while a
@@ -230,6 +231,9 @@ func (clust *Cluster) Run() {
 	if err != nil {
 		panic(err)
 	}
+	go func() {
+		time.Sleep(time.Second * 5)
+	}()
 	http.Serve(listener, nil)
 }
 
