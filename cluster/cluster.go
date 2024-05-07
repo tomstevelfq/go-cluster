@@ -47,14 +47,15 @@ type ClientNode struct {
 }
 
 type Cluster struct {
-	mutex    sync.Mutex
-	State    bool //running or stopped
-	Nodes    []*ClientNode
-	NodesMap map[string]*ClientNode
-	addrList []string
-	server   *rpc.Server
-	addr     string
-	Master   bool //is master node or not
+	mutex     sync.Mutex
+	State     bool //running or stopped
+	Nodes     []*ClientNode
+	NodesMap  map[string]*ClientNode
+	addrList  []string
+	server    *rpc.Server
+	addr      string
+	Master    bool //is master node or not
+	DebugMode bool
 }
 
 type Calculate struct{}
@@ -105,11 +106,15 @@ func GetHostAddr() string {
 			continue // 如果无法转换，则忽略该地址
 		}
 
+		log.Println("addr", ipNet.IP.String())
 		// 判断地址是否为回环地址和 IPv4 地址
 		if ipNet.IP.IsLoopback() || ipNet.IP.To4() == nil {
 			continue // 如果是回环地址或者不是 IPv4 地址，则忽略该地址
 		}
 		res = ipNet.IP.String()
+		if res[:3] == "192" || res[:3] == "172" {
+			break
+		}
 	}
 	return res
 }
@@ -200,6 +205,7 @@ func (clust *Cluster) PingAdd() {
 	}
 
 	for _, addr := range addrs {
+		clust.DebugLog("cluster", clust.addr, "--pingadd", addr)
 		client, err := rpc.DialHTTP("tcp", addr)
 		if err != nil {
 			fmt.Println("client connected error")
@@ -233,6 +239,7 @@ func (clust *Cluster) Run() {
 	}
 	go func() {
 		time.Sleep(time.Second * 5)
+		clust.PingAdd()
 	}()
 	http.Serve(listener, nil)
 }
@@ -248,6 +255,21 @@ func (host *Cluster) MessageToNode(mes *Message, node *ClientNode) {
 		<-done
 		node.mesDone <- mes
 	}()
+}
+
+func (host *Cluster) EnableDebug() {
+	host.DebugMode = true
+}
+
+func (host *Cluster) DisableDebug() {
+	host.DebugMode = false
+}
+
+// only print in debug mode
+func (host *Cluster) DebugLog(args ...interface{}) {
+	if host.DebugMode {
+		log.Println(args...)
+	}
 }
 
 func min(a int, b int) int {
@@ -270,6 +292,7 @@ func (clust *Cluster) GetMasterNode() *ClientNode {
 
 // test code for Cluster, it aims to calculate sum for range of numa to numb with the use of distributed nodes
 func (clust *Cluster) CalCulateSum(numa int, numb int) int {
+	clust.DebugLog("cluster", clust.addr, "--start calculate sum")
 	if len(clust.Nodes) == 0 {
 		log.Fatal("no nodes for calculating sum")
 	}
@@ -281,6 +304,7 @@ func (clust *Cluster) CalCulateSum(numa int, numb int) int {
 	res := 0
 	for _, node := range clust.Nodes {
 		reply := 0
+		clust.DebugLog("cluster", clust.addr, "--call async calculate", node.address)
 		done := node.CallAsync("Calculate.Sum", &CalArg{left, min(right, numb), nil}, &reply)
 		wg.Add(1)
 		go func() {
@@ -295,6 +319,7 @@ func (clust *Cluster) CalCulateSum(numa int, numb int) int {
 
 func (clust *Cluster) CallMasterAsync(method string, arg interface{}, reply interface{}) chan *rpc.Call {
 	masterNode := clust.GetMasterNode()
+	clust.DebugLog("cluster Node", clust.addr, "--call master Node", masterNode.address)
 	done := masterNode.CallAsync(method, arg, reply)
 	return done
 }
