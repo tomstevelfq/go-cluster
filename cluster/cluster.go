@@ -6,7 +6,6 @@ import (
 	"log"
 	"math"
 	"net"
-	"net/http"
 	"net/rpc"
 	"os"
 	"strings"
@@ -231,17 +230,30 @@ func (clust *Cluster) Run() {
 	clust.mutex.Lock()
 	clust.State = true
 	clust.mutex.Unlock()
-	clust.server.HandleHTTP("/rpc", "/debug/rpc")
-
+	// 创建一个 TCP 监听器
+	log.Println("clust.addr", clust.addr)
 	listener, err := net.Listen("tcp", clust.addr)
 	if err != nil {
-		panic(err)
+		fmt.Println("Failed to listen:", err)
+		return
 	}
+	defer listener.Close()
+	log.Println("RPC server is running on", clust.addr)
+
 	go func() {
 		time.Sleep(time.Second * 5)
 		clust.PingAdd()
 	}()
-	http.Serve(listener, nil)
+
+	// 接受连接并为每个连接启动一个 goroutine 来处理请求
+	for {
+		conn, err := listener.Accept()
+		if err != nil {
+			fmt.Println("Failed to accept connection:", err)
+			continue
+		}
+		go rpc.ServeConn(conn)
+	}
 }
 
 func (clust *Cluster) RegisterObj(obj interface{}) {
