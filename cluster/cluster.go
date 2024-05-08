@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"log"
 	"math"
+	"math/rand"
 	"net"
 	"net/rpc"
 	"os"
@@ -37,16 +38,18 @@ type Message struct {
 }
 
 type ClientNode struct {
-	mutex   sync.Mutex
-	Name    string
-	address string
-	State   bool
-	mesDone chan *Message
-	Client  *rpc.Client
+	mutex    sync.Mutex
+	Name     string
+	address  string
+	State    bool
+	mesDone  chan *Message
+	Client   *rpc.Client
+	IsClosed bool
 }
 
 type Cluster struct {
 	mutex     sync.Mutex
+	NodesMtx  sync.Mutex
 	State     bool //running or stopped
 	Nodes     []*ClientNode
 	NodesMap  map[string]*ClientNode
@@ -196,6 +199,19 @@ func (node *ClientNode) Call(method string, arg interface{}, reply interface{}) 
 	return node.Client.Call(method, arg, reply)
 }
 
+func (node *ClientNode) Reconnect() error {
+	log.Println("cli node reconnnect", node.address)
+	client, err := rpc.Dial("tcp", node.address)
+	if err != nil {
+		log.Println("client connected error", node.address)
+		return err
+	}
+
+	log.Println("client connected success", node.address)
+	node.Client = client
+	return nil
+}
+
 func InitCluster(port string) *Cluster {
 	addr := GetHostAddr()
 	if addr == "" {
@@ -242,14 +258,16 @@ func (clust *Cluster) PingAdd() {
 			log.Println("client connected error", clust.addr, "---", addr)
 			continue
 		}
+
 		log.Println("client connected success", clust.addr, "---", addr, client)
 
 		cli := &ClientNode{
-			State:   false,
-			Name:    "client-" + addr,
-			address: addr,
-			Client:  client,
-			mesDone: make(chan *Message, 10),
+			State:    false,
+			Name:     "client-" + addr,
+			address:  addr,
+			Client:   client,
+			mesDone:  make(chan *Message, 10),
+			IsClosed: false,
 		}
 		clust.Nodes = append(clust.Nodes, cli)
 	}
@@ -335,6 +353,46 @@ func (clust *Cluster) GetMasterNode() *ClientNode {
 	return res
 }
 
+func (clust *Cluster) GetRandomNode() *ClientNode {
+	l := len(clust.Nodes)
+	p := rand.Intn(l)
+	log.Println("get random cient node", clust.Nodes[p])
+	return clust.Nodes[p]
+}
+
+func (clust *Cluster) RemoveNode(node *ClientNode) {
+	log.Println("cluster", clust.addr, "remove node", node.address)
+	for ind, n := range clust.Nodes {
+		if node == n {
+			clust.NodesMtx.Lock()
+			clust.Nodes = append(clust.Nodes[:ind], clust.Nodes[ind+1:]...)
+			clust.NodesMtx.Unlock()
+			return
+		}
+	}
+}
+
+// This function is guaranteed to be successfully delivered
+func (clust *Cluster) CallAsyncGuarantee(done chan *rpc.Call, dep *int, cli *ClientNode, ind int) {
+	if *dep == 10 {
+		return
+	}
+	(*dep)++
+	call := <-done
+	if call.Error != nil {
+		log.Println("calculate error", call.Error)
+		if cli.IsClosed {
+			err := cli.Reconnect()
+			if err != nil {
+				clust.RemoveNode(cli)
+			}
+		}
+		node := clust.GetRandomNode()
+		done = node.CallAsync("Calculate.Sum", call.Args, call.Reply)
+		clust.CallAsyncGuarantee(done, dep, node, ind)
+	}
+}
+
 // test code for Cluster, it aims to calculate sum for range of numa to numb with the use of distributed nodes
 func (clust *Cluster) CalCulateSum(numa int, numb int) int {
 	fmt.Println("cluster", clust.addr, "--start calculate sum")
@@ -346,7 +404,7 @@ func (clust *Cluster) CalCulateSum(numa int, numb int) int {
 	right := div
 	var wg sync.WaitGroup
 	res := 0
-	for _, node := range clust.Nodes {
+	for ind, node := range clust.Nodes {
 		reply := 0
 		log.Println("cluster", clust.addr, "--call async calculate", node.address)
 		done := node.CallAsync("Calculate.Sum", &ClustArg{left, min(right, numb)}, &reply)
@@ -355,8 +413,9 @@ func (clust *Cluster) CalCulateSum(numa int, numb int) int {
 		wg.Add(1)
 		go func() {
 			defer wg.Done()
-			<-done
-			log.Println("calculate over", reply)
+			dep := 0
+			clust.CallAsyncGuarantee(done, &dep, node, ind)
+			log.Println("calculate over", reply, dep)
 			res = res + reply
 		}()
 	}
