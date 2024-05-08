@@ -21,7 +21,7 @@ func main() {
 
 	// 调用远程方法
 	var reply int
-	err = client.Call("Calculate.Sum", &ClustArg{1, 1000}, &reply)
+	err = client.Call("Cluster.ClusterCalculateRpc", &ClustArg{1, 1000}, &reply)
 	if err != nil {
 		fmt.Println("RPC call failed:", err)
 		return

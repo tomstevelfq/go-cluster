@@ -75,6 +75,7 @@ func MessageCallback(mes *Message) {
 }
 
 func (cal *Calculate) Sum(arg *ClustArg, reply *int) error {
+	time.Sleep(time.Second * 3)
 	ret := 0
 	l := arg.L
 	r := arg.R
@@ -82,6 +83,7 @@ func (cal *Calculate) Sum(arg *ClustArg, reply *int) error {
 		ret += i
 	}
 	*reply = ret
+	log.Println("calculate.sum finished", *reply, arg.L, arg.R)
 	return nil
 }
 
@@ -180,9 +182,18 @@ func (node *ClientNode) CallAsync(method string, arg interface{}, reply interfac
 		log.Fatal("node client is nil")
 	}
 
-	done := make(chan *rpc.Call)
+	done := make(chan *rpc.Call, 10)
 	node.Client.Go(method, arg, reply, done)
 	return done
+}
+
+func (node *ClientNode) Call(method string, arg interface{}, reply interface{}) error {
+	log.Println("node", node.address, "calla method:", method, node.Client)
+	if node.Client == nil {
+		log.Fatal("node client is nil")
+	}
+
+	return node.Client.Call(method, arg, reply)
 }
 
 func InitCluster(port string) *Cluster {
@@ -231,8 +242,8 @@ func (clust *Cluster) PingAdd() {
 			log.Println("client connected error", clust.addr, "---", addr)
 			continue
 		}
-		log.Println("client connected success", clust.addr, "---", addr)
-		defer client.Close()
+		log.Println("client connected success", clust.addr, "---", addr, client)
+
 		cli := &ClientNode{
 			State:   false,
 			Name:    "client-" + addr,
@@ -330,20 +341,22 @@ func (clust *Cluster) CalCulateSum(numa int, numb int) int {
 	if len(clust.Nodes) == 0 {
 		log.Fatal("no nodes for calculating sum")
 	}
-	div := math.Ceil(float64(numb-numa) / float64(len(clust.Nodes)))
-
-	left := 0
-	right := int(div)
+	div := int(math.Ceil(float64(numb-numa+1) / float64(len(clust.Nodes))))
+	left := numa
+	right := div
 	var wg sync.WaitGroup
 	res := 0
 	for _, node := range clust.Nodes {
 		reply := 0
-		fmt.Println("cluster", clust.addr, "--call async calculate", node.address)
+		log.Println("cluster", clust.addr, "--call async calculate", node.address)
 		done := node.CallAsync("Calculate.Sum", &ClustArg{left, min(right, numb)}, &reply)
+		left += div
+		right += div
 		wg.Add(1)
 		go func() {
 			defer wg.Done()
 			<-done
+			log.Println("calculate over", reply)
 			res = res + reply
 		}()
 	}
@@ -353,7 +366,7 @@ func (clust *Cluster) CalCulateSum(numa int, numb int) int {
 
 func (clust *Cluster) CallMasterAsync(method string, arg interface{}, reply interface{}) chan *rpc.Call {
 	masterNode := clust.GetMasterNode()
-	fmt.Println("cluster Node", clust.addr, "--call master Node", masterNode.address)
+	log.Println("cluster Node", clust.addr, "--call master Node", masterNode.address)
 	done := masterNode.CallAsync(method, arg, reply)
 	return done
 }
