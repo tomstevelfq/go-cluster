@@ -2,6 +2,7 @@ package cluster
 
 import (
 	"encoding/json"
+	"errors"
 	"fmt"
 	"log"
 	"math"
@@ -238,6 +239,25 @@ func InitCluster(port string) *Cluster {
 	return clust
 }
 
+func (clust *Cluster) connect(addr string) *ClientNode {
+	client, err := rpc.Dial("tcp", addr)
+	if err != nil {
+		log.Println("client connected error", clust.addr, "---", addr)
+		return nil
+	}
+
+	log.Println("client connected success", clust.addr, "---", addr, client)
+
+	return &ClientNode{
+		State:    false,
+		Name:     "client-" + addr,
+		address:  addr,
+		Client:   client,
+		mesDone:  make(chan *Message, 10),
+		IsClosed: false,
+	}
+}
+
 func (clust *Cluster) PingAdd() {
 	//build a sequence of addrs list for nodes, test if the ping is ok
 	file, err := os.Open("addrs.json")
@@ -255,21 +275,9 @@ func (clust *Cluster) PingAdd() {
 	for _, addr := range addrs {
 		addr = "192.168.3.11:" + addr
 		clust.DebugLog("cluster", clust.addr, "--pingadd", addr)
-		client, err := rpc.Dial("tcp", addr)
-		if err != nil {
-			log.Println("client connected error", clust.addr, "---", addr)
+		cli := clust.connect(addr)
+		if cli == nil {
 			continue
-		}
-
-		log.Println("client connected success", clust.addr, "---", addr, client)
-
-		cli := &ClientNode{
-			State:    false,
-			Name:     "client-" + addr,
-			address:  addr,
-			Client:   client,
-			mesDone:  make(chan *Message, 10),
-			IsClosed: false,
 		}
 		clust.Nodes = append(clust.Nodes, cli)
 	}
@@ -309,6 +317,70 @@ func (clust *Cluster) Run() {
 	}
 }
 
+func (clust *Cluster) JoinHost(addr string) error {
+	for _, cli := range clust.Nodes {
+		if cli.address == addr {
+			return nil
+		}
+	}
+
+	cli := clust.connect(addr)
+	if cli == nil {
+		return errors.New("nil")
+	}
+	clust.Nodes = append(clust.Nodes, cli)
+	return nil
+}
+
+func (clust *Cluster) JoinHostNotice(arg string, reply interface{}) error {
+	return clust.JoinHost(arg)
+}
+
+func (clust *Cluster) JoinHostRpc(arg string, reply interface{}) error {
+	if clust.Master != true {
+		node := clust.GetMasterNode()
+		err := node.Call("Cluster.JoinHostRpc", arg, reply)
+		if err != nil {
+			log.Println("rpc Cluster.JoinHostRpc failed", err)
+			return err
+		}
+	}
+
+	var wg sync.WaitGroup
+	for _, node := range clust.Nodes {
+		wg.Add(1)
+		done := node.CallAsync("Cluster.JoinHostNotice", arg, reply)
+		go func() {
+			defer wg.Done()
+			call := <-done
+			if call.Error != nil {
+				log.Println("Cluster.JoinHostNotice failed", call.Args)
+			}
+		}()
+	}
+	wg.Wait()
+
+	cli := clust.GetCliNode(arg)
+	if cli == nil {
+		log.Println("cli join to master failed", arg)
+		return errors.New("nil")
+	}
+
+	for _, node := range clust.Nodes {
+		wg.Add(1)
+		done := cli.CallAsync("Cluster.JoinHostNotice", node.address, reply)
+		go func() {
+			defer wg.Done()
+			call := <-done
+			if call.Error != nil {
+				log.Println("Cluster.JoinHostNotice failed", call.Args)
+			}
+		}()
+	}
+	wg.Wait()
+	return nil
+}
+
 func (clust *Cluster) RegisterObj(obj interface{}) {
 	clust.server.Register(obj)
 }
@@ -346,13 +418,22 @@ func min(a int, b int) int {
 
 // get the master node
 func (clust *Cluster) GetMasterNode() *ClientNode {
-	res := (*ClientNode)(nil)
 	for _, node := range clust.Nodes {
 		if strings.Contains(node.address, "9999") {
-			res = node
+			return node
 		}
 	}
-	return res
+	return nil
+}
+
+// get cli node by addr
+func (clust *Cluster) GetCliNode(addr string) *ClientNode {
+	for _, node := range clust.Nodes {
+		if node.address == addr {
+			return node
+		}
+	}
+	return nil
 }
 
 func (clust *Cluster) GetRandomNode() *ClientNode {
