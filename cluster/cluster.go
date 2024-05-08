@@ -60,12 +60,13 @@ type Cluster struct {
 	DebugMode bool
 }
 
-type Calculate struct{}
+type Calculate struct {
+	clust *Cluster
+}
 
 type CalArg struct {
-	l     int
-	r     int
-	clust *Cluster
+	l int
+	r int
 }
 
 type ClustArg struct {
@@ -92,25 +93,25 @@ func (cal *Calculate) Sum(arg *ClustArg, reply *int) error {
 
 func (cal *Calculate) DoCalculate(arg *CalArg, reply *int) error {
 	//是主节点，直接开始计算
-	if arg.clust.Master {
-		*reply = arg.clust.CalCulateSum(arg.l, arg.r)
+	if cal.clust.Master {
+		*reply = cal.clust.CalCulateSum(arg.l, arg.r)
 	} else {
 		//否则转移至主节点
-		masterNode := arg.clust.GetMasterNode()
+		masterNode := cal.clust.GetMasterNode()
 		done := masterNode.CallAsync("Calculate.DoCalculate", arg, reply)
 		<-done
 	}
 	return nil
 }
 
-func (clust *Cluster) ClusterCalculateRpc(arg *ClustArg, reply *int) error {
+func (cal *Calculate) ClusterCalculateRpc(arg *ClustArg, reply *int) error {
 	//是主节点，直接开始计算
-	if clust.Master {
-		*reply = clust.CalCulateSum(arg.L, arg.R)
+	if cal.clust.Master {
+		*reply = cal.clust.CalCulateSum(arg.L, arg.R)
 	} else {
 		//否则转移至主节点
-		masterNode := clust.GetMasterNode()
-		done := masterNode.CallAsync("Cluster.ClusterCalculateRpc", arg, reply)
+		masterNode := cal.clust.GetMasterNode()
+		done := masterNode.CallAsync("Calculate.ClusterCalculateRpc", arg, reply)
 		<-done
 	}
 	return nil
@@ -231,8 +232,9 @@ func InitCluster(port string) *Cluster {
 	clust.State = false
 	clust.addr = addr
 	clust.server = rpc.NewServer()
-	clust.RegisterObj(new(Calculate))
-	clust.RegisterObj(clust)
+	cal := new(Calculate)
+	cal.clust = clust
+	clust.RegisterObj(cal)
 	return clust
 }
 
