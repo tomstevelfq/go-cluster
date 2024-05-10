@@ -227,15 +227,13 @@ func InitCluster(port string) *Cluster {
 
 	clust := new(Cluster)
 
-	if port == "9999" {
-		clust.Master = true
-	}
 	clust.State = false
 	clust.addr = addr
 	clust.server = rpc.NewServer()
 	cal := new(Calculate)
 	cal.clust = clust
 	clust.RegisterObj(cal)
+	clust.RegisterObj(clust)
 	return clust
 }
 
@@ -287,6 +285,39 @@ func (clust *Cluster) PingAdd() {
 	}
 }
 
+func Init() {
+	log.Println("---------------------------------cluster init start---------------------------------")
+	addrs := GetAddrs()
+	var clustList []*Cluster
+	for _, port := range addrs {
+		clust := InitCluster(port)
+		clust.EnableDebug() //enable debug log
+		clustList = append(clustList, clust)
+		go clust.Run()
+	}
+
+	time.Sleep(time.Second * 5)
+
+	var master *Cluster
+	if len(clustList) != 0 {
+		master = clustList[0]
+		master.Master = true
+	}
+	node := master.GetCliNode(master.addr)
+	if node == nil {
+		log.Println("failed to get master node")
+		return
+	}
+	for _, clust := range clustList {
+		done := node.CallAsync("Cluster.JoinHostRpc", clust.addr, nil)
+		call := <-done
+		if call.Error != nil {
+			log.Println("call Cluster.JoinHostRpc error", call.Error)
+		}
+	}
+	log.Println("---------------------------------cluster init end---------------------------------")
+}
+
 func (clust *Cluster) Run() {
 	clust.mutex.Lock()
 	clust.State = true
@@ -301,12 +332,11 @@ func (clust *Cluster) Run() {
 	defer listener.Close()
 	log.Println("RPC server is running on", clust.addr)
 
-	go func() {
-		time.Sleep(time.Second * 5)
-		clust.PingAdd()
-	}()
-
 	// 接受连接并为每个连接启动一个 goroutine 来处理请求
+	go func() {
+		cli := clust.connect(clust.addr)
+		clust.Nodes = append(clust.Nodes, cli)
+	}()
 	for {
 		conn, err := listener.Accept()
 		if err != nil {
@@ -320,6 +350,7 @@ func (clust *Cluster) Run() {
 func (clust *Cluster) JoinHost(addr string) error {
 	for _, cli := range clust.Nodes {
 		if cli.address == addr {
+			log.Println("address is the same", addr)
 			return nil
 		}
 	}
@@ -332,12 +363,14 @@ func (clust *Cluster) JoinHost(addr string) error {
 	return nil
 }
 
-func (clust *Cluster) JoinHostNotice(arg string, reply interface{}) error {
+func (clust *Cluster) JoinHostNotice(arg string, reply *int) error {
+	log.Println("join host notice", clust.addr, "----", arg)
 	return clust.JoinHost(arg)
 }
 
-func (clust *Cluster) JoinHostRpc(arg string, reply interface{}) error {
-	if clust.Master != true {
+func (clust *Cluster) JoinHostRpc(arg string, reply *int) error {
+	log.Println("join host rpc", clust.addr, arg)
+	if !clust.Master {
 		node := clust.GetMasterNode()
 		err := node.Call("Cluster.JoinHostRpc", arg, reply)
 		if err != nil {
@@ -354,7 +387,7 @@ func (clust *Cluster) JoinHostRpc(arg string, reply interface{}) error {
 			defer wg.Done()
 			call := <-done
 			if call.Error != nil {
-				log.Println("Cluster.JoinHostNotice failed", call.Args)
+				log.Println("Cluster.JoinHostNotice failed", call.Error)
 			}
 		}()
 	}

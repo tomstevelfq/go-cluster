@@ -23,13 +23,7 @@ func main() {
 	}
 	defer file.Close()
 	log.SetOutput(file)
-	addrs := cluster.GetAddrs()
-	var clustList []*cluster.Cluster
-	for _, port := range addrs {
-		clust := cluster.InitCluster(port)
-		clust.EnableDebug() //enable debug log
-		clustList = append(clustList, clust)
-		go clust.Run()
-	}
+	cluster.Init()
+
 	time.Sleep(time.Second * 6000)
 }
