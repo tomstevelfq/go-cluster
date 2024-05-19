@@ -59,6 +59,8 @@ type Cluster struct {
 	addr      string
 	Master    bool //is master node or not
 	DebugMode bool
+	HeartBeat int //heart beat every second
+	Tic       *time.Ticker
 }
 
 type Calculate struct {
@@ -80,7 +82,7 @@ func MessageCallback(mes *Message) {
 }
 
 func (cal *Calculate) Sum(arg *ClustArg, reply *int) error {
-	time.Sleep(time.Second * 3)
+	//time.Sleep(time.Second * 3)
 	ret := 0
 	l := arg.L
 	r := arg.R
@@ -211,6 +213,7 @@ func (node *ClientNode) Reconnect() error {
 
 	log.Println("client connected success", node.address)
 	node.Client = client
+	node.IsClosed = false
 	return nil
 }
 
@@ -229,6 +232,7 @@ func InitCluster(port string) *Cluster {
 
 	clust.State = false
 	clust.addr = addr
+	clust.HeartBeat = 1
 	clust.server = rpc.NewServer()
 	cal := new(Calculate)
 	cal.clust = clust
@@ -296,7 +300,7 @@ func Init() {
 		go clust.Run()
 	}
 
-	time.Sleep(time.Second * 5)
+	//time.Sleep(time.Second * 5)
 
 	var master *Cluster
 	if len(clustList) != 0 {
@@ -318,6 +322,45 @@ func Init() {
 	log.Println("---------------------------------cluster init end---------------------------------")
 }
 
+// test connection of every node
+func (clust *Cluster) PingConnect() {
+	var wg sync.WaitGroup
+	clust.NodesMtx.Lock()
+	for i := range clust.Nodes {
+		wg.Add(1)
+		node := clust.Nodes[i]
+		var reply bool
+		done := node.CallAsync("Cluster.PingRpc", clust.addr, &reply)
+		go func() {
+			defer wg.Done()
+			call := <-done
+			if call.Error != nil {
+				log.Println(clust.addr, "failed to ping", node.address)
+				clust.Nodes[i].IsClosed = true
+			}
+		}()
+	}
+	wg.Wait()
+	clust.NodesMtx.Lock()
+	log.Println(clust.addr, "ping connect finished")
+}
+
+func (clust *Cluster) HeartBeatStart() {
+	clust.Tic = time.NewTicker(time.Duration(clust.HeartBeat) * time.Second)
+	for t := range clust.Tic.C {
+		log.Println("heart beat ticker", t)
+		clust.PingConnect()
+	}
+}
+
+func (clust *Cluster) HeartBeatStop() {
+	clust.Tic.Stop()
+}
+
+func (clust *Cluster) HeartBeatReset(t time.Duration) {
+	clust.Tic.Reset(t)
+}
+
 func (clust *Cluster) Run() {
 	clust.mutex.Lock()
 	clust.State = true
@@ -336,7 +379,9 @@ func (clust *Cluster) Run() {
 	go func() {
 		cli := clust.connect(clust.addr)
 		clust.Nodes = append(clust.Nodes, cli)
+		clust.HeartBeatStart()
 	}()
+
 	for {
 		conn, err := listener.Accept()
 		if err != nil {
@@ -412,6 +457,12 @@ func (clust *Cluster) JoinHostRpc(arg string, reply *int) error {
 	}
 	wg.Wait()
 	return nil
+}
+
+// rpc to test connnection
+func (clust *Cluster) PingRpc(addr string, state *bool) error {
+	log.Println("ping from--", addr)
+	*state = true
 }
 
 func (clust *Cluster) RegisterObj(obj interface{}) {

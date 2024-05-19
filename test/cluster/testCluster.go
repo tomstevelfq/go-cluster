@@ -1,18 +1,16 @@
 package main
 
-import (
-	"log"
-	"os"
-)
+import "fmt"
 
 func main() {
-	log.SetFlags(log.LstdFlags | log.Lshortfile)
-	file, err := os.OpenFile("test.log", os.O_CREATE|os.O_WRONLY|os.O_APPEND, 0666)
-	if err != nil {
-		log.Fatal("cannot open the log file:", err)
+	s := []int{1, 2, 3, 4, 5, 6, 7, 8, 9}
+	n := 0
+	for n = 0; n < len(s); n++ {
+		if s[n]%2 == 0 {
+			s = append(s[:n], s[n+1:]...)
+			n--
+		}
 	}
-	defer file.Close()
-	log.SetOutput(file)
-	a := 20
-	log.Println("haha", a)
+	fmt.Println(n)
+	fmt.Println(s)
 }

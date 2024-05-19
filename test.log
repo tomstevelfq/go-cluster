@@ -1,435 +1,1070 @@
-2024/05/11 02:02:23 cluster.go:289: ---------------------------------cluster init start---------------------------------
-2024/05/11 02:02:23 cluster.go:133: addr fe80::26d0:e597:761e:a594
-2024/05/11 02:02:23 cluster.go:133: addr 169.254.175.238
-2024/05/11 02:02:23 cluster.go:133: addr fe80::c36f:b5b3:d132:7a02
-2024/05/11 02:02:23 cluster.go:133: addr 169.254.150.161
-2024/05/11 02:02:23 cluster.go:133: addr fe80::2535:6606:72ff:6a6d
-2024/05/11 02:02:23 cluster.go:133: addr 169.254.54.151
-2024/05/11 02:02:23 cluster.go:133: addr fe80::14b5:45ca:1811:a75b
-2024/05/11 02:02:23 cluster.go:133: addr 192.168.3.11
-2024/05/11 02:02:23 cluster.go:326: clust.addr 192.168.3.11:9999
-2024/05/11 02:02:23 cluster.go:333: RPC server is running on 192.168.3.11:9999
-2024/05/11 02:02:23 cluster.go:133: addr fe80::26d0:e597:761e:a594
-2024/05/11 02:02:23 cluster.go:133: addr 169.254.175.238
-2024/05/11 02:02:23 cluster.go:133: addr fe80::c36f:b5b3:d132:7a02
-2024/05/11 02:02:23 cluster.go:133: addr 169.254.150.161
-2024/05/11 02:02:23 cluster.go:133: addr fe80::2535:6606:72ff:6a6d
-2024/05/11 02:02:23 cluster.go:133: addr 169.254.54.151
-2024/05/11 02:02:23 cluster.go:133: addr fe80::14b5:45ca:1811:a75b
-2024/05/11 02:02:23 cluster.go:133: addr 192.168.3.11
-2024/05/11 02:02:23 cluster.go:326: clust.addr 192.168.3.11:8081
-2024/05/11 02:02:23 cluster.go:333: RPC server is running on 192.168.3.11:8081
-2024/05/11 02:02:23 cluster.go:247: client connected success 192.168.3.11:8081 --- 192.168.3.11:8081 &{0xc000196210 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
-2024/05/11 02:02:23 cluster.go:247: client connected success 192.168.3.11:9999 --- 192.168.3.11:9999 &{0xc000023d10 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
-2024/05/11 02:02:23 cluster.go:133: addr fe80::26d0:e597:761e:a594
-2024/05/11 02:02:23 cluster.go:133: addr 169.254.175.238
-2024/05/11 02:02:23 cluster.go:133: addr fe80::c36f:b5b3:d132:7a02
-2024/05/11 02:02:23 cluster.go:133: addr 169.254.150.161
-2024/05/11 02:02:23 cluster.go:133: addr fe80::2535:6606:72ff:6a6d
-2024/05/11 02:02:23 cluster.go:133: addr 169.254.54.151
-2024/05/11 02:02:23 cluster.go:133: addr fe80::14b5:45ca:1811:a75b
-2024/05/11 02:02:23 cluster.go:133: addr 192.168.3.11
-2024/05/11 02:02:23 cluster.go:326: clust.addr 192.168.3.11:8082
-2024/05/11 02:02:23 cluster.go:333: RPC server is running on 192.168.3.11:8082
-2024/05/11 02:02:23 cluster.go:247: client connected success 192.168.3.11:8082 --- 192.168.3.11:8082 &{0xc0001963f0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
-2024/05/11 02:02:23 cluster.go:133: addr fe80::26d0:e597:761e:a594
-2024/05/11 02:02:23 cluster.go:133: addr 169.254.175.238
-2024/05/11 02:02:23 cluster.go:133: addr fe80::c36f:b5b3:d132:7a02
-2024/05/11 02:02:23 cluster.go:133: addr 169.254.150.161
-2024/05/11 02:02:23 cluster.go:133: addr fe80::2535:6606:72ff:6a6d
-2024/05/11 02:02:23 cluster.go:133: addr 169.254.54.151
-2024/05/11 02:02:23 cluster.go:133: addr fe80::14b5:45ca:1811:a75b
-2024/05/11 02:02:23 cluster.go:133: addr 192.168.3.11
-2024/05/11 02:02:23 cluster.go:326: clust.addr 192.168.3.11:8083
-2024/05/11 02:02:23 cluster.go:333: RPC server is running on 192.168.3.11:8083
-2024/05/11 02:02:23 cluster.go:247: client connected success 192.168.3.11:8083 --- 192.168.3.11:8083 &{0xc000208360 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
-2024/05/11 02:02:23 cluster.go:133: addr fe80::26d0:e597:761e:a594
-2024/05/11 02:02:23 cluster.go:133: addr 169.254.175.238
-2024/05/11 02:02:23 cluster.go:133: addr fe80::c36f:b5b3:d132:7a02
-2024/05/11 02:02:23 cluster.go:133: addr 169.254.150.161
-2024/05/11 02:02:23 cluster.go:133: addr fe80::2535:6606:72ff:6a6d
-2024/05/11 02:02:23 cluster.go:133: addr 169.254.54.151
-2024/05/11 02:02:23 cluster.go:133: addr fe80::14b5:45ca:1811:a75b
-2024/05/11 02:02:23 cluster.go:133: addr 192.168.3.11
-2024/05/11 02:02:23 cluster.go:326: clust.addr 192.168.3.11:8084
-2024/05/11 02:02:23 cluster.go:333: RPC server is running on 192.168.3.11:8084
-2024/05/11 02:02:23 cluster.go:247: client connected success 192.168.3.11:8084 --- 192.168.3.11:8084 &{0xc000196810 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
-2024/05/11 02:02:23 cluster.go:133: addr fe80::26d0:e597:761e:a594
-2024/05/11 02:02:23 cluster.go:133: addr 169.254.175.238
-2024/05/11 02:02:23 cluster.go:133: addr fe80::c36f:b5b3:d132:7a02
-2024/05/11 02:02:23 cluster.go:133: addr 169.254.150.161
-2024/05/11 02:02:23 cluster.go:133: addr fe80::2535:6606:72ff:6a6d
-2024/05/11 02:02:23 cluster.go:133: addr 169.254.54.151
-2024/05/11 02:02:23 cluster.go:133: addr fe80::14b5:45ca:1811:a75b
-2024/05/11 02:02:23 cluster.go:133: addr 192.168.3.11
-2024/05/11 02:02:23 cluster.go:326: clust.addr 192.168.3.11:8085
-2024/05/11 02:02:23 cluster.go:333: RPC server is running on 192.168.3.11:8085
-2024/05/11 02:02:23 cluster.go:247: client connected success 192.168.3.11:8085 --- 192.168.3.11:8085 &{0xc000208690 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
-2024/05/11 02:02:23 cluster.go:133: addr fe80::26d0:e597:761e:a594
-2024/05/11 02:02:23 cluster.go:133: addr 169.254.175.238
-2024/05/11 02:02:23 cluster.go:133: addr fe80::c36f:b5b3:d132:7a02
-2024/05/11 02:02:23 cluster.go:133: addr 169.254.150.161
-2024/05/11 02:02:23 cluster.go:133: addr fe80::2535:6606:72ff:6a6d
-2024/05/11 02:02:23 cluster.go:133: addr 169.254.54.151
-2024/05/11 02:02:23 cluster.go:133: addr fe80::14b5:45ca:1811:a75b
-2024/05/11 02:02:23 cluster.go:133: addr 192.168.3.11
-2024/05/11 02:02:23 cluster.go:326: clust.addr 192.168.3.11:8086
-2024/05/11 02:02:23 cluster.go:333: RPC server is running on 192.168.3.11:8086
-2024/05/11 02:02:23 cluster.go:247: client connected success 192.168.3.11:8086 --- 192.168.3.11:8086 &{0xc0000afec0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
-2024/05/11 02:02:23 cluster.go:133: addr fe80::26d0:e597:761e:a594
-2024/05/11 02:02:23 cluster.go:133: addr 169.254.175.238
-2024/05/11 02:02:23 cluster.go:133: addr fe80::c36f:b5b3:d132:7a02
-2024/05/11 02:02:23 cluster.go:133: addr 169.254.150.161
-2024/05/11 02:02:23 cluster.go:133: addr fe80::2535:6606:72ff:6a6d
-2024/05/11 02:02:23 cluster.go:133: addr 169.254.54.151
-2024/05/11 02:02:23 cluster.go:133: addr fe80::14b5:45ca:1811:a75b
-2024/05/11 02:02:23 cluster.go:133: addr 192.168.3.11
-2024/05/11 02:02:23 cluster.go:326: clust.addr 192.168.3.11:8087
-2024/05/11 02:02:23 cluster.go:333: RPC server is running on 192.168.3.11:8087
-2024/05/11 02:02:23 cluster.go:247: client connected success 192.168.3.11:8087 --- 192.168.3.11:8087 &{0xc000196bd0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
-2024/05/11 02:02:23 cluster.go:133: addr fe80::26d0:e597:761e:a594
-2024/05/11 02:02:23 cluster.go:133: addr 169.254.175.238
-2024/05/11 02:02:23 cluster.go:133: addr fe80::c36f:b5b3:d132:7a02
-2024/05/11 02:02:23 cluster.go:133: addr 169.254.150.161
-2024/05/11 02:02:23 cluster.go:133: addr fe80::2535:6606:72ff:6a6d
-2024/05/11 02:02:23 cluster.go:133: addr 169.254.54.151
-2024/05/11 02:02:23 cluster.go:133: addr fe80::14b5:45ca:1811:a75b
-2024/05/11 02:02:23 cluster.go:133: addr 192.168.3.11
-2024/05/11 02:02:23 cluster.go:326: clust.addr 192.168.3.11:8088
-2024/05/11 02:02:23 cluster.go:333: RPC server is running on 192.168.3.11:8088
-2024/05/11 02:02:23 cluster.go:247: client connected success 192.168.3.11:8088 --- 192.168.3.11:8088 &{0xc0000ea360 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
-2024/05/11 02:02:23 cluster.go:133: addr fe80::26d0:e597:761e:a594
-2024/05/11 02:02:23 cluster.go:133: addr 169.254.175.238
-2024/05/11 02:02:23 cluster.go:133: addr fe80::c36f:b5b3:d132:7a02
-2024/05/11 02:02:23 cluster.go:133: addr 169.254.150.161
-2024/05/11 02:02:23 cluster.go:133: addr fe80::2535:6606:72ff:6a6d
-2024/05/11 02:02:23 cluster.go:133: addr 169.254.54.151
-2024/05/11 02:02:23 cluster.go:133: addr fe80::14b5:45ca:1811:a75b
-2024/05/11 02:02:23 cluster.go:133: addr 192.168.3.11
-2024/05/11 02:02:23 cluster.go:326: clust.addr 192.168.3.11:8089
-2024/05/11 02:02:23 cluster.go:333: RPC server is running on 192.168.3.11:8089
-2024/05/11 02:02:23 cluster.go:247: client connected success 192.168.3.11:8089 --- 192.168.3.11:8089 &{0xc0000ea5a0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:9999 callasync method: Cluster.JoinHostRpc
-2024/05/11 02:02:28 cluster.go:372: join host rpc 192.168.3.11:9999 192.168.3.11:9999
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:9999 callasync method: Cluster.JoinHostNotice
-2024/05/11 02:02:28 cluster.go:367: join host notice 192.168.3.11:9999 ---- 192.168.3.11:9999
-2024/05/11 02:02:28 cluster.go:353: address is the same 192.168.3.11:9999
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:9999 callasync method: Cluster.JoinHostNotice
-2024/05/11 02:02:28 cluster.go:367: join host notice 192.168.3.11:9999 ---- 192.168.3.11:9999
-2024/05/11 02:02:28 cluster.go:353: address is the same 192.168.3.11:9999
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:9999 callasync method: Cluster.JoinHostRpc
-2024/05/11 02:02:28 cluster.go:372: join host rpc 192.168.3.11:9999 192.168.3.11:8081
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:9999 callasync method: Cluster.JoinHostNotice
-2024/05/11 02:02:28 cluster.go:367: join host notice 192.168.3.11:9999 ---- 192.168.3.11:8081
-2024/05/11 02:02:28 cluster.go:247: client connected success 192.168.3.11:9999 --- 192.168.3.11:8081 &{0xc0000ea7e0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:8081 callasync method: Cluster.JoinHostNotice
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:8081 callasync method: Cluster.JoinHostNotice
-2024/05/11 02:02:28 cluster.go:367: join host notice 192.168.3.11:8081 ---- 192.168.3.11:9999
-2024/05/11 02:02:28 cluster.go:367: join host notice 192.168.3.11:8081 ---- 192.168.3.11:8081
-2024/05/11 02:02:28 cluster.go:353: address is the same 192.168.3.11:8081
-2024/05/11 02:02:28 cluster.go:247: client connected success 192.168.3.11:8081 --- 192.168.3.11:9999 &{0xc00014fce0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:9999 callasync method: Cluster.JoinHostRpc
-2024/05/11 02:02:28 cluster.go:372: join host rpc 192.168.3.11:9999 192.168.3.11:8082
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:9999 callasync method: Cluster.JoinHostNotice
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:8081 callasync method: Cluster.JoinHostNotice
-2024/05/11 02:02:28 cluster.go:367: join host notice 192.168.3.11:9999 ---- 192.168.3.11:8082
-2024/05/11 02:02:28 cluster.go:367: join host notice 192.168.3.11:8081 ---- 192.168.3.11:8082
-2024/05/11 02:02:28 cluster.go:247: client connected success 192.168.3.11:8081 --- 192.168.3.11:8082 &{0xc0000eac60 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
-2024/05/11 02:02:28 cluster.go:247: client connected success 192.168.3.11:9999 --- 192.168.3.11:8082 &{0xc0000eae40 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:8082 callasync method: Cluster.JoinHostNotice
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:8082 callasync method: Cluster.JoinHostNotice
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:8082 callasync method: Cluster.JoinHostNotice
-2024/05/11 02:02:28 cluster.go:367: join host notice 192.168.3.11:8082 ---- 192.168.3.11:9999
-2024/05/11 02:02:28 cluster.go:367: join host notice 192.168.3.11:8082 ---- 192.168.3.11:8082
-2024/05/11 02:02:28 cluster.go:353: address is the same 192.168.3.11:8082
-2024/05/11 02:02:28 cluster.go:367: join host notice 192.168.3.11:8082 ---- 192.168.3.11:8081
-2024/05/11 02:02:28 cluster.go:247: client connected success 192.168.3.11:8082 --- 192.168.3.11:8081 &{0xc0001970b0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
-2024/05/11 02:02:28 cluster.go:247: client connected success 192.168.3.11:8082 --- 192.168.3.11:9999 &{0xc0002921e0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:9999 callasync method: Cluster.JoinHostRpc
-2024/05/11 02:02:28 cluster.go:372: join host rpc 192.168.3.11:9999 192.168.3.11:8083
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:9999 callasync method: Cluster.JoinHostNotice
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:8081 callasync method: Cluster.JoinHostNotice
-2024/05/11 02:02:28 cluster.go:367: join host notice 192.168.3.11:9999 ---- 192.168.3.11:8083
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:8082 callasync method: Cluster.JoinHostNotice
-2024/05/11 02:02:28 cluster.go:367: join host notice 192.168.3.11:8081 ---- 192.168.3.11:8083
-2024/05/11 02:02:28 cluster.go:367: join host notice 192.168.3.11:8082 ---- 192.168.3.11:8083
-2024/05/11 02:02:28 cluster.go:247: client connected success 192.168.3.11:9999 --- 192.168.3.11:8083 &{0xc000292540 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
-2024/05/11 02:02:28 cluster.go:247: client connected success 192.168.3.11:8082 --- 192.168.3.11:8083 &{0xc0002926f0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
-2024/05/11 02:02:28 cluster.go:247: client connected success 192.168.3.11:8081 --- 192.168.3.11:8083 &{0xc000197320 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:8083 callasync method: Cluster.JoinHostNotice
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:8083 callasync method: Cluster.JoinHostNotice
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:8083 callasync method: Cluster.JoinHostNotice
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:8083 callasync method: Cluster.JoinHostNotice
-2024/05/11 02:02:28 cluster.go:367: join host notice 192.168.3.11:8083 ---- 192.168.3.11:9999
-2024/05/11 02:02:28 cluster.go:367: join host notice 192.168.3.11:8083 ---- 192.168.3.11:8081
-2024/05/11 02:02:28 cluster.go:367: join host notice 192.168.3.11:8083 ---- 192.168.3.11:8083
-2024/05/11 02:02:28 cluster.go:353: address is the same 192.168.3.11:8083
-2024/05/11 02:02:28 cluster.go:367: join host notice 192.168.3.11:8083 ---- 192.168.3.11:8082
-2024/05/11 02:02:28 cluster.go:247: client connected success 192.168.3.11:8083 --- 192.168.3.11:8081 &{0xc0000eb770 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
-2024/05/11 02:02:28 cluster.go:247: client connected success 192.168.3.11:8083 --- 192.168.3.11:9999 &{0xc0000ebb90 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
-2024/05/11 02:02:28 cluster.go:247: client connected success 192.168.3.11:8083 --- 192.168.3.11:8082 &{0xc0001977a0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:9999 callasync method: Cluster.JoinHostRpc
-2024/05/11 02:02:28 cluster.go:372: join host rpc 192.168.3.11:9999 192.168.3.11:8084
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:9999 callasync method: Cluster.JoinHostNotice
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:8081 callasync method: Cluster.JoinHostNotice
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:8082 callasync method: Cluster.JoinHostNotice
-2024/05/11 02:02:28 cluster.go:367: join host notice 192.168.3.11:9999 ---- 192.168.3.11:8084
-2024/05/11 02:02:28 cluster.go:367: join host notice 192.168.3.11:8081 ---- 192.168.3.11:8084
-2024/05/11 02:02:28 cluster.go:367: join host notice 192.168.3.11:8082 ---- 192.168.3.11:8084
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:8083 callasync method: Cluster.JoinHostNotice
-2024/05/11 02:02:28 cluster.go:367: join host notice 192.168.3.11:8083 ---- 192.168.3.11:8084
-2024/05/11 02:02:28 cluster.go:247: client connected success 192.168.3.11:9999 --- 192.168.3.11:8084 &{0xc0000ebda0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
-2024/05/11 02:02:28 cluster.go:247: client connected success 192.168.3.11:8081 --- 192.168.3.11:8084 &{0xc000326000 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
-2024/05/11 02:02:28 cluster.go:247: client connected success 192.168.3.11:8082 --- 192.168.3.11:8084 &{0xc000197a70 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
-2024/05/11 02:02:28 cluster.go:247: client connected success 192.168.3.11:8083 --- 192.168.3.11:8084 &{0xc000326210 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:8084 callasync method: Cluster.JoinHostNotice
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:8084 callasync method: Cluster.JoinHostNotice
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:8084 callasync method: Cluster.JoinHostNotice
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:8084 callasync method: Cluster.JoinHostNotice
-2024/05/11 02:02:28 cluster.go:367: join host notice 192.168.3.11:8084 ---- 192.168.3.11:9999
-2024/05/11 02:02:28 cluster.go:367: join host notice 192.168.3.11:8084 ---- 192.168.3.11:8081
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:8084 callasync method: Cluster.JoinHostNotice
-2024/05/11 02:02:28 cluster.go:367: join host notice 192.168.3.11:8084 ---- 192.168.3.11:8084
-2024/05/11 02:02:28 cluster.go:353: address is the same 192.168.3.11:8084
-2024/05/11 02:02:28 cluster.go:367: join host notice 192.168.3.11:8084 ---- 192.168.3.11:8083
-2024/05/11 02:02:28 cluster.go:367: join host notice 192.168.3.11:8084 ---- 192.168.3.11:8082
-2024/05/11 02:02:28 cluster.go:247: client connected success 192.168.3.11:8084 --- 192.168.3.11:9999 &{0xc000197da0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
-2024/05/11 02:02:28 cluster.go:247: client connected success 192.168.3.11:8084 --- 192.168.3.11:8081 &{0xc000209c50 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
-2024/05/11 02:02:28 cluster.go:247: client connected success 192.168.3.11:8084 --- 192.168.3.11:8083 &{0xc0001fe000 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
-2024/05/11 02:02:28 cluster.go:247: client connected success 192.168.3.11:8084 --- 192.168.3.11:8082 &{0xc000326540 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:9999 callasync method: Cluster.JoinHostRpc
-2024/05/11 02:02:28 cluster.go:372: join host rpc 192.168.3.11:9999 192.168.3.11:8085
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:9999 callasync method: Cluster.JoinHostNotice
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:8081 callasync method: Cluster.JoinHostNotice
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:8082 callasync method: Cluster.JoinHostNotice
-2024/05/11 02:02:28 cluster.go:367: join host notice 192.168.3.11:8081 ---- 192.168.3.11:8085
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:8083 callasync method: Cluster.JoinHostNotice
-2024/05/11 02:02:28 cluster.go:367: join host notice 192.168.3.11:9999 ---- 192.168.3.11:8085
-2024/05/11 02:02:28 cluster.go:367: join host notice 192.168.3.11:8082 ---- 192.168.3.11:8085
-2024/05/11 02:02:28 cluster.go:367: join host notice 192.168.3.11:8083 ---- 192.168.3.11:8085
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:8084 callasync method: Cluster.JoinHostNotice
-2024/05/11 02:02:28 cluster.go:247: client connected success 192.168.3.11:8081 --- 192.168.3.11:8085 &{0xc000209ef0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
-2024/05/11 02:02:28 cluster.go:367: join host notice 192.168.3.11:8084 ---- 192.168.3.11:8085
-2024/05/11 02:02:28 cluster.go:247: client connected success 192.168.3.11:9999 --- 192.168.3.11:8085 &{0xc000293500 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
-2024/05/11 02:02:28 cluster.go:247: client connected success 192.168.3.11:8082 --- 192.168.3.11:8085 &{0xc0002937d0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
-2024/05/11 02:02:28 cluster.go:247: client connected success 192.168.3.11:8083 --- 192.168.3.11:8085 &{0xc0001fe390 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
-2024/05/11 02:02:28 cluster.go:247: client connected success 192.168.3.11:8084 --- 192.168.3.11:8085 &{0xc0001fe660 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:8085 callasync method: Cluster.JoinHostNotice
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:8085 callasync method: Cluster.JoinHostNotice
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:8085 callasync method: Cluster.JoinHostNotice
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:8085 callasync method: Cluster.JoinHostNotice
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:8085 callasync method: Cluster.JoinHostNotice
-2024/05/11 02:02:28 cluster.go:367: join host notice 192.168.3.11:8085 ---- 192.168.3.11:9999
-2024/05/11 02:02:28 cluster.go:367: join host notice 192.168.3.11:8085 ---- 192.168.3.11:8081
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:8085 callasync method: Cluster.JoinHostNotice
-2024/05/11 02:02:28 cluster.go:367: join host notice 192.168.3.11:8085 ---- 192.168.3.11:8084
-2024/05/11 02:02:28 cluster.go:367: join host notice 192.168.3.11:8085 ---- 192.168.3.11:8085
-2024/05/11 02:02:28 cluster.go:353: address is the same 192.168.3.11:8085
-2024/05/11 02:02:28 cluster.go:367: join host notice 192.168.3.11:8085 ---- 192.168.3.11:8082
-2024/05/11 02:02:28 cluster.go:367: join host notice 192.168.3.11:8085 ---- 192.168.3.11:8083
-2024/05/11 02:02:28 cluster.go:247: client connected success 192.168.3.11:8085 --- 192.168.3.11:9999 &{0xc0001fe960 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
-2024/05/11 02:02:28 cluster.go:247: client connected success 192.168.3.11:8085 --- 192.168.3.11:8084 &{0xc0003903f0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
-2024/05/11 02:02:28 cluster.go:247: client connected success 192.168.3.11:8085 --- 192.168.3.11:8083 &{0xc000326bd0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
-2024/05/11 02:02:28 cluster.go:247: client connected success 192.168.3.11:8085 --- 192.168.3.11:8082 &{0xc0003905d0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
-2024/05/11 02:02:28 cluster.go:247: client connected success 192.168.3.11:8085 --- 192.168.3.11:8081 &{0xc000293ef0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:9999 callasync method: Cluster.JoinHostRpc
-2024/05/11 02:02:28 cluster.go:372: join host rpc 192.168.3.11:9999 192.168.3.11:8086
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:9999 callasync method: Cluster.JoinHostNotice
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:8081 callasync method: Cluster.JoinHostNotice
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:8082 callasync method: Cluster.JoinHostNotice
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:8083 callasync method: Cluster.JoinHostNotice
-2024/05/11 02:02:28 cluster.go:367: join host notice 192.168.3.11:8081 ---- 192.168.3.11:8086
-2024/05/11 02:02:28 cluster.go:367: join host notice 192.168.3.11:9999 ---- 192.168.3.11:8086
-2024/05/11 02:02:28 cluster.go:367: join host notice 192.168.3.11:8082 ---- 192.168.3.11:8086
-2024/05/11 02:02:28 cluster.go:367: join host notice 192.168.3.11:8083 ---- 192.168.3.11:8086
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:8084 callasync method: Cluster.JoinHostNotice
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:8085 callasync method: Cluster.JoinHostNotice
-2024/05/11 02:02:28 cluster.go:247: client connected success 192.168.3.11:9999 --- 192.168.3.11:8086 &{0xc000326f60 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
-2024/05/11 02:02:28 cluster.go:367: join host notice 192.168.3.11:8085 ---- 192.168.3.11:8086
-2024/05/11 02:02:28 cluster.go:367: join host notice 192.168.3.11:8084 ---- 192.168.3.11:8086
-2024/05/11 02:02:28 cluster.go:247: client connected success 192.168.3.11:8085 --- 192.168.3.11:8086 &{0xc0001fefc0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
-2024/05/11 02:02:28 cluster.go:247: client connected success 192.168.3.11:8081 --- 192.168.3.11:8086 &{0xc0001ff1a0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
-2024/05/11 02:02:28 cluster.go:247: client connected success 192.168.3.11:8083 --- 192.168.3.11:8086 &{0xc0002f01b0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
-2024/05/11 02:02:28 cluster.go:247: client connected success 192.168.3.11:8084 --- 192.168.3.11:8086 &{0xc0003271a0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
-2024/05/11 02:02:28 cluster.go:247: client connected success 192.168.3.11:8082 --- 192.168.3.11:8086 &{0xc0002f03c0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:8086 callasync method: Cluster.JoinHostNotice
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:8086 callasync method: Cluster.JoinHostNotice
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:8086 callasync method: Cluster.JoinHostNotice
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:8086 callasync method: Cluster.JoinHostNotice
-2024/05/11 02:02:28 cluster.go:367: join host notice 192.168.3.11:8086 ---- 192.168.3.11:9999
-2024/05/11 02:02:28 cluster.go:367: join host notice 192.168.3.11:8086 ---- 192.168.3.11:8081
-2024/05/11 02:02:28 cluster.go:367: join host notice 192.168.3.11:8086 ---- 192.168.3.11:8083
-2024/05/11 02:02:28 cluster.go:367: join host notice 192.168.3.11:8086 ---- 192.168.3.11:8082
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:8086 callasync method: Cluster.JoinHostNotice
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:8086 callasync method: Cluster.JoinHostNotice
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:8086 callasync method: Cluster.JoinHostNotice
-2024/05/11 02:02:28 cluster.go:247: client connected success 192.168.3.11:8086 --- 192.168.3.11:8081 &{0xc0002f0720 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
-2024/05/11 02:02:28 cluster.go:367: join host notice 192.168.3.11:8086 ---- 192.168.3.11:8085
-2024/05/11 02:02:28 cluster.go:367: join host notice 192.168.3.11:8086 ---- 192.168.3.11:8084
-2024/05/11 02:02:28 cluster.go:247: client connected success 192.168.3.11:8086 --- 192.168.3.11:9999 &{0xc0001ff830 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
-2024/05/11 02:02:28 cluster.go:247: client connected success 192.168.3.11:8086 --- 192.168.3.11:8083 &{0xc0001ff650 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
-2024/05/11 02:02:28 cluster.go:247: client connected success 192.168.3.11:8086 --- 192.168.3.11:8082 &{0xc0003278c0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
-2024/05/11 02:02:28 cluster.go:247: client connected success 192.168.3.11:8086 --- 192.168.3.11:8085 &{0xc0002f09c0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
-2024/05/11 02:02:28 cluster.go:367: join host notice 192.168.3.11:8086 ---- 192.168.3.11:8086
-2024/05/11 02:02:28 cluster.go:353: address is the same 192.168.3.11:8086
-2024/05/11 02:02:28 cluster.go:247: client connected success 192.168.3.11:8086 --- 192.168.3.11:8084 &{0xc000327bf0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:9999 callasync method: Cluster.JoinHostRpc
-2024/05/11 02:02:28 cluster.go:372: join host rpc 192.168.3.11:9999 192.168.3.11:8087
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:9999 callasync method: Cluster.JoinHostNotice
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:8081 callasync method: Cluster.JoinHostNotice
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:8082 callasync method: Cluster.JoinHostNotice
-2024/05/11 02:02:28 cluster.go:367: join host notice 192.168.3.11:9999 ---- 192.168.3.11:8087
-2024/05/11 02:02:28 cluster.go:367: join host notice 192.168.3.11:8081 ---- 192.168.3.11:8087
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:8083 callasync method: Cluster.JoinHostNotice
-2024/05/11 02:02:28 cluster.go:367: join host notice 192.168.3.11:8082 ---- 192.168.3.11:8087
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:8084 callasync method: Cluster.JoinHostNotice
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:8085 callasync method: Cluster.JoinHostNotice
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:8086 callasync method: Cluster.JoinHostNotice
-2024/05/11 02:02:28 cluster.go:367: join host notice 192.168.3.11:8086 ---- 192.168.3.11:8087
-2024/05/11 02:02:28 cluster.go:367: join host notice 192.168.3.11:8083 ---- 192.168.3.11:8087
-2024/05/11 02:02:28 cluster.go:367: join host notice 192.168.3.11:8085 ---- 192.168.3.11:8087
-2024/05/11 02:02:28 cluster.go:247: client connected success 192.168.3.11:9999 --- 192.168.3.11:8087 &{0xc000391170 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
-2024/05/11 02:02:28 cluster.go:367: join host notice 192.168.3.11:8084 ---- 192.168.3.11:8087
-2024/05/11 02:02:28 cluster.go:247: client connected success 192.168.3.11:8082 --- 192.168.3.11:8087 &{0xc0002f0c60 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
-2024/05/11 02:02:28 cluster.go:247: client connected success 192.168.3.11:8081 --- 192.168.3.11:8087 &{0xc0002f0e40 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
-2024/05/11 02:02:28 cluster.go:247: client connected success 192.168.3.11:8085 --- 192.168.3.11:8087 &{0xc0003914a0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
-2024/05/11 02:02:28 cluster.go:247: client connected success 192.168.3.11:8086 --- 192.168.3.11:8087 &{0xc000327e60 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
-2024/05/11 02:02:28 cluster.go:247: client connected success 192.168.3.11:8084 --- 192.168.3.11:8087 &{0xc000391680 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
-2024/05/11 02:02:28 cluster.go:247: client connected success 192.168.3.11:8083 --- 192.168.3.11:8087 &{0xc0003760c0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:8087 callasync method: Cluster.JoinHostNotice
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:8087 callasync method: Cluster.JoinHostNotice
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:8087 callasync method: Cluster.JoinHostNotice
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:8087 callasync method: Cluster.JoinHostNotice
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:8087 callasync method: Cluster.JoinHostNotice
-2024/05/11 02:02:28 cluster.go:367: join host notice 192.168.3.11:8087 ---- 192.168.3.11:8081
-2024/05/11 02:02:28 cluster.go:367: join host notice 192.168.3.11:8087 ---- 192.168.3.11:8082
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:8087 callasync method: Cluster.JoinHostNotice
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:8087 callasync method: Cluster.JoinHostNotice
-2024/05/11 02:02:28 cluster.go:367: join host notice 192.168.3.11:8087 ---- 192.168.3.11:8084
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:8087 callasync method: Cluster.JoinHostNotice
-2024/05/11 02:02:28 cluster.go:367: join host notice 192.168.3.11:8087 ---- 192.168.3.11:8083
-2024/05/11 02:02:28 cluster.go:367: join host notice 192.168.3.11:8087 ---- 192.168.3.11:9999
-2024/05/11 02:02:28 cluster.go:367: join host notice 192.168.3.11:8087 ---- 192.168.3.11:8085
-2024/05/11 02:02:28 cluster.go:367: join host notice 192.168.3.11:8087 ---- 192.168.3.11:8086
-2024/05/11 02:02:28 cluster.go:247: client connected success 192.168.3.11:8087 --- 192.168.3.11:8081 &{0xc000376630 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
-2024/05/11 02:02:28 cluster.go:247: client connected success 192.168.3.11:8087 --- 192.168.3.11:8085 &{0xc00045a120 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
-2024/05/11 02:02:28 cluster.go:247: client connected success 192.168.3.11:8087 --- 192.168.3.11:8083 &{0xc000376a80 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
-2024/05/11 02:02:28 cluster.go:367: join host notice 192.168.3.11:8087 ---- 192.168.3.11:8087
-2024/05/11 02:02:28 cluster.go:353: address is the same 192.168.3.11:8087
-2024/05/11 02:02:28 cluster.go:247: client connected success 192.168.3.11:8087 --- 192.168.3.11:9999 &{0xc00045a300 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
-2024/05/11 02:02:28 cluster.go:247: client connected success 192.168.3.11:8087 --- 192.168.3.11:8082 &{0xc000391cb0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
-2024/05/11 02:02:28 cluster.go:247: client connected success 192.168.3.11:8087 --- 192.168.3.11:8084 &{0xc0002f17a0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
-2024/05/11 02:02:28 cluster.go:247: client connected success 192.168.3.11:8087 --- 192.168.3.11:8086 &{0xc000376c30 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:9999 callasync method: Cluster.JoinHostRpc
-2024/05/11 02:02:28 cluster.go:372: join host rpc 192.168.3.11:9999 192.168.3.11:8088
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:9999 callasync method: Cluster.JoinHostNotice
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:8081 callasync method: Cluster.JoinHostNotice
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:8082 callasync method: Cluster.JoinHostNotice
-2024/05/11 02:02:28 cluster.go:367: join host notice 192.168.3.11:8081 ---- 192.168.3.11:8088
-2024/05/11 02:02:28 cluster.go:367: join host notice 192.168.3.11:9999 ---- 192.168.3.11:8088
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:8083 callasync method: Cluster.JoinHostNotice
-2024/05/11 02:02:28 cluster.go:367: join host notice 192.168.3.11:8082 ---- 192.168.3.11:8088
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:8084 callasync method: Cluster.JoinHostNotice
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:8085 callasync method: Cluster.JoinHostNotice
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:8086 callasync method: Cluster.JoinHostNotice
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:8087 callasync method: Cluster.JoinHostNotice
-2024/05/11 02:02:28 cluster.go:367: join host notice 192.168.3.11:8086 ---- 192.168.3.11:8088
-2024/05/11 02:02:28 cluster.go:367: join host notice 192.168.3.11:8084 ---- 192.168.3.11:8088
-2024/05/11 02:02:28 cluster.go:367: join host notice 192.168.3.11:8087 ---- 192.168.3.11:8088
-2024/05/11 02:02:28 cluster.go:247: client connected success 192.168.3.11:8081 --- 192.168.3.11:8088 &{0xc000377080 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
-2024/05/11 02:02:28 cluster.go:247: client connected success 192.168.3.11:9999 --- 192.168.3.11:8088 &{0xc00045a720 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
-2024/05/11 02:02:28 cluster.go:367: join host notice 192.168.3.11:8083 ---- 192.168.3.11:8088
-2024/05/11 02:02:28 cluster.go:367: join host notice 192.168.3.11:8085 ---- 192.168.3.11:8088
-2024/05/11 02:02:28 cluster.go:247: client connected success 192.168.3.11:8084 --- 192.168.3.11:8088 &{0xc00045ac30 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
-2024/05/11 02:02:28 cluster.go:247: client connected success 192.168.3.11:8086 --- 192.168.3.11:8088 &{0xc0003772c0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
-2024/05/11 02:02:28 cluster.go:247: client connected success 192.168.3.11:8087 --- 192.168.3.11:8088 &{0xc0002f1b00 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
-2024/05/11 02:02:28 cluster.go:247: client connected success 192.168.3.11:8083 --- 192.168.3.11:8088 &{0xc00045ae10 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
-2024/05/11 02:02:28 cluster.go:247: client connected success 192.168.3.11:8082 --- 192.168.3.11:8088 &{0xc00045a900 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
-2024/05/11 02:02:28 cluster.go:247: client connected success 192.168.3.11:8085 --- 192.168.3.11:8088 &{0xc00045b0e0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:8088 callasync method: Cluster.JoinHostNotice
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:8088 callasync method: Cluster.JoinHostNotice
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:8088 callasync method: Cluster.JoinHostNotice
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:8088 callasync method: Cluster.JoinHostNotice
-2024/05/11 02:02:28 cluster.go:367: join host notice 192.168.3.11:8088 ---- 192.168.3.11:8082
-2024/05/11 02:02:28 cluster.go:367: join host notice 192.168.3.11:8088 ---- 192.168.3.11:8083
-2024/05/11 02:02:28 cluster.go:367: join host notice 192.168.3.11:8088 ---- 192.168.3.11:9999
-2024/05/11 02:02:28 cluster.go:367: join host notice 192.168.3.11:8088 ---- 192.168.3.11:8081
-2024/05/11 02:02:28 cluster.go:247: client connected success 192.168.3.11:8088 --- 192.168.3.11:8083 &{0xc0003775f0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:8088 callasync method: Cluster.JoinHostNotice
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:8088 callasync method: Cluster.JoinHostNotice
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:8088 callasync method: Cluster.JoinHostNotice
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:8088 callasync method: Cluster.JoinHostNotice
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:8088 callasync method: Cluster.JoinHostNotice
-2024/05/11 02:02:28 cluster.go:247: client connected success 192.168.3.11:8088 --- 192.168.3.11:8082 &{0xc0004bc360 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
-2024/05/11 02:02:28 cluster.go:367: join host notice 192.168.3.11:8088 ---- 192.168.3.11:8088
-2024/05/11 02:02:28 cluster.go:353: address is the same 192.168.3.11:8088
-2024/05/11 02:02:28 cluster.go:247: client connected success 192.168.3.11:8088 --- 192.168.3.11:8081 &{0xc0003fc150 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
-2024/05/11 02:02:28 cluster.go:247: client connected success 192.168.3.11:8088 --- 192.168.3.11:9999 &{0xc0004bc540 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
-2024/05/11 02:02:28 cluster.go:367: join host notice 192.168.3.11:8088 ---- 192.168.3.11:8085
-2024/05/11 02:02:28 cluster.go:367: join host notice 192.168.3.11:8088 ---- 192.168.3.11:8087
-2024/05/11 02:02:28 cluster.go:367: join host notice 192.168.3.11:8088 ---- 192.168.3.11:8086
-2024/05/11 02:02:28 cluster.go:367: join host notice 192.168.3.11:8088 ---- 192.168.3.11:8084
-2024/05/11 02:02:28 cluster.go:247: client connected success 192.168.3.11:8088 --- 192.168.3.11:8087 &{0xc0003779b0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
-2024/05/11 02:02:28 cluster.go:247: client connected success 192.168.3.11:8088 --- 192.168.3.11:8084 &{0xc00045b7a0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
-2024/05/11 02:02:28 cluster.go:247: client connected success 192.168.3.11:8088 --- 192.168.3.11:8086 &{0xc0003fc540 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
-2024/05/11 02:02:28 cluster.go:247: client connected success 192.168.3.11:8088 --- 192.168.3.11:8085 &{0xc00045b980 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:9999 callasync method: Cluster.JoinHostRpc
-2024/05/11 02:02:28 cluster.go:372: join host rpc 192.168.3.11:9999 192.168.3.11:8089
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:9999 callasync method: Cluster.JoinHostNotice
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:8081 callasync method: Cluster.JoinHostNotice
-2024/05/11 02:02:28 cluster.go:367: join host notice 192.168.3.11:9999 ---- 192.168.3.11:8089
-2024/05/11 02:02:28 cluster.go:367: join host notice 192.168.3.11:8081 ---- 192.168.3.11:8089
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:8082 callasync method: Cluster.JoinHostNotice
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:8083 callasync method: Cluster.JoinHostNotice
-2024/05/11 02:02:28 cluster.go:367: join host notice 192.168.3.11:8082 ---- 192.168.3.11:8089
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:8084 callasync method: Cluster.JoinHostNotice
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:8085 callasync method: Cluster.JoinHostNotice
-2024/05/11 02:02:28 cluster.go:367: join host notice 192.168.3.11:8084 ---- 192.168.3.11:8089
-2024/05/11 02:02:28 cluster.go:367: join host notice 192.168.3.11:8083 ---- 192.168.3.11:8089
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:8086 callasync method: Cluster.JoinHostNotice
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:8087 callasync method: Cluster.JoinHostNotice
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:8088 callasync method: Cluster.JoinHostNotice
-2024/05/11 02:02:28 cluster.go:367: join host notice 192.168.3.11:8085 ---- 192.168.3.11:8089
-2024/05/11 02:02:28 cluster.go:247: client connected success 192.168.3.11:8082 --- 192.168.3.11:8089 &{0xc0004bcae0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
-2024/05/11 02:02:28 cluster.go:367: join host notice 192.168.3.11:8088 ---- 192.168.3.11:8089
-2024/05/11 02:02:28 cluster.go:367: join host notice 192.168.3.11:8087 ---- 192.168.3.11:8089
-2024/05/11 02:02:28 cluster.go:247: client connected success 192.168.3.11:9999 --- 192.168.3.11:8089 &{0xc000377e60 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
-2024/05/11 02:02:28 cluster.go:247: client connected success 192.168.3.11:8085 --- 192.168.3.11:8089 &{0xc0003fca20 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
-2024/05/11 02:02:28 cluster.go:247: client connected success 192.168.3.11:8081 --- 192.168.3.11:8089 &{0xc0004bcd20 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
-2024/05/11 02:02:28 cluster.go:247: client connected success 192.168.3.11:8083 --- 192.168.3.11:8089 &{0xc00045bdd0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
-2024/05/11 02:02:28 cluster.go:247: client connected success 192.168.3.11:8084 --- 192.168.3.11:8089 &{0xc0003fcbd0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
-2024/05/11 02:02:28 cluster.go:367: join host notice 192.168.3.11:8086 ---- 192.168.3.11:8089
-2024/05/11 02:02:28 cluster.go:247: client connected success 192.168.3.11:8087 --- 192.168.3.11:8089 &{0xc0003fcdb0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
-2024/05/11 02:02:28 cluster.go:247: client connected success 192.168.3.11:8088 --- 192.168.3.11:8089 &{0xc0005301b0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
-2024/05/11 02:02:28 cluster.go:247: client connected success 192.168.3.11:8086 --- 192.168.3.11:8089 &{0xc0005bc120 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:8089 callasync method: Cluster.JoinHostNotice
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:8089 callasync method: Cluster.JoinHostNotice
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:8089 callasync method: Cluster.JoinHostNotice
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:8089 callasync method: Cluster.JoinHostNotice
-2024/05/11 02:02:28 cluster.go:367: join host notice 192.168.3.11:8089 ---- 192.168.3.11:9999
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:8089 callasync method: Cluster.JoinHostNotice
-2024/05/11 02:02:28 cluster.go:367: join host notice 192.168.3.11:8089 ---- 192.168.3.11:8081
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:8089 callasync method: Cluster.JoinHostNotice
-2024/05/11 02:02:28 cluster.go:367: join host notice 192.168.3.11:8089 ---- 192.168.3.11:8082
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:8089 callasync method: Cluster.JoinHostNotice
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:8089 callasync method: Cluster.JoinHostNotice
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:8089 callasync method: Cluster.JoinHostNotice
-2024/05/11 02:02:28 cluster.go:185: node 192.168.3.11:8089 callasync method: Cluster.JoinHostNotice
-2024/05/11 02:02:28 cluster.go:367: join host notice 192.168.3.11:8089 ---- 192.168.3.11:8083
-2024/05/11 02:02:28 cluster.go:367: join host notice 192.168.3.11:8089 ---- 192.168.3.11:8085
-2024/05/11 02:02:28 cluster.go:367: join host notice 192.168.3.11:8089 ---- 192.168.3.11:8086
-2024/05/11 02:02:28 cluster.go:367: join host notice 192.168.3.11:8089 ---- 192.168.3.11:8088
-2024/05/11 02:02:28 cluster.go:367: join host notice 192.168.3.11:8089 ---- 192.168.3.11:8087
-2024/05/11 02:02:28 cluster.go:367: join host notice 192.168.3.11:8089 ---- 192.168.3.11:8084
-2024/05/11 02:02:28 cluster.go:247: client connected success 192.168.3.11:8089 --- 192.168.3.11:8083 &{0xc0005bc5d0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
-2024/05/11 02:02:28 cluster.go:247: client connected success 192.168.3.11:8089 --- 192.168.3.11:8081 &{0xc000530930 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
-2024/05/11 02:02:28 cluster.go:247: client connected success 192.168.3.11:8089 --- 192.168.3.11:8082 &{0xc000530b40 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
-2024/05/11 02:02:28 cluster.go:367: join host notice 192.168.3.11:8089 ---- 192.168.3.11:8089
-2024/05/11 02:02:28 cluster.go:353: address is the same 192.168.3.11:8089
-2024/05/11 02:02:28 cluster.go:247: client connected success 192.168.3.11:8089 --- 192.168.3.11:8087 &{0xc000530f60 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
-2024/05/11 02:02:28 cluster.go:247: client connected success 192.168.3.11:8089 --- 192.168.3.11:8086 &{0xc0005bca50 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
-2024/05/11 02:02:28 cluster.go:247: client connected success 192.168.3.11:8089 --- 192.168.3.11:9999 &{0xc0003fd680 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
-2024/05/11 02:02:28 cluster.go:247: client connected success 192.168.3.11:8089 --- 192.168.3.11:8084 &{0xc0004bd290 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
-2024/05/11 02:02:28 cluster.go:247: client connected success 192.168.3.11:8089 --- 192.168.3.11:8088 &{0xc000531290 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
-2024/05/11 02:02:28 cluster.go:247: client connected success 192.168.3.11:8089 --- 192.168.3.11:8085 &{0xc0004bd5f0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
-2024/05/11 02:02:28 cluster.go:318: ---------------------------------cluster init end---------------------------------
+2024/05/19 22:24:47 cluster.go:289: ---------------------------------cluster init start---------------------------------
+2024/05/19 22:24:47 cluster.go:133: addr fe80::26d0:e597:761e:a594
+2024/05/19 22:24:47 cluster.go:133: addr 169.254.175.238
+2024/05/19 22:24:47 cluster.go:133: addr fe80::c36f:b5b3:d132:7a02
+2024/05/19 22:24:47 cluster.go:133: addr 169.254.150.161
+2024/05/19 22:24:47 cluster.go:133: addr fe80::2535:6606:72ff:6a6d
+2024/05/19 22:24:47 cluster.go:133: addr 169.254.54.151
+2024/05/19 22:24:47 cluster.go:133: addr fe80::14b5:45ca:1811:a75b
+2024/05/19 22:24:47 cluster.go:133: addr 192.168.3.11
+2024/05/19 22:24:47 cluster.go:326: clust.addr 192.168.3.11:9999
+2024/05/19 22:24:47 cluster.go:333: RPC server is running on 192.168.3.11:9999
+2024/05/19 22:24:47 cluster.go:133: addr fe80::26d0:e597:761e:a594
+2024/05/19 22:24:47 cluster.go:133: addr 169.254.175.238
+2024/05/19 22:24:47 cluster.go:133: addr fe80::c36f:b5b3:d132:7a02
+2024/05/19 22:24:47 cluster.go:133: addr 169.254.150.161
+2024/05/19 22:24:47 cluster.go:133: addr fe80::2535:6606:72ff:6a6d
+2024/05/19 22:24:47 cluster.go:133: addr 169.254.54.151
+2024/05/19 22:24:47 cluster.go:133: addr fe80::14b5:45ca:1811:a75b
+2024/05/19 22:24:47 cluster.go:133: addr 192.168.3.11
+2024/05/19 22:24:47 cluster.go:326: clust.addr 192.168.3.11:8081
+2024/05/19 22:24:47 cluster.go:247: client connected success 192.168.3.11:9999 --- 192.168.3.11:9999 &{0xc000096240 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:24:47 cluster.go:333: RPC server is running on 192.168.3.11:8081
+2024/05/19 22:24:47 cluster.go:247: client connected success 192.168.3.11:8081 --- 192.168.3.11:8081 &{0xc0002082d0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:24:47 cluster.go:133: addr fe80::26d0:e597:761e:a594
+2024/05/19 22:24:47 cluster.go:133: addr 169.254.175.238
+2024/05/19 22:24:47 cluster.go:133: addr fe80::c36f:b5b3:d132:7a02
+2024/05/19 22:24:47 cluster.go:133: addr 169.254.150.161
+2024/05/19 22:24:47 cluster.go:133: addr fe80::2535:6606:72ff:6a6d
+2024/05/19 22:24:47 cluster.go:133: addr 169.254.54.151
+2024/05/19 22:24:47 cluster.go:133: addr fe80::14b5:45ca:1811:a75b
+2024/05/19 22:24:47 cluster.go:133: addr 192.168.3.11
+2024/05/19 22:24:47 cluster.go:326: clust.addr 192.168.3.11:8082
+2024/05/19 22:24:47 cluster.go:333: RPC server is running on 192.168.3.11:8082
+2024/05/19 22:24:47 cluster.go:247: client connected success 192.168.3.11:8082 --- 192.168.3.11:8082 &{0xc0001901b0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:24:47 cluster.go:133: addr fe80::26d0:e597:761e:a594
+2024/05/19 22:24:47 cluster.go:133: addr 169.254.175.238
+2024/05/19 22:24:47 cluster.go:133: addr fe80::c36f:b5b3:d132:7a02
+2024/05/19 22:24:47 cluster.go:133: addr 169.254.150.161
+2024/05/19 22:24:47 cluster.go:133: addr fe80::2535:6606:72ff:6a6d
+2024/05/19 22:24:47 cluster.go:133: addr 169.254.54.151
+2024/05/19 22:24:47 cluster.go:133: addr fe80::14b5:45ca:1811:a75b
+2024/05/19 22:24:47 cluster.go:133: addr 192.168.3.11
+2024/05/19 22:24:47 cluster.go:326: clust.addr 192.168.3.11:8083
+2024/05/19 22:24:47 cluster.go:333: RPC server is running on 192.168.3.11:8083
+2024/05/19 22:24:47 cluster.go:247: client connected success 192.168.3.11:8083 --- 192.168.3.11:8083 &{0xc000096660 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:24:47 cluster.go:133: addr fe80::26d0:e597:761e:a594
+2024/05/19 22:24:47 cluster.go:133: addr 169.254.175.238
+2024/05/19 22:24:47 cluster.go:133: addr fe80::c36f:b5b3:d132:7a02
+2024/05/19 22:24:47 cluster.go:133: addr 169.254.150.161
+2024/05/19 22:24:47 cluster.go:133: addr fe80::2535:6606:72ff:6a6d
+2024/05/19 22:24:47 cluster.go:133: addr 169.254.54.151
+2024/05/19 22:24:47 cluster.go:133: addr fe80::14b5:45ca:1811:a75b
+2024/05/19 22:24:47 cluster.go:133: addr 192.168.3.11
+2024/05/19 22:24:47 cluster.go:326: clust.addr 192.168.3.11:8084
+2024/05/19 22:24:47 cluster.go:333: RPC server is running on 192.168.3.11:8084
+2024/05/19 22:24:47 cluster.go:247: client connected success 192.168.3.11:8084 --- 192.168.3.11:8084 &{0xc000147050 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:24:47 cluster.go:133: addr fe80::26d0:e597:761e:a594
+2024/05/19 22:24:47 cluster.go:133: addr 169.254.175.238
+2024/05/19 22:24:47 cluster.go:133: addr fe80::c36f:b5b3:d132:7a02
+2024/05/19 22:24:47 cluster.go:133: addr 169.254.150.161
+2024/05/19 22:24:47 cluster.go:133: addr fe80::2535:6606:72ff:6a6d
+2024/05/19 22:24:47 cluster.go:133: addr 169.254.54.151
+2024/05/19 22:24:47 cluster.go:133: addr fe80::14b5:45ca:1811:a75b
+2024/05/19 22:24:47 cluster.go:133: addr 192.168.3.11
+2024/05/19 22:24:47 cluster.go:326: clust.addr 192.168.3.11:8085
+2024/05/19 22:24:47 cluster.go:333: RPC server is running on 192.168.3.11:8085
+2024/05/19 22:24:47 cluster.go:247: client connected success 192.168.3.11:8085 --- 192.168.3.11:8085 &{0xc000147380 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:24:47 cluster.go:133: addr fe80::26d0:e597:761e:a594
+2024/05/19 22:24:47 cluster.go:133: addr 169.254.175.238
+2024/05/19 22:24:47 cluster.go:133: addr fe80::c36f:b5b3:d132:7a02
+2024/05/19 22:24:47 cluster.go:133: addr 169.254.150.161
+2024/05/19 22:24:47 cluster.go:133: addr fe80::2535:6606:72ff:6a6d
+2024/05/19 22:24:47 cluster.go:133: addr 169.254.54.151
+2024/05/19 22:24:47 cluster.go:133: addr fe80::14b5:45ca:1811:a75b
+2024/05/19 22:24:47 cluster.go:133: addr 192.168.3.11
+2024/05/19 22:24:47 cluster.go:326: clust.addr 192.168.3.11:8086
+2024/05/19 22:24:47 cluster.go:333: RPC server is running on 192.168.3.11:8086
+2024/05/19 22:24:47 cluster.go:247: client connected success 192.168.3.11:8086 --- 192.168.3.11:8086 &{0xc000190e70 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:24:47 cluster.go:133: addr fe80::26d0:e597:761e:a594
+2024/05/19 22:24:47 cluster.go:133: addr 169.254.175.238
+2024/05/19 22:24:47 cluster.go:133: addr fe80::c36f:b5b3:d132:7a02
+2024/05/19 22:24:47 cluster.go:133: addr 169.254.150.161
+2024/05/19 22:24:47 cluster.go:133: addr fe80::2535:6606:72ff:6a6d
+2024/05/19 22:24:47 cluster.go:133: addr 169.254.54.151
+2024/05/19 22:24:47 cluster.go:133: addr fe80::14b5:45ca:1811:a75b
+2024/05/19 22:24:47 cluster.go:133: addr 192.168.3.11
+2024/05/19 22:24:47 cluster.go:326: clust.addr 192.168.3.11:8087
+2024/05/19 22:24:47 cluster.go:333: RPC server is running on 192.168.3.11:8087
+2024/05/19 22:24:47 cluster.go:247: client connected success 192.168.3.11:8087 --- 192.168.3.11:8087 &{0xc0002085a0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:24:47 cluster.go:133: addr fe80::26d0:e597:761e:a594
+2024/05/19 22:24:47 cluster.go:133: addr 169.254.175.238
+2024/05/19 22:24:47 cluster.go:133: addr fe80::c36f:b5b3:d132:7a02
+2024/05/19 22:24:47 cluster.go:133: addr 169.254.150.161
+2024/05/19 22:24:47 cluster.go:133: addr fe80::2535:6606:72ff:6a6d
+2024/05/19 22:24:47 cluster.go:133: addr 169.254.54.151
+2024/05/19 22:24:47 cluster.go:133: addr fe80::14b5:45ca:1811:a75b
+2024/05/19 22:24:47 cluster.go:133: addr 192.168.3.11
+2024/05/19 22:24:47 cluster.go:326: clust.addr 192.168.3.11:8088
+2024/05/19 22:24:47 cluster.go:333: RPC server is running on 192.168.3.11:8088
+2024/05/19 22:24:47 cluster.go:247: client connected success 192.168.3.11:8088 --- 192.168.3.11:8088 &{0xc000191230 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:24:47 cluster.go:133: addr fe80::26d0:e597:761e:a594
+2024/05/19 22:24:47 cluster.go:133: addr 169.254.175.238
+2024/05/19 22:24:47 cluster.go:133: addr fe80::c36f:b5b3:d132:7a02
+2024/05/19 22:24:47 cluster.go:133: addr 169.254.150.161
+2024/05/19 22:24:47 cluster.go:133: addr fe80::2535:6606:72ff:6a6d
+2024/05/19 22:24:47 cluster.go:133: addr 169.254.54.151
+2024/05/19 22:24:47 cluster.go:133: addr fe80::14b5:45ca:1811:a75b
+2024/05/19 22:24:47 cluster.go:133: addr 192.168.3.11
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:9999 callasync method: Cluster.JoinHostRpc
+2024/05/19 22:24:47 cluster.go:326: clust.addr 192.168.3.11:8089
+2024/05/19 22:24:47 cluster.go:333: RPC server is running on 192.168.3.11:8089
+2024/05/19 22:24:47 cluster.go:372: join host rpc 192.168.3.11:9999 192.168.3.11:9999
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:9999 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:24:47 cluster.go:247: client connected success 192.168.3.11:8089 --- 192.168.3.11:8089 &{0xc000208ab0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:24:47 cluster.go:367: join host notice 192.168.3.11:9999 ---- 192.168.3.11:9999
+2024/05/19 22:24:47 cluster.go:353: address is the same 192.168.3.11:9999
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:9999 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:24:47 cluster.go:367: join host notice 192.168.3.11:9999 ---- 192.168.3.11:9999
+2024/05/19 22:24:47 cluster.go:353: address is the same 192.168.3.11:9999
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:9999 callasync method: Cluster.JoinHostRpc
+2024/05/19 22:24:47 cluster.go:372: join host rpc 192.168.3.11:9999 192.168.3.11:8081
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:9999 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:24:47 cluster.go:367: join host notice 192.168.3.11:9999 ---- 192.168.3.11:8081
+2024/05/19 22:24:47 cluster.go:247: client connected success 192.168.3.11:9999 --- 192.168.3.11:8081 &{0xc000191800 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:8081 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:8081 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:24:47 cluster.go:367: join host notice 192.168.3.11:8081 ---- 192.168.3.11:9999
+2024/05/19 22:24:47 cluster.go:367: join host notice 192.168.3.11:8081 ---- 192.168.3.11:8081
+2024/05/19 22:24:47 cluster.go:353: address is the same 192.168.3.11:8081
+2024/05/19 22:24:47 cluster.go:247: client connected success 192.168.3.11:8081 --- 192.168.3.11:9999 &{0xc0000e2300 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:9999 callasync method: Cluster.JoinHostRpc
+2024/05/19 22:24:47 cluster.go:372: join host rpc 192.168.3.11:9999 192.168.3.11:8082
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:9999 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:8081 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:24:47 cluster.go:367: join host notice 192.168.3.11:9999 ---- 192.168.3.11:8082
+2024/05/19 22:24:47 cluster.go:367: join host notice 192.168.3.11:8081 ---- 192.168.3.11:8082
+2024/05/19 22:24:47 cluster.go:247: client connected success 192.168.3.11:9999 --- 192.168.3.11:8082 &{0xc000191c20 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:24:47 cluster.go:247: client connected success 192.168.3.11:8081 --- 192.168.3.11:8082 &{0xc000191e00 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:8082 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:8082 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:8082 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:24:47 cluster.go:367: join host notice 192.168.3.11:8082 ---- 192.168.3.11:9999
+2024/05/19 22:24:47 cluster.go:367: join host notice 192.168.3.11:8082 ---- 192.168.3.11:8081
+2024/05/19 22:24:47 cluster.go:367: join host notice 192.168.3.11:8082 ---- 192.168.3.11:8082
+2024/05/19 22:24:47 cluster.go:353: address is the same 192.168.3.11:8082
+2024/05/19 22:24:47 cluster.go:247: client connected success 192.168.3.11:8082 --- 192.168.3.11:9999 &{0xc000209860 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:24:47 cluster.go:247: client connected success 192.168.3.11:8082 --- 192.168.3.11:8081 &{0xc0000e27e0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:9999 callasync method: Cluster.JoinHostRpc
+2024/05/19 22:24:47 cluster.go:372: join host rpc 192.168.3.11:9999 192.168.3.11:8083
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:9999 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:8081 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:24:47 cluster.go:367: join host notice 192.168.3.11:9999 ---- 192.168.3.11:8083
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:8082 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:24:47 cluster.go:367: join host notice 192.168.3.11:8082 ---- 192.168.3.11:8083
+2024/05/19 22:24:47 cluster.go:367: join host notice 192.168.3.11:8081 ---- 192.168.3.11:8083
+2024/05/19 22:24:47 cluster.go:247: client connected success 192.168.3.11:8082 --- 192.168.3.11:8083 &{0xc000209aa0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:24:47 cluster.go:247: client connected success 192.168.3.11:8081 --- 192.168.3.11:8083 &{0xc0001f4120 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:24:47 cluster.go:247: client connected success 192.168.3.11:9999 --- 192.168.3.11:8083 &{0xc000209dd0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:8083 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:8083 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:8083 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:8083 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:24:47 cluster.go:367: join host notice 192.168.3.11:8083 ---- 192.168.3.11:9999
+2024/05/19 22:24:47 cluster.go:367: join host notice 192.168.3.11:8083 ---- 192.168.3.11:8083
+2024/05/19 22:24:47 cluster.go:353: address is the same 192.168.3.11:8083
+2024/05/19 22:24:47 cluster.go:367: join host notice 192.168.3.11:8083 ---- 192.168.3.11:8081
+2024/05/19 22:24:47 cluster.go:367: join host notice 192.168.3.11:8083 ---- 192.168.3.11:8082
+2024/05/19 22:24:47 cluster.go:247: client connected success 192.168.3.11:8083 --- 192.168.3.11:9999 &{0xc00038c5d0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:24:47 cluster.go:247: client connected success 192.168.3.11:8083 --- 192.168.3.11:8082 &{0xc0000e2d20 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:24:47 cluster.go:247: client connected success 192.168.3.11:8083 --- 192.168.3.11:8081 &{0xc000147ad0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:9999 callasync method: Cluster.JoinHostRpc
+2024/05/19 22:24:47 cluster.go:372: join host rpc 192.168.3.11:9999 192.168.3.11:8084
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:9999 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:8081 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:8082 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:8083 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:24:47 cluster.go:367: join host notice 192.168.3.11:8083 ---- 192.168.3.11:8084
+2024/05/19 22:24:47 cluster.go:367: join host notice 192.168.3.11:8082 ---- 192.168.3.11:8084
+2024/05/19 22:24:47 cluster.go:367: join host notice 192.168.3.11:8081 ---- 192.168.3.11:8084
+2024/05/19 22:24:47 cluster.go:367: join host notice 192.168.3.11:9999 ---- 192.168.3.11:8084
+2024/05/19 22:24:47 cluster.go:247: client connected success 192.168.3.11:8081 --- 192.168.3.11:8084 &{0xc00038cc90 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:24:47 cluster.go:247: client connected success 192.168.3.11:8083 --- 192.168.3.11:8084 &{0xc0001f43c0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:24:47 cluster.go:247: client connected success 192.168.3.11:8082 --- 192.168.3.11:8084 &{0xc00038cfc0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:24:47 cluster.go:247: client connected success 192.168.3.11:9999 --- 192.168.3.11:8084 &{0xc00038d1a0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:8084 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:8084 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:8084 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:8084 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:8084 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:24:47 cluster.go:367: join host notice 192.168.3.11:8084 ---- 192.168.3.11:8084
+2024/05/19 22:24:47 cluster.go:367: join host notice 192.168.3.11:8084 ---- 192.168.3.11:8081
+2024/05/19 22:24:47 cluster.go:367: join host notice 192.168.3.11:8084 ---- 192.168.3.11:8082
+2024/05/19 22:24:47 cluster.go:367: join host notice 192.168.3.11:8084 ---- 192.168.3.11:8083
+2024/05/19 22:24:47 cluster.go:353: address is the same 192.168.3.11:8084
+2024/05/19 22:24:47 cluster.go:367: join host notice 192.168.3.11:8084 ---- 192.168.3.11:9999
+2024/05/19 22:24:47 cluster.go:247: client connected success 192.168.3.11:8084 --- 192.168.3.11:8083 &{0xc0001f4cc0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:24:47 cluster.go:247: client connected success 192.168.3.11:8084 --- 192.168.3.11:9999 &{0xc00038d4a0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:24:47 cluster.go:247: client connected success 192.168.3.11:8084 --- 192.168.3.11:8082 &{0xc0001f50e0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:24:47 cluster.go:247: client connected success 192.168.3.11:8084 --- 192.168.3.11:8081 &{0xc000147f50 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:9999 callasync method: Cluster.JoinHostRpc
+2024/05/19 22:24:47 cluster.go:372: join host rpc 192.168.3.11:9999 192.168.3.11:8085
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:9999 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:8081 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:24:47 cluster.go:367: join host notice 192.168.3.11:9999 ---- 192.168.3.11:8085
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:8082 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:8083 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:8084 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:24:47 cluster.go:367: join host notice 192.168.3.11:8084 ---- 192.168.3.11:8085
+2024/05/19 22:24:47 cluster.go:367: join host notice 192.168.3.11:8083 ---- 192.168.3.11:8085
+2024/05/19 22:24:47 cluster.go:247: client connected success 192.168.3.11:9999 --- 192.168.3.11:8085 &{0xc0000e3020 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:24:47 cluster.go:247: client connected success 192.168.3.11:8083 --- 192.168.3.11:8085 &{0xc0001f5290 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:24:47 cluster.go:367: join host notice 192.168.3.11:8081 ---- 192.168.3.11:8085
+2024/05/19 22:24:47 cluster.go:367: join host notice 192.168.3.11:8082 ---- 192.168.3.11:8085
+2024/05/19 22:24:47 cluster.go:247: client connected success 192.168.3.11:8084 --- 192.168.3.11:8085 &{0xc000296390 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:24:47 cluster.go:247: client connected success 192.168.3.11:8082 --- 192.168.3.11:8085 &{0xc00038d8c0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:24:47 cluster.go:247: client connected success 192.168.3.11:8081 --- 192.168.3.11:8085 &{0xc0000e3260 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:8085 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:8085 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:8085 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:8085 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:8085 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:24:47 cluster.go:367: join host notice 192.168.3.11:8085 ---- 192.168.3.11:8083
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:8085 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:24:47 cluster.go:367: join host notice 192.168.3.11:8085 ---- 192.168.3.11:8085
+2024/05/19 22:24:47 cluster.go:353: address is the same 192.168.3.11:8085
+2024/05/19 22:24:47 cluster.go:367: join host notice 192.168.3.11:8085 ---- 192.168.3.11:9999
+2024/05/19 22:24:47 cluster.go:367: join host notice 192.168.3.11:8085 ---- 192.168.3.11:8084
+2024/05/19 22:24:47 cluster.go:367: join host notice 192.168.3.11:8085 ---- 192.168.3.11:8081
+2024/05/19 22:24:47 cluster.go:247: client connected success 192.168.3.11:8085 --- 192.168.3.11:8083 &{0xc0000e3770 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:24:47 cluster.go:367: join host notice 192.168.3.11:8085 ---- 192.168.3.11:8082
+2024/05/19 22:24:47 cluster.go:247: client connected success 192.168.3.11:8085 --- 192.168.3.11:8081 &{0xc0000e3b90 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:24:47 cluster.go:247: client connected success 192.168.3.11:8085 --- 192.168.3.11:8082 &{0xc0003e0060 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:24:47 cluster.go:247: client connected success 192.168.3.11:8085 --- 192.168.3.11:9999 &{0xc0003e04e0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:24:47 cluster.go:247: client connected success 192.168.3.11:8085 --- 192.168.3.11:8084 &{0xc0003e0960 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:9999 callasync method: Cluster.JoinHostRpc
+2024/05/19 22:24:47 cluster.go:372: join host rpc 192.168.3.11:9999 192.168.3.11:8086
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:9999 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:8081 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:24:47 cluster.go:367: join host notice 192.168.3.11:8081 ---- 192.168.3.11:8086
+2024/05/19 22:24:47 cluster.go:367: join host notice 192.168.3.11:9999 ---- 192.168.3.11:8086
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:8082 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:8083 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:8084 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:24:47 cluster.go:247: client connected success 192.168.3.11:9999 --- 192.168.3.11:8086 &{0xc0001f5560 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:24:47 cluster.go:247: client connected success 192.168.3.11:8081 --- 192.168.3.11:8086 &{0xc0001f5740 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:24:47 cluster.go:367: join host notice 192.168.3.11:8083 ---- 192.168.3.11:8086
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:8085 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:24:47 cluster.go:367: join host notice 192.168.3.11:8085 ---- 192.168.3.11:8086
+2024/05/19 22:24:47 cluster.go:367: join host notice 192.168.3.11:8082 ---- 192.168.3.11:8086
+2024/05/19 22:24:47 cluster.go:247: client connected success 192.168.3.11:8083 --- 192.168.3.11:8086 &{0xc0001f5980 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:24:47 cluster.go:367: join host notice 192.168.3.11:8084 ---- 192.168.3.11:8086
+2024/05/19 22:24:47 cluster.go:247: client connected success 192.168.3.11:8082 --- 192.168.3.11:8086 &{0xc000296780 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:24:47 cluster.go:247: client connected success 192.168.3.11:8085 --- 192.168.3.11:8086 &{0xc0001f5bc0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:24:47 cluster.go:247: client connected success 192.168.3.11:8084 --- 192.168.3.11:8086 &{0xc0003461e0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:8086 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:8086 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:24:47 cluster.go:367: join host notice 192.168.3.11:8086 ---- 192.168.3.11:9999
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:8086 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:8086 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:8086 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:8086 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:8086 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:24:47 cluster.go:247: client connected success 192.168.3.11:8086 --- 192.168.3.11:9999 &{0xc000296ab0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:24:47 cluster.go:367: join host notice 192.168.3.11:8086 ---- 192.168.3.11:8086
+2024/05/19 22:24:47 cluster.go:353: address is the same 192.168.3.11:8086
+2024/05/19 22:24:47 cluster.go:367: join host notice 192.168.3.11:8086 ---- 192.168.3.11:8081
+2024/05/19 22:24:47 cluster.go:367: join host notice 192.168.3.11:8086 ---- 192.168.3.11:8083
+2024/05/19 22:24:47 cluster.go:367: join host notice 192.168.3.11:8086 ---- 192.168.3.11:8082
+2024/05/19 22:24:47 cluster.go:367: join host notice 192.168.3.11:8086 ---- 192.168.3.11:8084
+2024/05/19 22:24:47 cluster.go:247: client connected success 192.168.3.11:8086 --- 192.168.3.11:8081 &{0xc0003e0f30 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:24:47 cluster.go:247: client connected success 192.168.3.11:8086 --- 192.168.3.11:8082 &{0xc000296fc0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:24:47 cluster.go:367: join host notice 192.168.3.11:8086 ---- 192.168.3.11:8085
+2024/05/19 22:24:47 cluster.go:247: client connected success 192.168.3.11:8086 --- 192.168.3.11:8083 &{0xc0003e13b0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:24:47 cluster.go:247: client connected success 192.168.3.11:8086 --- 192.168.3.11:8084 &{0xc0003e1590 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:24:47 cluster.go:247: client connected success 192.168.3.11:8086 --- 192.168.3.11:8085 &{0xc0003e1770 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:9999 callasync method: Cluster.JoinHostRpc
+2024/05/19 22:24:47 cluster.go:372: join host rpc 192.168.3.11:9999 192.168.3.11:8087
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:9999 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:8081 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:8082 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:8083 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:8084 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:8085 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:8086 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:24:47 cluster.go:367: join host notice 192.168.3.11:8085 ---- 192.168.3.11:8087
+2024/05/19 22:24:47 cluster.go:367: join host notice 192.168.3.11:8084 ---- 192.168.3.11:8087
+2024/05/19 22:24:47 cluster.go:367: join host notice 192.168.3.11:8083 ---- 192.168.3.11:8087
+2024/05/19 22:24:47 cluster.go:247: client connected success 192.168.3.11:8084 --- 192.168.3.11:8087 &{0xc0003e1b00 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:24:47 cluster.go:367: join host notice 192.168.3.11:8086 ---- 192.168.3.11:8087
+2024/05/19 22:24:47 cluster.go:367: join host notice 192.168.3.11:8082 ---- 192.168.3.11:8087
+2024/05/19 22:24:47 cluster.go:247: client connected success 192.168.3.11:8086 --- 192.168.3.11:8087 &{0xc0003e1d40 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:24:47 cluster.go:247: client connected success 192.168.3.11:8083 --- 192.168.3.11:8087 &{0xc0003e1f20 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:24:47 cluster.go:367: join host notice 192.168.3.11:8081 ---- 192.168.3.11:8087
+2024/05/19 22:24:47 cluster.go:247: client connected success 192.168.3.11:8085 --- 192.168.3.11:8087 &{0xc0004d0180 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:24:47 cluster.go:247: client connected success 192.168.3.11:8082 --- 192.168.3.11:8087 &{0xc0004d0360 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:24:47 cluster.go:367: join host notice 192.168.3.11:9999 ---- 192.168.3.11:8087
+2024/05/19 22:24:47 cluster.go:247: client connected success 192.168.3.11:8081 --- 192.168.3.11:8087 &{0xc0004d0540 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:24:47 cluster.go:247: client connected success 192.168.3.11:9999 --- 192.168.3.11:8087 &{0xc000346ae0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:8087 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:8087 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:8087 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:8087 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:8087 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:8087 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:8087 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:8087 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:24:47 cluster.go:367: join host notice 192.168.3.11:8087 ---- 192.168.3.11:9999
+2024/05/19 22:24:47 cluster.go:367: join host notice 192.168.3.11:8087 ---- 192.168.3.11:8087
+2024/05/19 22:24:47 cluster.go:353: address is the same 192.168.3.11:8087
+2024/05/19 22:24:47 cluster.go:367: join host notice 192.168.3.11:8087 ---- 192.168.3.11:8081
+2024/05/19 22:24:47 cluster.go:367: join host notice 192.168.3.11:8087 ---- 192.168.3.11:8084
+2024/05/19 22:24:47 cluster.go:367: join host notice 192.168.3.11:8087 ---- 192.168.3.11:8085
+2024/05/19 22:24:47 cluster.go:367: join host notice 192.168.3.11:8087 ---- 192.168.3.11:8082
+2024/05/19 22:24:47 cluster.go:367: join host notice 192.168.3.11:8087 ---- 192.168.3.11:8086
+2024/05/19 22:24:47 cluster.go:367: join host notice 192.168.3.11:8087 ---- 192.168.3.11:8083
+2024/05/19 22:24:47 cluster.go:247: client connected success 192.168.3.11:8087 --- 192.168.3.11:8086 &{0xc000297740 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:24:47 cluster.go:247: client connected success 192.168.3.11:8087 --- 192.168.3.11:8082 &{0xc000297920 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:24:47 cluster.go:247: client connected success 192.168.3.11:8087 --- 192.168.3.11:8085 &{0xc000297b00 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:24:47 cluster.go:247: client connected success 192.168.3.11:8087 --- 192.168.3.11:8083 &{0xc0003471d0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:24:47 cluster.go:247: client connected success 192.168.3.11:8087 --- 192.168.3.11:9999 &{0xc0003473b0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:24:47 cluster.go:247: client connected success 192.168.3.11:8087 --- 192.168.3.11:8084 &{0xc000347590 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:24:47 cluster.go:247: client connected success 192.168.3.11:8087 --- 192.168.3.11:8081 &{0xc000347770 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:9999 callasync method: Cluster.JoinHostRpc
+2024/05/19 22:24:47 cluster.go:372: join host rpc 192.168.3.11:9999 192.168.3.11:8088
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:9999 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:8081 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:24:47 cluster.go:367: join host notice 192.168.3.11:9999 ---- 192.168.3.11:8088
+2024/05/19 22:24:47 cluster.go:367: join host notice 192.168.3.11:8081 ---- 192.168.3.11:8088
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:8082 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:8083 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:8084 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:8085 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:8086 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:24:47 cluster.go:367: join host notice 192.168.3.11:8082 ---- 192.168.3.11:8088
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:8087 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:24:47 cluster.go:247: client connected success 192.168.3.11:8081 --- 192.168.3.11:8088 &{0xc0002ea030 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:24:47 cluster.go:367: join host notice 192.168.3.11:8087 ---- 192.168.3.11:8088
+2024/05/19 22:24:47 cluster.go:247: client connected success 192.168.3.11:8082 --- 192.168.3.11:8088 &{0xc0002ea270 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:24:47 cluster.go:367: join host notice 192.168.3.11:8086 ---- 192.168.3.11:8088
+2024/05/19 22:24:47 cluster.go:367: join host notice 192.168.3.11:8084 ---- 192.168.3.11:8088
+2024/05/19 22:24:47 cluster.go:247: client connected success 192.168.3.11:8087 --- 192.168.3.11:8088 &{0xc0002ea450 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:24:47 cluster.go:367: join host notice 192.168.3.11:8085 ---- 192.168.3.11:8088
+2024/05/19 22:24:47 cluster.go:247: client connected success 192.168.3.11:8085 --- 192.168.3.11:8088 &{0xc0004d1320 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:24:47 cluster.go:367: join host notice 192.168.3.11:8083 ---- 192.168.3.11:8088
+2024/05/19 22:24:47 cluster.go:247: client connected success 192.168.3.11:9999 --- 192.168.3.11:8088 &{0xc0002ea630 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:24:47 cluster.go:247: client connected success 192.168.3.11:8083 --- 192.168.3.11:8088 &{0xc0004d1560 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:24:47 cluster.go:247: client connected success 192.168.3.11:8086 --- 192.168.3.11:8088 &{0xc000347ce0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:24:47 cluster.go:247: client connected success 192.168.3.11:8084 --- 192.168.3.11:8088 &{0xc000520090 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:8088 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:8088 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:8088 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:8088 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:8088 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:8088 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:8088 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:8088 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:8088 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:24:47 cluster.go:367: join host notice 192.168.3.11:8088 ---- 192.168.3.11:8081
+2024/05/19 22:24:47 cluster.go:367: join host notice 192.168.3.11:8088 ---- 192.168.3.11:8084
+2024/05/19 22:24:47 cluster.go:367: join host notice 192.168.3.11:8088 ---- 192.168.3.11:8082
+2024/05/19 22:24:47 cluster.go:367: join host notice 192.168.3.11:8088 ---- 192.168.3.11:9999
+2024/05/19 22:24:47 cluster.go:367: join host notice 192.168.3.11:8088 ---- 192.168.3.11:8083
+2024/05/19 22:24:47 cluster.go:247: client connected success 192.168.3.11:8088 --- 192.168.3.11:9999 &{0xc0004d19b0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:24:47 cluster.go:247: client connected success 192.168.3.11:8088 --- 192.168.3.11:8082 &{0xc0004d1d10 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:24:47 cluster.go:247: client connected success 192.168.3.11:8088 --- 192.168.3.11:8081 &{0xc0004d1ef0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:24:47 cluster.go:247: client connected success 192.168.3.11:8088 --- 192.168.3.11:8084 &{0xc0004d17d0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:24:47 cluster.go:367: join host notice 192.168.3.11:8088 ---- 192.168.3.11:8088
+2024/05/19 22:24:47 cluster.go:353: address is the same 192.168.3.11:8088
+2024/05/19 22:24:47 cluster.go:367: join host notice 192.168.3.11:8088 ---- 192.168.3.11:8085
+2024/05/19 22:24:47 cluster.go:367: join host notice 192.168.3.11:8088 ---- 192.168.3.11:8086
+2024/05/19 22:24:47 cluster.go:367: join host notice 192.168.3.11:8088 ---- 192.168.3.11:8087
+2024/05/19 22:24:47 cluster.go:247: client connected success 192.168.3.11:8088 --- 192.168.3.11:8087 &{0xc0004304b0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:24:47 cluster.go:247: client connected success 192.168.3.11:8088 --- 192.168.3.11:8086 &{0xc000520ba0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:24:47 cluster.go:247: client connected success 192.168.3.11:8088 --- 192.168.3.11:8083 &{0xc000430690 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:24:47 cluster.go:247: client connected success 192.168.3.11:8088 --- 192.168.3.11:8085 &{0xc000520d80 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:9999 callasync method: Cluster.JoinHostRpc
+2024/05/19 22:24:47 cluster.go:372: join host rpc 192.168.3.11:9999 192.168.3.11:8089
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:9999 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:8081 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:8082 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:8083 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:8084 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:8085 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:8086 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:8087 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:8088 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:24:47 cluster.go:367: join host notice 192.168.3.11:8087 ---- 192.168.3.11:8089
+2024/05/19 22:24:47 cluster.go:367: join host notice 192.168.3.11:8088 ---- 192.168.3.11:8089
+2024/05/19 22:24:47 cluster.go:367: join host notice 192.168.3.11:8086 ---- 192.168.3.11:8089
+2024/05/19 22:24:47 cluster.go:367: join host notice 192.168.3.11:8085 ---- 192.168.3.11:8089
+2024/05/19 22:24:47 cluster.go:247: client connected success 192.168.3.11:8088 --- 192.168.3.11:8089 &{0xc0002ea9c0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:24:47 cluster.go:247: client connected success 192.168.3.11:8087 --- 192.168.3.11:8089 &{0xc0002eaba0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:24:47 cluster.go:247: client connected success 192.168.3.11:8086 --- 192.168.3.11:8089 &{0xc0002ead80 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:24:47 cluster.go:367: join host notice 192.168.3.11:8084 ---- 192.168.3.11:8089
+2024/05/19 22:24:47 cluster.go:247: client connected success 192.168.3.11:8085 --- 192.168.3.11:8089 &{0xc0002eaf60 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:24:47 cluster.go:367: join host notice 192.168.3.11:8082 ---- 192.168.3.11:8089
+2024/05/19 22:24:47 cluster.go:367: join host notice 192.168.3.11:8081 ---- 192.168.3.11:8089
+2024/05/19 22:24:47 cluster.go:367: join host notice 192.168.3.11:8083 ---- 192.168.3.11:8089
+2024/05/19 22:24:47 cluster.go:247: client connected success 192.168.3.11:8082 --- 192.168.3.11:8089 &{0xc0002eb1a0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:24:47 cluster.go:247: client connected success 192.168.3.11:8084 --- 192.168.3.11:8089 &{0xc0002eb380 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:24:47 cluster.go:367: join host notice 192.168.3.11:9999 ---- 192.168.3.11:8089
+2024/05/19 22:24:47 cluster.go:247: client connected success 192.168.3.11:8083 --- 192.168.3.11:8089 &{0xc000521380 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:24:47 cluster.go:247: client connected success 192.168.3.11:8081 --- 192.168.3.11:8089 &{0xc0005216b0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:24:47 cluster.go:247: client connected success 192.168.3.11:9999 --- 192.168.3.11:8089 &{0xc000521890 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:8089 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:8089 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:8089 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:8089 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:8089 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:8089 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:8089 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:8089 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:8089 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:24:47 cluster.go:185: node 192.168.3.11:8089 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:24:47 cluster.go:367: join host notice 192.168.3.11:8089 ---- 192.168.3.11:8081
+2024/05/19 22:24:47 cluster.go:367: join host notice 192.168.3.11:8089 ---- 192.168.3.11:8089
+2024/05/19 22:24:47 cluster.go:353: address is the same 192.168.3.11:8089
+2024/05/19 22:24:47 cluster.go:367: join host notice 192.168.3.11:8089 ---- 192.168.3.11:8082
+2024/05/19 22:24:47 cluster.go:367: join host notice 192.168.3.11:8089 ---- 192.168.3.11:8083
+2024/05/19 22:24:47 cluster.go:367: join host notice 192.168.3.11:8089 ---- 192.168.3.11:9999
+2024/05/19 22:24:47 cluster.go:367: join host notice 192.168.3.11:8089 ---- 192.168.3.11:8084
+2024/05/19 22:24:47 cluster.go:247: client connected success 192.168.3.11:8089 --- 192.168.3.11:9999 &{0xc000576450 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:24:47 cluster.go:247: client connected success 192.168.3.11:8089 --- 192.168.3.11:8081 &{0xc000576630 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:24:47 cluster.go:367: join host notice 192.168.3.11:8089 ---- 192.168.3.11:8085
+2024/05/19 22:24:47 cluster.go:247: client connected success 192.168.3.11:8089 --- 192.168.3.11:8082 &{0xc000576810 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:24:47 cluster.go:367: join host notice 192.168.3.11:8089 ---- 192.168.3.11:8086
+2024/05/19 22:24:47 cluster.go:247: client connected success 192.168.3.11:8089 --- 192.168.3.11:8083 &{0xc000576c30 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:24:47 cluster.go:367: join host notice 192.168.3.11:8089 ---- 192.168.3.11:8087
+2024/05/19 22:24:47 cluster.go:247: client connected success 192.168.3.11:8089 --- 192.168.3.11:8085 &{0xc000576f60 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:24:47 cluster.go:247: client connected success 192.168.3.11:8089 --- 192.168.3.11:8084 &{0xc000577140 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:24:47 cluster.go:247: client connected success 192.168.3.11:8089 --- 192.168.3.11:8086 &{0xc000577320 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:24:47 cluster.go:367: join host notice 192.168.3.11:8089 ---- 192.168.3.11:8088
+2024/05/19 22:24:47 cluster.go:247: client connected success 192.168.3.11:8089 --- 192.168.3.11:8087 &{0xc000431710 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:24:47 cluster.go:247: client connected success 192.168.3.11:8089 --- 192.168.3.11:8088 &{0xc000577560 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:24:47 cluster.go:318: ---------------------------------cluster init end---------------------------------
+2024/05/19 22:26:37 cluster.go:525: cluster 192.168.3.11:9999 --call async calculate 192.168.3.11:9999
+2024/05/19 22:26:37 cluster.go:185: node 192.168.3.11:9999 callasync method: Calculate.Sum
+2024/05/19 22:26:37 cluster.go:525: cluster 192.168.3.11:9999 --call async calculate 192.168.3.11:8081
+2024/05/19 22:26:37 cluster.go:185: node 192.168.3.11:8081 callasync method: Calculate.Sum
+2024/05/19 22:26:37 cluster.go:525: cluster 192.168.3.11:9999 --call async calculate 192.168.3.11:8082
+2024/05/19 22:26:37 cluster.go:185: node 192.168.3.11:8082 callasync method: Calculate.Sum
+2024/05/19 22:26:37 cluster.go:525: cluster 192.168.3.11:9999 --call async calculate 192.168.3.11:8083
+2024/05/19 22:26:37 cluster.go:185: node 192.168.3.11:8083 callasync method: Calculate.Sum
+2024/05/19 22:26:37 cluster.go:525: cluster 192.168.3.11:9999 --call async calculate 192.168.3.11:8084
+2024/05/19 22:26:37 cluster.go:185: node 192.168.3.11:8084 callasync method: Calculate.Sum
+2024/05/19 22:26:37 cluster.go:525: cluster 192.168.3.11:9999 --call async calculate 192.168.3.11:8085
+2024/05/19 22:26:37 cluster.go:185: node 192.168.3.11:8085 callasync method: Calculate.Sum
+2024/05/19 22:26:37 cluster.go:525: cluster 192.168.3.11:9999 --call async calculate 192.168.3.11:8086
+2024/05/19 22:26:37 cluster.go:185: node 192.168.3.11:8086 callasync method: Calculate.Sum
+2024/05/19 22:26:37 cluster.go:525: cluster 192.168.3.11:9999 --call async calculate 192.168.3.11:8087
+2024/05/19 22:26:37 cluster.go:185: node 192.168.3.11:8087 callasync method: Calculate.Sum
+2024/05/19 22:26:37 cluster.go:525: cluster 192.168.3.11:9999 --call async calculate 192.168.3.11:8088
+2024/05/19 22:26:37 cluster.go:185: node 192.168.3.11:8088 callasync method: Calculate.Sum
+2024/05/19 22:26:37 cluster.go:525: cluster 192.168.3.11:9999 --call async calculate 192.168.3.11:8089
+2024/05/19 22:26:37 cluster.go:185: node 192.168.3.11:8089 callasync method: Calculate.Sum
+2024/05/19 22:26:40 cluster.go:91: calculate.sum finished 15050 101 200
+2024/05/19 22:26:40 cluster.go:91: calculate.sum finished 5050 1 100
+2024/05/19 22:26:40 cluster.go:91: calculate.sum finished 45050 401 500
+2024/05/19 22:26:40 cluster.go:91: calculate.sum finished 35050 301 400
+2024/05/19 22:26:40 cluster.go:91: calculate.sum finished 25050 201 300
+2024/05/19 22:26:40 cluster.go:534: calculate over 15050 1
+2024/05/19 22:26:40 cluster.go:534: calculate over 45050 1
+2024/05/19 22:26:40 cluster.go:534: calculate over 5050 1
+2024/05/19 22:26:40 cluster.go:91: calculate.sum finished 55050 501 600
+2024/05/19 22:26:40 cluster.go:91: calculate.sum finished 65050 601 700
+2024/05/19 22:26:40 cluster.go:534: calculate over 35050 1
+2024/05/19 22:26:40 cluster.go:91: calculate.sum finished 75050 701 800
+2024/05/19 22:26:40 cluster.go:534: calculate over 55050 1
+2024/05/19 22:26:40 cluster.go:534: calculate over 25050 1
+2024/05/19 22:26:40 cluster.go:534: calculate over 65050 1
+2024/05/19 22:26:40 cluster.go:534: calculate over 75050 1
+2024/05/19 22:26:40 cluster.go:91: calculate.sum finished 85050 801 900
+2024/05/19 22:26:40 cluster.go:91: calculate.sum finished 95050 901 1000
+2024/05/19 22:26:40 cluster.go:534: calculate over 85050 1
+2024/05/19 22:26:40 cluster.go:534: calculate over 95050 1
+2024/05/19 22:26:50 cluster.go:525: cluster 192.168.3.11:9999 --call async calculate 192.168.3.11:9999
+2024/05/19 22:26:50 cluster.go:185: node 192.168.3.11:9999 callasync method: Calculate.Sum
+2024/05/19 22:26:50 cluster.go:525: cluster 192.168.3.11:9999 --call async calculate 192.168.3.11:8081
+2024/05/19 22:26:50 cluster.go:185: node 192.168.3.11:8081 callasync method: Calculate.Sum
+2024/05/19 22:26:50 cluster.go:525: cluster 192.168.3.11:9999 --call async calculate 192.168.3.11:8082
+2024/05/19 22:26:50 cluster.go:185: node 192.168.3.11:8082 callasync method: Calculate.Sum
+2024/05/19 22:26:50 cluster.go:525: cluster 192.168.3.11:9999 --call async calculate 192.168.3.11:8083
+2024/05/19 22:26:50 cluster.go:185: node 192.168.3.11:8083 callasync method: Calculate.Sum
+2024/05/19 22:26:50 cluster.go:525: cluster 192.168.3.11:9999 --call async calculate 192.168.3.11:8084
+2024/05/19 22:26:50 cluster.go:185: node 192.168.3.11:8084 callasync method: Calculate.Sum
+2024/05/19 22:26:50 cluster.go:525: cluster 192.168.3.11:9999 --call async calculate 192.168.3.11:8085
+2024/05/19 22:26:50 cluster.go:185: node 192.168.3.11:8085 callasync method: Calculate.Sum
+2024/05/19 22:26:50 cluster.go:525: cluster 192.168.3.11:9999 --call async calculate 192.168.3.11:8086
+2024/05/19 22:26:50 cluster.go:185: node 192.168.3.11:8086 callasync method: Calculate.Sum
+2024/05/19 22:26:50 cluster.go:525: cluster 192.168.3.11:9999 --call async calculate 192.168.3.11:8087
+2024/05/19 22:26:50 cluster.go:185: node 192.168.3.11:8087 callasync method: Calculate.Sum
+2024/05/19 22:26:50 cluster.go:525: cluster 192.168.3.11:9999 --call async calculate 192.168.3.11:8088
+2024/05/19 22:26:50 cluster.go:185: node 192.168.3.11:8088 callasync method: Calculate.Sum
+2024/05/19 22:26:50 cluster.go:525: cluster 192.168.3.11:9999 --call async calculate 192.168.3.11:8089
+2024/05/19 22:26:50 cluster.go:185: node 192.168.3.11:8089 callasync method: Calculate.Sum
+2024/05/19 22:26:53 cluster.go:91: calculate.sum finished 75050 701 800
+2024/05/19 22:26:53 cluster.go:91: calculate.sum finished 5050 1 100
+2024/05/19 22:26:53 cluster.go:91: calculate.sum finished 65050 601 700
+2024/05/19 22:26:53 cluster.go:91: calculate.sum finished 15050 101 200
+2024/05/19 22:26:53 cluster.go:91: calculate.sum finished 45050 401 500
+2024/05/19 22:26:53 cluster.go:534: calculate over 5050 1
+2024/05/19 22:26:53 cluster.go:91: calculate.sum finished 35050 301 400
+2024/05/19 22:26:53 cluster.go:91: calculate.sum finished 95050 901 1000
+2024/05/19 22:26:53 cluster.go:534: calculate over 65050 1
+2024/05/19 22:26:53 cluster.go:91: calculate.sum finished 55050 501 600
+2024/05/19 22:26:53 cluster.go:91: calculate.sum finished 85050 801 900
+2024/05/19 22:26:53 cluster.go:91: calculate.sum finished 25050 201 300
+2024/05/19 22:26:53 cluster.go:534: calculate over 35050 1
+2024/05/19 22:26:53 cluster.go:534: calculate over 75050 1
+2024/05/19 22:26:53 cluster.go:534: calculate over 95050 1
+2024/05/19 22:26:53 cluster.go:534: calculate over 45050 1
+2024/05/19 22:26:53 cluster.go:534: calculate over 85050 1
+2024/05/19 22:26:53 cluster.go:534: calculate over 55050 1
+2024/05/19 22:26:53 cluster.go:534: calculate over 15050 1
+2024/05/19 22:26:53 cluster.go:534: calculate over 25050 1
+2024/05/19 22:27:32 cluster.go:288: ---------------------------------cluster init start---------------------------------
+2024/05/19 22:27:32 cluster.go:132: addr fe80::26d0:e597:761e:a594
+2024/05/19 22:27:32 cluster.go:132: addr 169.254.175.238
+2024/05/19 22:27:32 cluster.go:132: addr fe80::c36f:b5b3:d132:7a02
+2024/05/19 22:27:32 cluster.go:132: addr 169.254.150.161
+2024/05/19 22:27:32 cluster.go:132: addr fe80::2535:6606:72ff:6a6d
+2024/05/19 22:27:32 cluster.go:132: addr 169.254.54.151
+2024/05/19 22:27:32 cluster.go:132: addr fe80::14b5:45ca:1811:a75b
+2024/05/19 22:27:32 cluster.go:132: addr 192.168.3.11
+2024/05/19 22:27:32 cluster.go:325: clust.addr 192.168.3.11:9999
+2024/05/19 22:27:32 cluster.go:332: RPC server is running on 192.168.3.11:9999
+2024/05/19 22:27:32 cluster.go:246: client connected success 192.168.3.11:9999 --- 192.168.3.11:9999 &{0xc000206120 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:27:32 cluster.go:132: addr fe80::26d0:e597:761e:a594
+2024/05/19 22:27:32 cluster.go:132: addr 169.254.175.238
+2024/05/19 22:27:32 cluster.go:132: addr fe80::c36f:b5b3:d132:7a02
+2024/05/19 22:27:32 cluster.go:132: addr 169.254.150.161
+2024/05/19 22:27:32 cluster.go:132: addr fe80::2535:6606:72ff:6a6d
+2024/05/19 22:27:32 cluster.go:132: addr 169.254.54.151
+2024/05/19 22:27:32 cluster.go:132: addr fe80::14b5:45ca:1811:a75b
+2024/05/19 22:27:32 cluster.go:132: addr 192.168.3.11
+2024/05/19 22:27:32 cluster.go:325: clust.addr 192.168.3.11:8081
+2024/05/19 22:27:32 cluster.go:332: RPC server is running on 192.168.3.11:8081
+2024/05/19 22:27:32 cluster.go:246: client connected success 192.168.3.11:8081 --- 192.168.3.11:8081 &{0xc0001823c0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:27:32 cluster.go:132: addr fe80::26d0:e597:761e:a594
+2024/05/19 22:27:32 cluster.go:132: addr 169.254.175.238
+2024/05/19 22:27:32 cluster.go:132: addr fe80::c36f:b5b3:d132:7a02
+2024/05/19 22:27:32 cluster.go:132: addr 169.254.150.161
+2024/05/19 22:27:32 cluster.go:132: addr fe80::2535:6606:72ff:6a6d
+2024/05/19 22:27:32 cluster.go:132: addr 169.254.54.151
+2024/05/19 22:27:32 cluster.go:132: addr fe80::14b5:45ca:1811:a75b
+2024/05/19 22:27:32 cluster.go:132: addr 192.168.3.11
+2024/05/19 22:27:32 cluster.go:325: clust.addr 192.168.3.11:8082
+2024/05/19 22:27:32 cluster.go:332: RPC server is running on 192.168.3.11:8082
+2024/05/19 22:27:32 cluster.go:246: client connected success 192.168.3.11:8082 --- 192.168.3.11:8082 &{0xc000182690 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:27:32 cluster.go:132: addr fe80::26d0:e597:761e:a594
+2024/05/19 22:27:32 cluster.go:132: addr 169.254.175.238
+2024/05/19 22:27:32 cluster.go:132: addr fe80::c36f:b5b3:d132:7a02
+2024/05/19 22:27:32 cluster.go:132: addr 169.254.150.161
+2024/05/19 22:27:32 cluster.go:132: addr fe80::2535:6606:72ff:6a6d
+2024/05/19 22:27:32 cluster.go:132: addr 169.254.54.151
+2024/05/19 22:27:32 cluster.go:132: addr fe80::14b5:45ca:1811:a75b
+2024/05/19 22:27:32 cluster.go:132: addr 192.168.3.11
+2024/05/19 22:27:32 cluster.go:325: clust.addr 192.168.3.11:8083
+2024/05/19 22:27:32 cluster.go:332: RPC server is running on 192.168.3.11:8083
+2024/05/19 22:27:32 cluster.go:246: client connected success 192.168.3.11:8083 --- 192.168.3.11:8083 &{0xc0002064b0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:27:32 cluster.go:132: addr fe80::26d0:e597:761e:a594
+2024/05/19 22:27:32 cluster.go:132: addr 169.254.175.238
+2024/05/19 22:27:32 cluster.go:132: addr fe80::c36f:b5b3:d132:7a02
+2024/05/19 22:27:32 cluster.go:132: addr 169.254.150.161
+2024/05/19 22:27:32 cluster.go:132: addr fe80::2535:6606:72ff:6a6d
+2024/05/19 22:27:32 cluster.go:132: addr 169.254.54.151
+2024/05/19 22:27:32 cluster.go:132: addr fe80::14b5:45ca:1811:a75b
+2024/05/19 22:27:32 cluster.go:132: addr 192.168.3.11
+2024/05/19 22:27:32 cluster.go:325: clust.addr 192.168.3.11:8084
+2024/05/19 22:27:32 cluster.go:332: RPC server is running on 192.168.3.11:8084
+2024/05/19 22:27:32 cluster.go:246: client connected success 192.168.3.11:8084 --- 192.168.3.11:8084 &{0xc0001829c0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:27:32 cluster.go:132: addr fe80::26d0:e597:761e:a594
+2024/05/19 22:27:32 cluster.go:132: addr 169.254.175.238
+2024/05/19 22:27:32 cluster.go:132: addr fe80::c36f:b5b3:d132:7a02
+2024/05/19 22:27:32 cluster.go:132: addr 169.254.150.161
+2024/05/19 22:27:32 cluster.go:132: addr fe80::2535:6606:72ff:6a6d
+2024/05/19 22:27:32 cluster.go:132: addr 169.254.54.151
+2024/05/19 22:27:32 cluster.go:132: addr fe80::14b5:45ca:1811:a75b
+2024/05/19 22:27:32 cluster.go:132: addr 192.168.3.11
+2024/05/19 22:27:32 cluster.go:325: clust.addr 192.168.3.11:8085
+2024/05/19 22:27:32 cluster.go:332: RPC server is running on 192.168.3.11:8085
+2024/05/19 22:27:32 cluster.go:246: client connected success 192.168.3.11:8085 --- 192.168.3.11:8085 &{0xc0002068d0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:27:32 cluster.go:132: addr fe80::26d0:e597:761e:a594
+2024/05/19 22:27:32 cluster.go:132: addr 169.254.175.238
+2024/05/19 22:27:32 cluster.go:132: addr fe80::c36f:b5b3:d132:7a02
+2024/05/19 22:27:32 cluster.go:132: addr 169.254.150.161
+2024/05/19 22:27:32 cluster.go:132: addr fe80::2535:6606:72ff:6a6d
+2024/05/19 22:27:32 cluster.go:132: addr 169.254.54.151
+2024/05/19 22:27:32 cluster.go:132: addr fe80::14b5:45ca:1811:a75b
+2024/05/19 22:27:32 cluster.go:132: addr 192.168.3.11
+2024/05/19 22:27:32 cluster.go:325: clust.addr 192.168.3.11:8086
+2024/05/19 22:27:32 cluster.go:332: RPC server is running on 192.168.3.11:8086
+2024/05/19 22:27:32 cluster.go:246: client connected success 192.168.3.11:8086 --- 192.168.3.11:8086 &{0xc000206ba0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:27:32 cluster.go:132: addr fe80::26d0:e597:761e:a594
+2024/05/19 22:27:32 cluster.go:132: addr 169.254.175.238
+2024/05/19 22:27:32 cluster.go:132: addr fe80::c36f:b5b3:d132:7a02
+2024/05/19 22:27:32 cluster.go:132: addr 169.254.150.161
+2024/05/19 22:27:32 cluster.go:132: addr fe80::2535:6606:72ff:6a6d
+2024/05/19 22:27:32 cluster.go:132: addr 169.254.54.151
+2024/05/19 22:27:32 cluster.go:132: addr fe80::14b5:45ca:1811:a75b
+2024/05/19 22:27:32 cluster.go:132: addr 192.168.3.11
+2024/05/19 22:27:32 cluster.go:325: clust.addr 192.168.3.11:8087
+2024/05/19 22:27:32 cluster.go:332: RPC server is running on 192.168.3.11:8087
+2024/05/19 22:27:32 cluster.go:246: client connected success 192.168.3.11:8087 --- 192.168.3.11:8087 &{0xc000113f50 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:27:32 cluster.go:132: addr fe80::26d0:e597:761e:a594
+2024/05/19 22:27:32 cluster.go:132: addr 169.254.175.238
+2024/05/19 22:27:32 cluster.go:132: addr fe80::c36f:b5b3:d132:7a02
+2024/05/19 22:27:32 cluster.go:132: addr 169.254.150.161
+2024/05/19 22:27:32 cluster.go:132: addr fe80::2535:6606:72ff:6a6d
+2024/05/19 22:27:32 cluster.go:132: addr 169.254.54.151
+2024/05/19 22:27:32 cluster.go:132: addr fe80::14b5:45ca:1811:a75b
+2024/05/19 22:27:32 cluster.go:132: addr 192.168.3.11
+2024/05/19 22:27:32 cluster.go:325: clust.addr 192.168.3.11:8088
+2024/05/19 22:27:32 cluster.go:332: RPC server is running on 192.168.3.11:8088
+2024/05/19 22:27:32 cluster.go:246: client connected success 192.168.3.11:8088 --- 192.168.3.11:8088 &{0xc000022450 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:27:32 cluster.go:132: addr fe80::26d0:e597:761e:a594
+2024/05/19 22:27:32 cluster.go:132: addr 169.254.175.238
+2024/05/19 22:27:32 cluster.go:132: addr fe80::c36f:b5b3:d132:7a02
+2024/05/19 22:27:32 cluster.go:132: addr 169.254.150.161
+2024/05/19 22:27:32 cluster.go:132: addr fe80::2535:6606:72ff:6a6d
+2024/05/19 22:27:32 cluster.go:132: addr 169.254.54.151
+2024/05/19 22:27:32 cluster.go:132: addr fe80::14b5:45ca:1811:a75b
+2024/05/19 22:27:32 cluster.go:132: addr 192.168.3.11
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:9999 callasync method: Cluster.JoinHostRpc
+2024/05/19 22:27:32 cluster.go:325: clust.addr 192.168.3.11:8089
+2024/05/19 22:27:32 cluster.go:332: RPC server is running on 192.168.3.11:8089
+2024/05/19 22:27:32 cluster.go:371: join host rpc 192.168.3.11:9999 192.168.3.11:9999
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:9999 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:27:32 cluster.go:246: client connected success 192.168.3.11:8089 --- 192.168.3.11:8089 &{0xc000022720 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:27:32 cluster.go:366: join host notice 192.168.3.11:9999 ---- 192.168.3.11:9999
+2024/05/19 22:27:32 cluster.go:352: address is the same 192.168.3.11:9999
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:9999 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:27:32 cluster.go:366: join host notice 192.168.3.11:9999 ---- 192.168.3.11:9999
+2024/05/19 22:27:32 cluster.go:352: address is the same 192.168.3.11:9999
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:9999 callasync method: Cluster.JoinHostRpc
+2024/05/19 22:27:32 cluster.go:371: join host rpc 192.168.3.11:9999 192.168.3.11:8081
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:9999 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:27:32 cluster.go:366: join host notice 192.168.3.11:9999 ---- 192.168.3.11:8081
+2024/05/19 22:27:32 cluster.go:246: client connected success 192.168.3.11:9999 --- 192.168.3.11:8081 &{0xc000207530 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:8081 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:8081 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:27:32 cluster.go:366: join host notice 192.168.3.11:8081 ---- 192.168.3.11:8081
+2024/05/19 22:27:32 cluster.go:352: address is the same 192.168.3.11:8081
+2024/05/19 22:27:32 cluster.go:366: join host notice 192.168.3.11:8081 ---- 192.168.3.11:9999
+2024/05/19 22:27:32 cluster.go:246: client connected success 192.168.3.11:8081 --- 192.168.3.11:9999 &{0xc000183da0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:9999 callasync method: Cluster.JoinHostRpc
+2024/05/19 22:27:32 cluster.go:371: join host rpc 192.168.3.11:9999 192.168.3.11:8082
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:9999 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:8081 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:27:32 cluster.go:366: join host notice 192.168.3.11:8081 ---- 192.168.3.11:8082
+2024/05/19 22:27:32 cluster.go:366: join host notice 192.168.3.11:9999 ---- 192.168.3.11:8082
+2024/05/19 22:27:32 cluster.go:246: client connected success 192.168.3.11:8081 --- 192.168.3.11:8082 &{0xc0001fa060 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:27:32 cluster.go:246: client connected success 192.168.3.11:9999 --- 192.168.3.11:8082 &{0xc000022b10 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:8082 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:8082 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:8082 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:27:32 cluster.go:366: join host notice 192.168.3.11:8082 ---- 192.168.3.11:8082
+2024/05/19 22:27:32 cluster.go:352: address is the same 192.168.3.11:8082
+2024/05/19 22:27:32 cluster.go:366: join host notice 192.168.3.11:8082 ---- 192.168.3.11:9999
+2024/05/19 22:27:32 cluster.go:366: join host notice 192.168.3.11:8082 ---- 192.168.3.11:8081
+2024/05/19 22:27:32 cluster.go:246: client connected success 192.168.3.11:8082 --- 192.168.3.11:9999 &{0xc0001587b0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:27:32 cluster.go:246: client connected success 192.168.3.11:8082 --- 192.168.3.11:8081 &{0xc0000232f0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:9999 callasync method: Cluster.JoinHostRpc
+2024/05/19 22:27:32 cluster.go:371: join host rpc 192.168.3.11:9999 192.168.3.11:8083
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:9999 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:8081 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:8082 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:27:32 cluster.go:366: join host notice 192.168.3.11:8082 ---- 192.168.3.11:8083
+2024/05/19 22:27:32 cluster.go:366: join host notice 192.168.3.11:8081 ---- 192.168.3.11:8083
+2024/05/19 22:27:32 cluster.go:366: join host notice 192.168.3.11:9999 ---- 192.168.3.11:8083
+2024/05/19 22:27:32 cluster.go:246: client connected success 192.168.3.11:9999 --- 192.168.3.11:8083 &{0xc000207c50 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:27:32 cluster.go:246: client connected success 192.168.3.11:8082 --- 192.168.3.11:8083 &{0xc000207e30 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:27:32 cluster.go:246: client connected success 192.168.3.11:8081 --- 192.168.3.11:8083 &{0xc00027e090 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:8083 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:8083 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:8083 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:8083 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:27:32 cluster.go:366: join host notice 192.168.3.11:8083 ---- 192.168.3.11:9999
+2024/05/19 22:27:32 cluster.go:366: join host notice 192.168.3.11:8083 ---- 192.168.3.11:8081
+2024/05/19 22:27:32 cluster.go:366: join host notice 192.168.3.11:8083 ---- 192.168.3.11:8082
+2024/05/19 22:27:32 cluster.go:366: join host notice 192.168.3.11:8083 ---- 192.168.3.11:8083
+2024/05/19 22:27:32 cluster.go:352: address is the same 192.168.3.11:8083
+2024/05/19 22:27:32 cluster.go:246: client connected success 192.168.3.11:8083 --- 192.168.3.11:9999 &{0xc000023620 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:27:32 cluster.go:246: client connected success 192.168.3.11:8083 --- 192.168.3.11:8081 &{0xc000023800 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:27:32 cluster.go:246: client connected success 192.168.3.11:8083 --- 192.168.3.11:8082 &{0xc00027e8a0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:9999 callasync method: Cluster.JoinHostRpc
+2024/05/19 22:27:32 cluster.go:371: join host rpc 192.168.3.11:9999 192.168.3.11:8084
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:9999 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:8081 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:27:32 cluster.go:366: join host notice 192.168.3.11:9999 ---- 192.168.3.11:8084
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:8082 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:8083 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:27:32 cluster.go:366: join host notice 192.168.3.11:8083 ---- 192.168.3.11:8084
+2024/05/19 22:27:32 cluster.go:366: join host notice 192.168.3.11:8082 ---- 192.168.3.11:8084
+2024/05/19 22:27:32 cluster.go:366: join host notice 192.168.3.11:8081 ---- 192.168.3.11:8084
+2024/05/19 22:27:32 cluster.go:246: client connected success 192.168.3.11:8081 --- 192.168.3.11:8084 &{0xc0001fa4e0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:27:32 cluster.go:246: client connected success 192.168.3.11:8083 --- 192.168.3.11:8084 &{0xc0001fa6c0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:27:32 cluster.go:246: client connected success 192.168.3.11:9999 --- 192.168.3.11:8084 &{0xc0001fa9f0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:27:32 cluster.go:246: client connected success 192.168.3.11:8082 --- 192.168.3.11:8084 &{0xc000023bf0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:8084 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:8084 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:8084 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:8084 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:8084 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:27:32 cluster.go:366: join host notice 192.168.3.11:8084 ---- 192.168.3.11:8081
+2024/05/19 22:27:32 cluster.go:366: join host notice 192.168.3.11:8084 ---- 192.168.3.11:8082
+2024/05/19 22:27:32 cluster.go:366: join host notice 192.168.3.11:8084 ---- 192.168.3.11:8084
+2024/05/19 22:27:32 cluster.go:352: address is the same 192.168.3.11:8084
+2024/05/19 22:27:32 cluster.go:366: join host notice 192.168.3.11:8084 ---- 192.168.3.11:9999
+2024/05/19 22:27:32 cluster.go:366: join host notice 192.168.3.11:8084 ---- 192.168.3.11:8083
+2024/05/19 22:27:32 cluster.go:246: client connected success 192.168.3.11:8084 --- 192.168.3.11:8081 &{0xc0001595f0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:27:32 cluster.go:246: client connected success 192.168.3.11:8084 --- 192.168.3.11:8082 &{0xc000159a10 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:27:32 cluster.go:246: client connected success 192.168.3.11:8084 --- 192.168.3.11:8083 &{0xc0002ac360 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:27:32 cluster.go:246: client connected success 192.168.3.11:8084 --- 192.168.3.11:9999 &{0xc0002ac570 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:9999 callasync method: Cluster.JoinHostRpc
+2024/05/19 22:27:32 cluster.go:371: join host rpc 192.168.3.11:9999 192.168.3.11:8085
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:9999 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:8081 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:27:32 cluster.go:366: join host notice 192.168.3.11:9999 ---- 192.168.3.11:8085
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:8082 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:8083 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:8084 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:27:32 cluster.go:366: join host notice 192.168.3.11:8084 ---- 192.168.3.11:8085
+2024/05/19 22:27:32 cluster.go:366: join host notice 192.168.3.11:8083 ---- 192.168.3.11:8085
+2024/05/19 22:27:32 cluster.go:246: client connected success 192.168.3.11:9999 --- 192.168.3.11:8085 &{0xc0001faed0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:27:32 cluster.go:366: join host notice 192.168.3.11:8082 ---- 192.168.3.11:8085
+2024/05/19 22:27:32 cluster.go:246: client connected success 192.168.3.11:8083 --- 192.168.3.11:8085 &{0xc0002ac780 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:27:32 cluster.go:246: client connected success 192.168.3.11:8084 --- 192.168.3.11:8085 &{0xc000159bf0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:27:32 cluster.go:366: join host notice 192.168.3.11:8081 ---- 192.168.3.11:8085
+2024/05/19 22:27:32 cluster.go:246: client connected success 192.168.3.11:8082 --- 192.168.3.11:8085 &{0xc00027ec90 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:27:32 cluster.go:246: client connected success 192.168.3.11:8081 --- 192.168.3.11:8085 &{0xc000159e30 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:8085 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:8085 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:8085 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:8085 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:8085 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:8085 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:27:32 cluster.go:366: join host notice 192.168.3.11:8085 ---- 192.168.3.11:9999
+2024/05/19 22:27:32 cluster.go:366: join host notice 192.168.3.11:8085 ---- 192.168.3.11:8085
+2024/05/19 22:27:32 cluster.go:352: address is the same 192.168.3.11:8085
+2024/05/19 22:27:32 cluster.go:366: join host notice 192.168.3.11:8085 ---- 192.168.3.11:8081
+2024/05/19 22:27:32 cluster.go:366: join host notice 192.168.3.11:8085 ---- 192.168.3.11:8083
+2024/05/19 22:27:32 cluster.go:246: client connected success 192.168.3.11:8085 --- 192.168.3.11:9999 &{0xc00027f020 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:27:32 cluster.go:366: join host notice 192.168.3.11:8085 ---- 192.168.3.11:8084
+2024/05/19 22:27:32 cluster.go:366: join host notice 192.168.3.11:8085 ---- 192.168.3.11:8082
+2024/05/19 22:27:32 cluster.go:246: client connected success 192.168.3.11:8085 --- 192.168.3.11:8081 &{0xc00027f590 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:27:32 cluster.go:246: client connected success 192.168.3.11:8085 --- 192.168.3.11:8083 &{0xc0002ad2f0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:27:32 cluster.go:246: client connected success 192.168.3.11:8085 --- 192.168.3.11:8084 &{0xc00027f8c0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:27:32 cluster.go:246: client connected success 192.168.3.11:8085 --- 192.168.3.11:8082 &{0xc0001fb260 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:9999 callasync method: Cluster.JoinHostRpc
+2024/05/19 22:27:32 cluster.go:371: join host rpc 192.168.3.11:9999 192.168.3.11:8086
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:9999 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:8081 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:27:32 cluster.go:366: join host notice 192.168.3.11:9999 ---- 192.168.3.11:8086
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:8082 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:8083 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:27:32 cluster.go:366: join host notice 192.168.3.11:8082 ---- 192.168.3.11:8086
+2024/05/19 22:27:32 cluster.go:366: join host notice 192.168.3.11:8083 ---- 192.168.3.11:8086
+2024/05/19 22:27:32 cluster.go:246: client connected success 192.168.3.11:9999 --- 192.168.3.11:8086 &{0xc0001fb470 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:8084 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:8085 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:27:32 cluster.go:366: join host notice 192.168.3.11:8081 ---- 192.168.3.11:8086
+2024/05/19 22:27:32 cluster.go:246: client connected success 192.168.3.11:8082 --- 192.168.3.11:8086 &{0xc0001fb7a0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:27:32 cluster.go:366: join host notice 192.168.3.11:8084 ---- 192.168.3.11:8086
+2024/05/19 22:27:32 cluster.go:246: client connected success 192.168.3.11:8083 --- 192.168.3.11:8086 &{0xc0001fbad0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:27:32 cluster.go:366: join host notice 192.168.3.11:8085 ---- 192.168.3.11:8086
+2024/05/19 22:27:32 cluster.go:246: client connected success 192.168.3.11:8084 --- 192.168.3.11:8086 &{0xc000336360 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:27:32 cluster.go:246: client connected success 192.168.3.11:8081 --- 192.168.3.11:8086 &{0xc00027fc20 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:27:32 cluster.go:246: client connected success 192.168.3.11:8085 --- 192.168.3.11:8086 &{0xc0001fbd10 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:8086 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:8086 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:8086 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:8086 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:8086 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:8086 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:27:32 cluster.go:366: join host notice 192.168.3.11:8086 ---- 192.168.3.11:8084
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:8086 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:27:32 cluster.go:366: join host notice 192.168.3.11:8086 ---- 192.168.3.11:8086
+2024/05/19 22:27:32 cluster.go:352: address is the same 192.168.3.11:8086
+2024/05/19 22:27:32 cluster.go:366: join host notice 192.168.3.11:8086 ---- 192.168.3.11:8085
+2024/05/19 22:27:32 cluster.go:366: join host notice 192.168.3.11:8086 ---- 192.168.3.11:9999
+2024/05/19 22:27:32 cluster.go:246: client connected success 192.168.3.11:8086 --- 192.168.3.11:8085 &{0xc0003f80c0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:27:32 cluster.go:366: join host notice 192.168.3.11:8086 ---- 192.168.3.11:8081
+2024/05/19 22:27:32 cluster.go:246: client connected success 192.168.3.11:8086 --- 192.168.3.11:8084 &{0xc0003f82a0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:27:32 cluster.go:366: join host notice 192.168.3.11:8086 ---- 192.168.3.11:8082
+2024/05/19 22:27:32 cluster.go:246: client connected success 192.168.3.11:8086 --- 192.168.3.11:9999 &{0xc0003f8810 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:27:32 cluster.go:246: client connected success 192.168.3.11:8086 --- 192.168.3.11:8081 &{0xc0002ad980 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:27:32 cluster.go:366: join host notice 192.168.3.11:8086 ---- 192.168.3.11:8083
+2024/05/19 22:27:32 cluster.go:246: client connected success 192.168.3.11:8086 --- 192.168.3.11:8082 &{0xc0004444b0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:27:32 cluster.go:246: client connected success 192.168.3.11:8086 --- 192.168.3.11:8083 &{0xc0002adcb0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:9999 callasync method: Cluster.JoinHostRpc
+2024/05/19 22:27:32 cluster.go:371: join host rpc 192.168.3.11:9999 192.168.3.11:8087
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:9999 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:8081 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:27:32 cluster.go:366: join host notice 192.168.3.11:9999 ---- 192.168.3.11:8087
+2024/05/19 22:27:32 cluster.go:366: join host notice 192.168.3.11:8081 ---- 192.168.3.11:8087
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:8082 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:8083 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:8084 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:8085 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:8086 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:27:32 cluster.go:366: join host notice 192.168.3.11:8085 ---- 192.168.3.11:8087
+2024/05/19 22:27:32 cluster.go:366: join host notice 192.168.3.11:8084 ---- 192.168.3.11:8087
+2024/05/19 22:27:32 cluster.go:246: client connected success 192.168.3.11:9999 --- 192.168.3.11:8087 &{0xc000336630 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:27:32 cluster.go:246: client connected success 192.168.3.11:8081 --- 192.168.3.11:8087 &{0xc0002adf20 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:27:32 cluster.go:366: join host notice 192.168.3.11:8083 ---- 192.168.3.11:8087
+2024/05/19 22:27:32 cluster.go:366: join host notice 192.168.3.11:8086 ---- 192.168.3.11:8087
+2024/05/19 22:27:32 cluster.go:366: join host notice 192.168.3.11:8082 ---- 192.168.3.11:8087
+2024/05/19 22:27:32 cluster.go:246: client connected success 192.168.3.11:8084 --- 192.168.3.11:8087 &{0xc000336870 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:27:32 cluster.go:246: client connected success 192.168.3.11:8085 --- 192.168.3.11:8087 &{0xc000336a50 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:27:32 cluster.go:246: client connected success 192.168.3.11:8082 --- 192.168.3.11:8087 &{0xc000502240 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:27:32 cluster.go:246: client connected success 192.168.3.11:8086 --- 192.168.3.11:8087 &{0xc000336c30 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:27:32 cluster.go:246: client connected success 192.168.3.11:8083 --- 192.168.3.11:8087 &{0xc0003f8cf0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:8087 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:8087 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:8087 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:8087 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:8087 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:8087 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:8087 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:27:32 cluster.go:366: join host notice 192.168.3.11:8087 ---- 192.168.3.11:8085
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:8087 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:27:32 cluster.go:366: join host notice 192.168.3.11:8087 ---- 192.168.3.11:8087
+2024/05/19 22:27:32 cluster.go:352: address is the same 192.168.3.11:8087
+2024/05/19 22:27:32 cluster.go:366: join host notice 192.168.3.11:8087 ---- 192.168.3.11:9999
+2024/05/19 22:27:32 cluster.go:366: join host notice 192.168.3.11:8087 ---- 192.168.3.11:8086
+2024/05/19 22:27:32 cluster.go:366: join host notice 192.168.3.11:8087 ---- 192.168.3.11:8081
+2024/05/19 22:27:32 cluster.go:246: client connected success 192.168.3.11:8087 --- 192.168.3.11:8085 &{0xc0003f90b0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:27:32 cluster.go:366: join host notice 192.168.3.11:8087 ---- 192.168.3.11:8082
+2024/05/19 22:27:32 cluster.go:246: client connected success 192.168.3.11:8087 --- 192.168.3.11:8081 &{0xc0003f9620 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:27:32 cluster.go:366: join host notice 192.168.3.11:8087 ---- 192.168.3.11:8083
+2024/05/19 22:27:32 cluster.go:366: join host notice 192.168.3.11:8087 ---- 192.168.3.11:8084
+2024/05/19 22:27:32 cluster.go:246: client connected success 192.168.3.11:8087 --- 192.168.3.11:9999 &{0xc0003f9c80 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:27:32 cluster.go:246: client connected success 192.168.3.11:8087 --- 192.168.3.11:8086 &{0xc0003f9aa0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:27:32 cluster.go:246: client connected success 192.168.3.11:8087 --- 192.168.3.11:8082 &{0xc000502cc0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:27:32 cluster.go:246: client connected success 192.168.3.11:8087 --- 192.168.3.11:8084 &{0xc000336f60 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:27:32 cluster.go:246: client connected success 192.168.3.11:8087 --- 192.168.3.11:8083 &{0xc0004ba030 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:9999 callasync method: Cluster.JoinHostRpc
+2024/05/19 22:27:32 cluster.go:371: join host rpc 192.168.3.11:9999 192.168.3.11:8088
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:9999 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:27:32 cluster.go:366: join host notice 192.168.3.11:9999 ---- 192.168.3.11:8088
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:8081 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:8082 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:8083 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:8084 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:8085 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:27:32 cluster.go:366: join host notice 192.168.3.11:8081 ---- 192.168.3.11:8088
+2024/05/19 22:27:32 cluster.go:366: join host notice 192.168.3.11:8082 ---- 192.168.3.11:8088
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:8086 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:8087 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:27:32 cluster.go:366: join host notice 192.168.3.11:8083 ---- 192.168.3.11:8088
+2024/05/19 22:27:32 cluster.go:366: join host notice 192.168.3.11:8087 ---- 192.168.3.11:8088
+2024/05/19 22:27:32 cluster.go:246: client connected success 192.168.3.11:8081 --- 192.168.3.11:8088 &{0xc000444c60 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:27:32 cluster.go:366: join host notice 192.168.3.11:8086 ---- 192.168.3.11:8088
+2024/05/19 22:27:32 cluster.go:246: client connected success 192.168.3.11:8087 --- 192.168.3.11:8088 &{0xc000445020 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:27:32 cluster.go:246: client connected success 192.168.3.11:8083 --- 192.168.3.11:8088 &{0xc0004ba240 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:27:32 cluster.go:246: client connected success 192.168.3.11:9999 --- 192.168.3.11:8088 &{0xc000445200 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:27:32 cluster.go:246: client connected success 192.168.3.11:8082 --- 192.168.3.11:8088 &{0xc000444e40 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:27:32 cluster.go:366: join host notice 192.168.3.11:8085 ---- 192.168.3.11:8088
+2024/05/19 22:27:32 cluster.go:246: client connected success 192.168.3.11:8086 --- 192.168.3.11:8088 &{0xc0004ba420 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:27:32 cluster.go:366: join host notice 192.168.3.11:8084 ---- 192.168.3.11:8088
+2024/05/19 22:27:32 cluster.go:246: client connected success 192.168.3.11:8085 --- 192.168.3.11:8088 &{0xc000503170 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:27:32 cluster.go:246: client connected success 192.168.3.11:8084 --- 192.168.3.11:8088 &{0xc000503350 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:8088 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:8088 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:27:32 cluster.go:366: join host notice 192.168.3.11:8088 ---- 192.168.3.11:9999
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:8088 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:27:32 cluster.go:246: client connected success 192.168.3.11:8088 --- 192.168.3.11:9999 &{0xc000503e90 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:27:32 cluster.go:366: join host notice 192.168.3.11:8088 ---- 192.168.3.11:8082
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:8088 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:8088 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:8088 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:8088 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:8088 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:8088 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:27:32 cluster.go:246: client connected success 192.168.3.11:8088 --- 192.168.3.11:8082 &{0xc000445440 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:27:32 cluster.go:366: join host notice 192.168.3.11:8088 ---- 192.168.3.11:8088
+2024/05/19 22:27:32 cluster.go:352: address is the same 192.168.3.11:8088
+2024/05/19 22:27:32 cluster.go:366: join host notice 192.168.3.11:8088 ---- 192.168.3.11:8083
+2024/05/19 22:27:32 cluster.go:366: join host notice 192.168.3.11:8088 ---- 192.168.3.11:8081
+2024/05/19 22:27:32 cluster.go:366: join host notice 192.168.3.11:8088 ---- 192.168.3.11:8084
+2024/05/19 22:27:32 cluster.go:366: join host notice 192.168.3.11:8088 ---- 192.168.3.11:8085
+2024/05/19 22:27:32 cluster.go:366: join host notice 192.168.3.11:8088 ---- 192.168.3.11:8086
+2024/05/19 22:27:32 cluster.go:366: join host notice 192.168.3.11:8088 ---- 192.168.3.11:8087
+2024/05/19 22:27:32 cluster.go:246: client connected success 192.168.3.11:8088 --- 192.168.3.11:8081 &{0xc000566330 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:27:32 cluster.go:246: client connected success 192.168.3.11:8088 --- 192.168.3.11:8084 &{0xc000566510 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:27:32 cluster.go:246: client connected success 192.168.3.11:8088 --- 192.168.3.11:8083 &{0xc000566840 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:27:32 cluster.go:246: client connected success 192.168.3.11:8088 --- 192.168.3.11:8086 &{0xc000566cc0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:27:32 cluster.go:246: client connected success 192.168.3.11:8088 --- 192.168.3.11:8085 &{0xc000566ea0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:27:32 cluster.go:246: client connected success 192.168.3.11:8088 --- 192.168.3.11:8087 &{0xc000445a40 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:9999 callasync method: Cluster.JoinHostRpc
+2024/05/19 22:27:32 cluster.go:371: join host rpc 192.168.3.11:9999 192.168.3.11:8089
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:9999 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:8081 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:27:32 cluster.go:366: join host notice 192.168.3.11:9999 ---- 192.168.3.11:8089
+2024/05/19 22:27:32 cluster.go:366: join host notice 192.168.3.11:8081 ---- 192.168.3.11:8089
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:8082 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:8083 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:8084 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:8085 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:8086 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:8087 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:8088 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:27:32 cluster.go:366: join host notice 192.168.3.11:8086 ---- 192.168.3.11:8089
+2024/05/19 22:27:32 cluster.go:366: join host notice 192.168.3.11:8084 ---- 192.168.3.11:8089
+2024/05/19 22:27:32 cluster.go:366: join host notice 192.168.3.11:8083 ---- 192.168.3.11:8089
+2024/05/19 22:27:32 cluster.go:366: join host notice 192.168.3.11:8085 ---- 192.168.3.11:8089
+2024/05/19 22:27:32 cluster.go:246: client connected success 192.168.3.11:8081 --- 192.168.3.11:8089 &{0xc0005674d0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:27:32 cluster.go:366: join host notice 192.168.3.11:8082 ---- 192.168.3.11:8089
+2024/05/19 22:27:32 cluster.go:246: client connected success 192.168.3.11:8085 --- 192.168.3.11:8089 &{0xc0004ba780 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:27:32 cluster.go:246: client connected success 192.168.3.11:8084 --- 192.168.3.11:8089 &{0xc0004ba960 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:27:32 cluster.go:246: client connected success 192.168.3.11:8086 --- 192.168.3.11:8089 &{0xc0004bab40 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:27:32 cluster.go:246: client connected success 192.168.3.11:8082 --- 192.168.3.11:8089 &{0xc0005ac000 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:27:32 cluster.go:246: client connected success 192.168.3.11:8083 --- 192.168.3.11:8089 &{0xc000337590 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:27:32 cluster.go:366: join host notice 192.168.3.11:8088 ---- 192.168.3.11:8089
+2024/05/19 22:27:32 cluster.go:366: join host notice 192.168.3.11:8087 ---- 192.168.3.11:8089
+2024/05/19 22:27:32 cluster.go:246: client connected success 192.168.3.11:9999 --- 192.168.3.11:8089 &{0xc0005676b0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:27:32 cluster.go:246: client connected success 192.168.3.11:8088 --- 192.168.3.11:8089 &{0xc0004bad50 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:27:32 cluster.go:246: client connected success 192.168.3.11:8087 --- 192.168.3.11:8089 &{0xc0004baf30 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:8089 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:8089 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:8089 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:8089 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:8089 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:27:32 cluster.go:366: join host notice 192.168.3.11:8089 ---- 192.168.3.11:8083
+2024/05/19 22:27:32 cluster.go:366: join host notice 192.168.3.11:8089 ---- 192.168.3.11:8084
+2024/05/19 22:27:32 cluster.go:366: join host notice 192.168.3.11:8089 ---- 192.168.3.11:8081
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:8089 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:8089 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:8089 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:8089 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:27:32 cluster.go:184: node 192.168.3.11:8089 callasync method: Cluster.JoinHostNotice
+2024/05/19 22:27:32 cluster.go:366: join host notice 192.168.3.11:8089 ---- 192.168.3.11:8082
+2024/05/19 22:27:32 cluster.go:246: client connected success 192.168.3.11:8089 --- 192.168.3.11:8084 &{0xc000567ad0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:27:32 cluster.go:366: join host notice 192.168.3.11:8089 ---- 192.168.3.11:9999
+2024/05/19 22:27:32 cluster.go:366: join host notice 192.168.3.11:8089 ---- 192.168.3.11:8089
+2024/05/19 22:27:32 cluster.go:352: address is the same 192.168.3.11:8089
+2024/05/19 22:27:32 cluster.go:366: join host notice 192.168.3.11:8089 ---- 192.168.3.11:8085
+2024/05/19 22:27:32 cluster.go:246: client connected success 192.168.3.11:8089 --- 192.168.3.11:8083 &{0xc0004bb4d0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:27:32 cluster.go:246: client connected success 192.168.3.11:8089 --- 192.168.3.11:8082 &{0xc0004bb800 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:27:32 cluster.go:246: client connected success 192.168.3.11:8089 --- 192.168.3.11:8081 &{0xc0005ac7b0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:27:32 cluster.go:246: client connected success 192.168.3.11:8089 --- 192.168.3.11:9999 &{0xc0004bbb30 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:27:32 cluster.go:366: join host notice 192.168.3.11:8089 ---- 192.168.3.11:8087
+2024/05/19 22:27:32 cluster.go:366: join host notice 192.168.3.11:8089 ---- 192.168.3.11:8088
+2024/05/19 22:27:32 cluster.go:366: join host notice 192.168.3.11:8089 ---- 192.168.3.11:8086
+2024/05/19 22:27:32 cluster.go:246: client connected success 192.168.3.11:8089 --- 192.168.3.11:8085 &{0xc000567d40 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:27:32 cluster.go:246: client connected success 192.168.3.11:8089 --- 192.168.3.11:8086 &{0xc0005acde0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:27:32 cluster.go:246: client connected success 192.168.3.11:8089 --- 192.168.3.11:8087 &{0xc0005ad0b0 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:27:32 cluster.go:246: client connected success 192.168.3.11:8089 --- 192.168.3.11:8088 &{0xc000630120 {0 0} { 0 <nil>} {0 0} 0 map[] false false}
+2024/05/19 22:27:32 cluster.go:317: ---------------------------------cluster init end---------------------------------
+2024/05/19 22:27:43 cluster.go:524: cluster 192.168.3.11:9999 --call async calculate 192.168.3.11:9999
+2024/05/19 22:27:43 cluster.go:184: node 192.168.3.11:9999 callasync method: Calculate.Sum
+2024/05/19 22:27:43 cluster.go:524: cluster 192.168.3.11:9999 --call async calculate 192.168.3.11:8081
+2024/05/19 22:27:43 cluster.go:184: node 192.168.3.11:8081 callasync method: Calculate.Sum
+2024/05/19 22:27:43 cluster.go:90: calculate.sum finished 5050 1 100
+2024/05/19 22:27:43 cluster.go:533: calculate over 5050 1
+2024/05/19 22:27:43 cluster.go:524: cluster 192.168.3.11:9999 --call async calculate 192.168.3.11:8082
+2024/05/19 22:27:43 cluster.go:184: node 192.168.3.11:8082 callasync method: Calculate.Sum
+2024/05/19 22:27:43 cluster.go:90: calculate.sum finished 15050 101 200
+2024/05/19 22:27:43 cluster.go:524: cluster 192.168.3.11:9999 --call async calculate 192.168.3.11:8083
+2024/05/19 22:27:43 cluster.go:184: node 192.168.3.11:8083 callasync method: Calculate.Sum
+2024/05/19 22:27:43 cluster.go:90: calculate.sum finished 25050 201 300
+2024/05/19 22:27:43 cluster.go:533: calculate over 15050 1
+2024/05/19 22:27:43 cluster.go:524: cluster 192.168.3.11:9999 --call async calculate 192.168.3.11:8084
+2024/05/19 22:27:43 cluster.go:533: calculate over 25050 1
+2024/05/19 22:27:43 cluster.go:184: node 192.168.3.11:8084 callasync method: Calculate.Sum
+2024/05/19 22:27:43 cluster.go:90: calculate.sum finished 35050 301 400
+2024/05/19 22:27:43 cluster.go:524: cluster 192.168.3.11:9999 --call async calculate 192.168.3.11:8085
+2024/05/19 22:27:43 cluster.go:90: calculate.sum finished 45050 401 500
+2024/05/19 22:27:43 cluster.go:533: calculate over 35050 1
+2024/05/19 22:27:43 cluster.go:184: node 192.168.3.11:8085 callasync method: Calculate.Sum
+2024/05/19 22:27:43 cluster.go:533: calculate over 45050 1
+2024/05/19 22:27:43 cluster.go:524: cluster 192.168.3.11:9999 --call async calculate 192.168.3.11:8086
+2024/05/19 22:27:43 cluster.go:184: node 192.168.3.11:8086 callasync method: Calculate.Sum
+2024/05/19 22:27:43 cluster.go:90: calculate.sum finished 55050 501 600
+2024/05/19 22:27:43 cluster.go:533: calculate over 55050 1
+2024/05/19 22:27:43 cluster.go:524: cluster 192.168.3.11:9999 --call async calculate 192.168.3.11:8087
+2024/05/19 22:27:43 cluster.go:184: node 192.168.3.11:8087 callasync method: Calculate.Sum
+2024/05/19 22:27:43 cluster.go:90: calculate.sum finished 65050 601 700
+2024/05/19 22:27:43 cluster.go:524: cluster 192.168.3.11:9999 --call async calculate 192.168.3.11:8088
+2024/05/19 22:27:43 cluster.go:184: node 192.168.3.11:8088 callasync method: Calculate.Sum
+2024/05/19 22:27:43 cluster.go:524: cluster 192.168.3.11:9999 --call async calculate 192.168.3.11:8089
+2024/05/19 22:27:43 cluster.go:184: node 192.168.3.11:8089 callasync method: Calculate.Sum
+2024/05/19 22:27:43 cluster.go:533: calculate over 65050 1
+2024/05/19 22:27:43 cluster.go:90: calculate.sum finished 85050 801 900
+2024/05/19 22:27:43 cluster.go:90: calculate.sum finished 75050 701 800
+2024/05/19 22:27:43 cluster.go:90: calculate.sum finished 95050 901 1000
+2024/05/19 22:27:43 cluster.go:533: calculate over 85050 1
+2024/05/19 22:27:43 cluster.go:533: calculate over 75050 1
+2024/05/19 22:27:43 cluster.go:533: calculate over 95050 1
+2024/05/19 22:27:46 cluster.go:524: cluster 192.168.3.11:9999 --call async calculate 192.168.3.11:9999
+2024/05/19 22:27:46 cluster.go:184: node 192.168.3.11:9999 callasync method: Calculate.Sum
+2024/05/19 22:27:46 cluster.go:90: calculate.sum finished 5050 1 100
+2024/05/19 22:27:46 cluster.go:524: cluster 192.168.3.11:9999 --call async calculate 192.168.3.11:8081
+2024/05/19 22:27:46 cluster.go:184: node 192.168.3.11:8081 callasync method: Calculate.Sum
+2024/05/19 22:27:46 cluster.go:524: cluster 192.168.3.11:9999 --call async calculate 192.168.3.11:8082
+2024/05/19 22:27:46 cluster.go:184: node 192.168.3.11:8082 callasync method: Calculate.Sum
+2024/05/19 22:27:46 cluster.go:524: cluster 192.168.3.11:9999 --call async calculate 192.168.3.11:8083
+2024/05/19 22:27:46 cluster.go:184: node 192.168.3.11:8083 callasync method: Calculate.Sum
+2024/05/19 22:27:46 cluster.go:533: calculate over 5050 1
+2024/05/19 22:27:46 cluster.go:90: calculate.sum finished 15050 101 200
+2024/05/19 22:27:46 cluster.go:524: cluster 192.168.3.11:9999 --call async calculate 192.168.3.11:8084
+2024/05/19 22:27:46 cluster.go:90: calculate.sum finished 25050 201 300
+2024/05/19 22:27:46 cluster.go:533: calculate over 15050 1
+2024/05/19 22:27:46 cluster.go:184: node 192.168.3.11:8084 callasync method: Calculate.Sum
+2024/05/19 22:27:46 cluster.go:533: calculate over 25050 1
+2024/05/19 22:27:46 cluster.go:90: calculate.sum finished 35050 301 400
+2024/05/19 22:27:46 cluster.go:524: cluster 192.168.3.11:9999 --call async calculate 192.168.3.11:8085
+2024/05/19 22:27:46 cluster.go:184: node 192.168.3.11:8085 callasync method: Calculate.Sum
+2024/05/19 22:27:46 cluster.go:90: calculate.sum finished 45050 401 500
+2024/05/19 22:27:46 cluster.go:533: calculate over 35050 1
+2024/05/19 22:27:46 cluster.go:524: cluster 192.168.3.11:9999 --call async calculate 192.168.3.11:8086
+2024/05/19 22:27:46 cluster.go:184: node 192.168.3.11:8086 callasync method: Calculate.Sum
+2024/05/19 22:27:46 cluster.go:533: calculate over 45050 1
+2024/05/19 22:27:46 cluster.go:90: calculate.sum finished 55050 501 600
+2024/05/19 22:27:46 cluster.go:524: cluster 192.168.3.11:9999 --call async calculate 192.168.3.11:8087
+2024/05/19 22:27:46 cluster.go:184: node 192.168.3.11:8087 callasync method: Calculate.Sum
+2024/05/19 22:27:46 cluster.go:90: calculate.sum finished 65050 601 700
+2024/05/19 22:27:46 cluster.go:533: calculate over 55050 1
+2024/05/19 22:27:46 cluster.go:524: cluster 192.168.3.11:9999 --call async calculate 192.168.3.11:8088
+2024/05/19 22:27:46 cluster.go:184: node 192.168.3.11:8088 callasync method: Calculate.Sum
+2024/05/19 22:27:46 cluster.go:533: calculate over 65050 1
+2024/05/19 22:27:46 cluster.go:90: calculate.sum finished 75050 701 800
+2024/05/19 22:27:46 cluster.go:524: cluster 192.168.3.11:9999 --call async calculate 192.168.3.11:8089
+2024/05/19 22:27:46 cluster.go:184: node 192.168.3.11:8089 callasync method: Calculate.Sum
+2024/05/19 22:27:46 cluster.go:533: calculate over 75050 1
+2024/05/19 22:27:46 cluster.go:90: calculate.sum finished 85050 801 900
+2024/05/19 22:27:46 cluster.go:533: calculate over 85050 1
+2024/05/19 22:27:46 cluster.go:90: calculate.sum finished 95050 901 1000
+2024/05/19 22:27:46 cluster.go:533: calculate over 95050 1
+2024/05/19 22:28:02 cluster.go:524: cluster 192.168.3.11:9999 --call async calculate 192.168.3.11:9999
+2024/05/19 22:28:02 cluster.go:184: node 192.168.3.11:9999 callasync method: Calculate.Sum
+2024/05/19 22:28:02 cluster.go:524: cluster 192.168.3.11:9999 --call async calculate 192.168.3.11:8081
+2024/05/19 22:28:02 cluster.go:184: node 192.168.3.11:8081 callasync method: Calculate.Sum
+2024/05/19 22:28:02 cluster.go:90: calculate.sum finished 5050 1 100
+2024/05/19 22:28:02 cluster.go:524: cluster 192.168.3.11:9999 --call async calculate 192.168.3.11:8082
+2024/05/19 22:28:02 cluster.go:184: node 192.168.3.11:8082 callasync method: Calculate.Sum
+2024/05/19 22:28:02 cluster.go:90: calculate.sum finished 15050 101 200
+2024/05/19 22:28:02 cluster.go:533: calculate over 5050 1
+2024/05/19 22:28:02 cluster.go:533: calculate over 15050 1
+2024/05/19 22:28:02 cluster.go:524: cluster 192.168.3.11:9999 --call async calculate 192.168.3.11:8083
+2024/05/19 22:28:02 cluster.go:184: node 192.168.3.11:8083 callasync method: Calculate.Sum
+2024/05/19 22:28:02 cluster.go:90: calculate.sum finished 25050 201 300
+2024/05/19 22:28:02 cluster.go:533: calculate over 25050 1
+2024/05/19 22:28:02 cluster.go:524: cluster 192.168.3.11:9999 --call async calculate 192.168.3.11:8084
+2024/05/19 22:28:02 cluster.go:90: calculate.sum finished 35050 301 400
+2024/05/19 22:28:02 cluster.go:184: node 192.168.3.11:8084 callasync method: Calculate.Sum
+2024/05/19 22:28:02 cluster.go:524: cluster 192.168.3.11:9999 --call async calculate 192.168.3.11:8085
+2024/05/19 22:28:02 cluster.go:184: node 192.168.3.11:8085 callasync method: Calculate.Sum
+2024/05/19 22:28:02 cluster.go:533: calculate over 35050 1
+2024/05/19 22:28:02 cluster.go:90: calculate.sum finished 45050 401 500
+2024/05/19 22:28:02 cluster.go:524: cluster 192.168.3.11:9999 --call async calculate 192.168.3.11:8086
+2024/05/19 22:28:02 cluster.go:90: calculate.sum finished 55050 501 600
+2024/05/19 22:28:02 cluster.go:184: node 192.168.3.11:8086 callasync method: Calculate.Sum
+2024/05/19 22:28:02 cluster.go:533: calculate over 45050 1
+2024/05/19 22:28:02 cluster.go:524: cluster 192.168.3.11:9999 --call async calculate 192.168.3.11:8087
+2024/05/19 22:28:02 cluster.go:184: node 192.168.3.11:8087 callasync method: Calculate.Sum
+2024/05/19 22:28:02 cluster.go:533: calculate over 55050 1
+2024/05/19 22:28:02 cluster.go:90: calculate.sum finished 65050 601 700
+2024/05/19 22:28:02 cluster.go:524: cluster 192.168.3.11:9999 --call async calculate 192.168.3.11:8088
+2024/05/19 22:28:02 cluster.go:184: node 192.168.3.11:8088 callasync method: Calculate.Sum
+2024/05/19 22:28:02 cluster.go:90: calculate.sum finished 75050 701 800
+2024/05/19 22:28:02 cluster.go:533: calculate over 65050 1
+2024/05/19 22:28:02 cluster.go:524: cluster 192.168.3.11:9999 --call async calculate 192.168.3.11:8089
+2024/05/19 22:28:02 cluster.go:90: calculate.sum finished 85050 801 900
+2024/05/19 22:28:02 cluster.go:533: calculate over 75050 1
+2024/05/19 22:28:02 cluster.go:184: node 192.168.3.11:8089 callasync method: Calculate.Sum
+2024/05/19 22:28:02 cluster.go:533: calculate over 85050 1
+2024/05/19 22:28:02 cluster.go:90: calculate.sum finished 95050 901 1000
+2024/05/19 22:28:02 cluster.go:533: calculate over 95050 1
